@@ -1,0 +1,676 @@
+
+tværtråd	A1
+1	22-19		13-2
+2	22-19		13-2
+3	22-19		13-2
+8	22-19		13-2
+9	22-19		13-2
+12	22-19	17-14	13-2
+15		17-14
+1N	22-19	17-14	13-2
+2N	22-19	17-14	13-2
+5N	            	13-2
+7N	22-20		13-3
+8N	22-19		13-2
+11N	22-19		13-10	9-6	5-2
+12N	22-19		13-2
+13N	22-19		13-2
+14N	22-19		13-2
+15N	22-19		13-2
+end
+
+kort	A1-1	DM160	Lampeplade
+1	A1-23-1	A1-1-1N		# 1V~ glød DM
+2	A1-23-2	A1-1-2N		# +50V Anode
+3	A1-23-3	A1-1-3N		# 1V~ glød DM
+4	A1-7-13			# MA12
+5	A1-7-6N			# MA11
+6	A1-6-13			# MA10
+7	A1-6-6N			# MA9
+8	A1-5-13			# MA8
+9	A1-5-6N			# MA7
+10	A1-4-13			# MA6
+11	A1-4-6N			# MA5
+12	A1-3-13			# MA4
+13	A1-3-6N			# MA3
+14	A1-2-13			# MA2
+15	A1-2-6N			# MA1
+1N	A1-1-1	KB12-S		# 1V~ glød DM
+2N	A1-1-2	KB12-Z		# +50 volt anode
+3N	A1-1-3	KB12-T		# 1V~ glød DM
+4N	A1-13-13		# MA24
+5N	A1-13-6N		# MA23
+6N	A1-12-13		# MA22
+7N	A1-12-6N		# MA21
+8N	A1-11-13		# MA20
+9N	A1-11-6N		# MA19
+10N	A1-10-13		# MA18
+11N	A1-10-6N		# MA17
+12N	A1-9-13			# MA16
+13N	A1-9-6N			# MA15
+14N	A1-8-13			# MA14
+15N	A1-8-6N			# MA13
+end
+
+kort	A1-2	0209	MA flip-flop
+1			x
+2	A2-5-3		x
+3	A2-5-2		x
+4	H1-A
+6	H1-B
+8			x
+9			x
+12	A1-2-9N		x
+13	A1-1-14
+14	H2-D
+15	H2-B
+1N			x
+2N			x
+3N	H2-A
+4N	H2-C
+5N			x
+6N	A1-1-15
+8N			x
+9N	A1-3-7N	A1-2-12
+10N	B1-30-15N	A2-1-14N
+11N	A2-5-4		x
+12N			x
+13N			x
+14N			x
+15N			x
+end
+
+kort	A1-3	0209	MA flip-flop
+1			x
+2			x
+3			x
+4	H1-C
+6	H1-D
+8			x
+9			x
+12			x	
+13	A1-1-12
+14	H2-J
+15	H2-F
+1N			x
+2N			x
+3N	H2-E
+4N	H2-H
+5N			x
+6N	A1-1-13
+7N	A1-2-9N		x
+8N			x
+11N			x
+12N			x
+13N			x
+14N			x
+15N			x
+end
+
+kort	A1-4	0209	MA flip-flop
+1			x
+2			x
+3			x
+4	H1-E
+6	H1-F
+8			x
+9			x
+12			x
+13	A1-1-10
+14	H2-N
+15	H2-L
+1N			x
+2N			x
+3N 	H2-K
+4N 	H2-M
+5N			x
+6N	A1-1-11
+7N			x
+8N			x
+11N			x
+12N			x
+13N			x
+14N			x
+15N			x
+end
+
+kort	A1-5	0209	MA flip-flop
+1			x
+2			x
+3			x
+4	H1-H
+6	H1-J
+8			x
+9			x
+12			x
+13	A1-1-8
+14	H2-T
+15	H2-R
+1N			x
+2N			x
+3N 	H2-P
+4N 	H2-S
+5N			x
+6N	A1-1-9
+7N			x
+8N	STEL		x
+11N	A1-18-2		x
+12N			x
+13N			x
+14N			x
+15N			x
+end
+
+kort	A1-6	0209	MA flip-flop
+1			x
+2			x
+3			x
+4	H1-K
+6	H1-L
+8			x
+9			x
+12			x
+13	A1-1-6
+14	H2-X
+15	H2-V
+1N			x
+2N			x
+3N 	H2-U
+4N 	H2-W
+5N			x
+6N	A1-1-7
+7N			x
+8N			x
+11N	A2-5-5		x
+12N			x
+13N			x
+14N			x
+15N			x
+end
+
+kort	A1-7	0209	MA flip-flop
+1			x
+2			x
+3			x
+4	H1-M
+6	H1-N
+8			x
+9			x
+12			x
+13	A1-1-4
+14	H2-BB
+15	H2-Z
+1N			x
+2N			x
+3N 	H2-Y
+4N 	H2-AA
+5N			x
+6N	A1-1-5
+7N			x
+8N			x
+11N			x
+12N			x
+13N			x
+14N			x
+15N			x
+end
+
+kort	A1-8	0209	MA flip-flop
+1			x
+2			x
+3			x
+4	H1-P
+6	H1-R
+8			x
+9			x
+12			x
+13	A1-1-14N
+14	H2-FF
+15	H2-DD
+1N			x
+2N			x
+3N 	H2-CC
+4N 	H2-EE
+5N			x
+6N	A1-1-15N
+7N			x
+8N			x
+11N			x
+12N			x
+13N			x
+14N			x
+15N			x
+end
+
+kort	A1-9	0209	MA flip-flop
+1			x
+2			x
+3			x
+4	H1-S
+6	H1-T
+8			x
+9			x
+12			x
+13	A1-1-12N
+14	H3-C
+15	H3-A
+1N			x
+2N			x
+3N 	H2-HH
+4N 	H2-KK
+5N			x
+6N	A1-1-13N
+7N			x
+8N			x
+11N	A1-18-3		x
+12N			x
+13N			x
+14N			x
+15N			x
+end
+
+kort	A1-10	0209	MA flip-flop
+1			x
+2			x
+3			x
+4	H1-U
+6	H1-V
+8			x
+9			x
+12			x
+13	A1-1-10N
+14	H3-H
+15	H3-E
+1N			x
+2N			x
+3N 	H3-B
+4N 	H3-D
+5N			x
+6N	A1-1-11N
+7N			x
+8N	STEL		x
+11N	A2-5-6		x
+12N			x
+13N			x
+14N			x
+15N			x
+end
+kort	A1-11	0209	MA flip-flop
+1			x
+2			x
+3			x
+4	H1-W
+6	H1-X
+8			x
+9			x
+12			x
+13	A1-1-8N
+14	H3-M
+15	H3-K
+1N			x
+2N			x
+3N 	H3-F
+4N 	H3-J
+5N			x
+6N	A1-1-9N
+7N			x
+8N			x
+11N			x
+12N			x
+13N			x
+14N			x
+15N			x
+end
+kort	A1-12	0209	MA flip-flop
+1	A1-13-8		x
+2			x
+3			x
+4	H1-Y
+6	H1-Z
+8			x
+9			x
+12			x
+13	A1-1-6N
+14	H3-S
+15	H3-P
+1N			x
+2N			x
+3N 	H3-L
+4N 	H3-N
+5N			x
+6N	A1-1-7N
+7N			x
+8N			x
+11N			x
+12N			x
+13N			x
+14N			x
+15N			x
+end
+
+kort	A1-13	0209	MA flip-flop
+1	-31.5V*		x	# Fra speciel loddeterminal
+2	A1-18-11	x
+3			x
+4	H1-AA
+6	H1-BB
+8	A1-12-1		x
+9	A1-14-12	x
+12	A1-19-9N	x
+13	A1-1-4N
+14	H3-W
+15	H3-U
+1N	A1-19-1N	x
+2N	A1-23-7		x
+3N	H3-R
+4N	H3-T
+5N	+4.5V		x
+6N	A1-1-5N
+7N			x
+8N			x
+11N	A1-18-4		x
+12N	A1-18-6N	x
+13N	A1-16-12	x
+14N	A1-18-12	x
+15N	A1-14-15	x
+end
+
+kort	A1-14	0206	Valg af adresse-register
+2	B1-43-14N
+3	B1-43-15N
+4	B1-31-15N
+5	B1-31-10N
+6	B1-31-12N
+12	A1-13-9		x
+15	A1-13-15N	x
+1N			x
+2N			x
+4N	A2-11-12N
+5N	A2-11-14N
+6N	A2-12-12N
+7N	A2-12-14N
+8N	A2-13-12N
+9N	A2-13-14N
+10N	A2-14-12N
+11N	A2-14-14N
+12N	A2-15-12N
+13N	A2-15-14N
+end
+
+kort	A1-15	0206	Valg af adresse-register
+2	B1-43-10N
+3	B1-43-12N
+4	B1-32-15N
+5	B1-32-10N
+6	B1-32-12N
+12			x
+15			x
+1N			x
+2N			x
+4N	A2-6-12N
+5N	A2-6-14N
+6N	A2-7-12N
+7N	A2-7-14N
+8N	A2-8-12N
+9N	A2-8-14N
+10N	A2-9-12N
+11N	A2-9-14N
+12N	A2-10-12N
+13N	A2-10-14N
+end
+
+
+kort	A1-16	0206	Valg af adresse-register
+2	B1-43-8N
+3	B1-43-13N
+4	B1-31-13N
+5	B1-31-9N
+6	B1-31-11N
+12	A1-13-13N	x
+15			x
+1N			x
+2N			x
+4N	A2-11-13N
+5N	A2-11-15N
+6N	A2-12-13N
+7N	A2-12-15N
+8N	A2-13-13N
+9N	A2-13-15N
+10N	A2-14-13N
+11N	A2-14-15N
+12N	A2-15-13N
+13N	A2-15-15N
+end
+
+kort	A1-17	0206	Valg af adresse-register
+2	B1-43-9N
+3	B1-43-11N
+4	B1-32-13N
+5	B1-32-9N
+6	B1-32-11N
+12	A1-18-14	x
+15	A1-18-1		x
+1N	C3-25-10	x
+2N	C3-25-7		x
+4N	A2-6-13N
+5N	A2-6-15N
+6N	A2-7-13N
+7N	A2-7-15N
+8N	A2-8-13N
+9N	A2-8-15N
+10N	A2-9-13N
+11N	A2-9-15N
+12N	A2-10-13N
+13N	A2-10-15N
+end
+
+kort	A1-18	0214-3	Klokpulsforstærkere
+1	A1-19-15N	A1-17-15
+2	A1-5-11N			# KPoA
+3	A1-9-11N
+4	A1-13-11N	B1-29-3
+5	A1-19-11N			# KPoB
+6	B1-29-12	H1-DD		# O til alle
+7	H1-CC				# Display
+8	A1-19-2				# KPB
+10	STEL
+11	A1-13-2				# KPA
+12	A1-19-14N	A1-13-14N
+14	A1-18-7N	A1-17-12
+15	A1-19-2N
+4N	STEL
+6N	A1-19-12N	A1-13-12N
+7N	A1-19-13N	A1-18-14
+8N	A1-18-13N
+9N	A1-18-12N
+10N	A1-18-11N
+11N	A1-18-10N	B1-27-8N
+12N	A1-18-9N	B1-27-9N
+13N	A1-18-8N	A1-18-14N
+14N	A1-18-13N	A1-18-15N
+15N	A1-18-14N	B1-27-7N
+end
+
+kort	A1-19	0209-1	MA B flip-flop
+1	-31.5V		x		# Fra spec loddeterminal
+2	A1-18-8		x
+3			x
+4	H1-EE
+5
+6	H1-FF
+8	A1-20-1		x
+9	A1-22-13N	x
+10	A1-20-4N
+12	A1-25-15N	x
+13	A1-23-14
+14	A1-19-10N
+1N	A1-13-1N	x
+2N	A1-18-15	x
+4N	A1-22-10
+6N	A1-23-15
+8N			x
+9N	A1-13-12	A1-20-7N
+10N	A1-19-14	B1-30-10N
+11N	A1-18-5		x
+12N	A1-18-6N	x
+13N	A1-18-7N	x
+14N	A1-18-12	x
+15N	A1-18-1		x
+end
+
+kort	A1-20	0209-1	MA B flip-flop
+1	A1-19-8		x
+2			x
+3			x
+4	H1-HH
+6	H1-JJ
+8			x
+9			x
+10	A1-21-4N
+12			x
+13	A1-23-12
+14	A1-20-10N
+1N			x
+2N			x
+4N	A1-19-10
+6N	A1-23-13
+7N	A1-19-9N	x
+8N	STEL		x
+10N	A1-20-14
+11N			x
+12N			x
+13N			x
+14N			x
+15N			x
+end
+
+kort	A1-21	0209-1	MA B flip-flop
+1			x
+2			x
+3			x
+4	H1-KK
+6	H1-LL
+8			x
+9			x
+10	A1-22-4N
+12			x
+13	A1-23-10
+14	A1-21-10N
+1N			x
+2N			x
+4N	A1-20-10
+6N	A1-23-11
+7N			x
+8N			x
+10N	A1-21-14
+11N			x
+12N			x
+13N			x
+14N			x
+15N			x
+end
+
+kort	A1-22	0209-1	MA B flip-flop
+1			x
+2			x
+3	+4.5V		x
+4	H1-MM
+6	H1-NN
+8			x
+9	A1-24-5N	x
+10	A1-19-4N
+12	A1-22-7N	x
+13	A1-23-8
+14	A1-22-10N
+1N	A1-25-10	x
+2N	A1-24-6N	x
+4N	A1-21-10
+6N	A1-23-9
+7N	A1-22-12	x
+8N			x
+10N	A1-22-14
+11N			x
+12N	A1-24-4		x
+13N	A1-19-9		x
+14N	A1-24-7		x
+15N	A1-25-15	x
+end
+
+kort	A1-23	DM160	Lampeplade
+1	A1-1-1	A1-23-1N	# 1V~ glød DM
+2	A1-1-2	A1-23-2N	# +50V anode
+3	A1-1-3	A1-23-3N	# 1V~ glød DM
+4	C6-5-6N			# b
+5	C6-5-13			# c
+6	A1-25-6N	A1-23-7	# -3 volt
+7	A1-23-6	A1-13-2N	# -3 volt
+8	A1-22-13		# MAB 1
+9	A1-22-6N		# MAB 2
+10	A1-21-13		# MAB 3
+11	A1-21-6N		# MAB 4
+12	A1-20-13		# MAB 5
+13	A1-20-6N		# MAB 6
+14	A1-19-13		# MAB 7
+15	A1-19-6N		# MAB 8
+1N	1V-AC-A	A1-23-1		# 1V~ glød DM
+2N	+50V	A1-23-2		# +50V anode
+3N	1V-AC-B	A1-23-3		# 1V~ glød DM
+# 4N	A4-24-15N		# SUB ~0V Add ~-7.5V
+5N	C3-25-5			# TL Tromle Ledig
+6N	C3-6-5			# TBA 0
+7N	C3-7-5			# TBA 1
+8N	C3-8-5			# TBA 2
+9N	C3-9-5			# TBA 3
+10N	C3-10-5			# TBA 4
+11N	C3-11-5			# TBA 5
+12N	C3-12-5			# TBA 6
+13N	C3-13-5			# TBA 7
+14N	C3-14-5			# TBA 8
+15N	C3-15-5			# TBA 9
+end
+
+kort	A1-24	0261-1	Klipper, SL" og Gs stop B bagkant
+1	B1-30-3N
+2	B1-30-4N
+4	A1-24-12N	A1-22-12N
+5	C6-21-6
+6	-31.5V
+7	A1-25-1		A1-22-14N
+8	A5-2-5
+9	STEL
+10	KB12-HH		KB5-M
+14	C2-4-13
+2N	A1-25-14N
+3N	A1-25-10N
+5N	A1-25-7N	A1-22-9
+6N	A1-25-5N	A1-22-2N
+7N	A1-25-11N
+10N	B1-28-3
+12N	A1-25-8N	A1-24-4
+13N	B1-26-13
+15N	A1-25-4N
+end
+
+kort	A1-25	0258	VAB, SLB fl-fl FLF
+1	-7.5V	A1-24-7
+2	B1-27-10N
+3	B1-27-12N
+4	B1-33-4
+9	+10.5V	A1-25-8N
+10	+1.5V	A1-22-1N
+11	STEL
+12	B1-28-2
+15	-31.5V	A1-22-15N
+4N	B1-27-2	A1-24-15N
+5N	-1.5V	A1-24-6N
+6N	-3.0V	A1-23-6
+7N	-13.5V	A1-24-5N
+8N	A1-25-9	A1-24-12N
+9N	STEL
+10N	A1-24-3N
+11N	A1-24-7N
+12N	B1-36-4
+14N	A1-24-2N
+15N	A1-19-12 B1-29-6
+end
+

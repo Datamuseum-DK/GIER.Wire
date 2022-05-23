@@ -1,0 +1,689 @@
+tværtråd	A6
+1	25-6	5-1
+2	25-6
+3	25-6
+4	25-6
+7	25-6
+8	25-6
+10	25-16	15-6
+11	25-16	15-6
+13	25-1
+14	25-6
+15	5-1
+
+1N	5-1
+2N	25-6	5-1
+3N	5-1
+7N	24-21	20-16	15-8
+9N	25-16	15-6
+10N	25-16	15-6
+15N	25-16	15-6
+end
+
+kort	A6-1	0211	Gm
+1					x
+2	C2-8-4N					# Gm BL2-9
+3	C2-7-10N					# Gm 1->Zl
+4	C2-9-5N		C2-19-4			# Gm BS3-9
+5	A2-1-3N					# Gm step
+6	C2-8-6N					# Gm By2-9
+7	C2-4-3N					# Gm 1-Zs
+13					x
+15	STEL				x
+1N					x
+2N					x
+3N	STEL				x
+4N	H10-FF
+5N	H10-DD
+6N	H10-EE
+7N	H10-CC
+8N	H8-BB
+9N	H8-Z
+10N	H8-AA
+11N	H8-Y
+12N	H10-BB
+13N	H10-Z
+14N	H10-AA
+15N	H10-Y
+end
+
+kort	A6-2	0211	Gm
+1					x
+2	C1-6-9N					# Gm TK
+3	C1-6-4N					# Gm IN
+4	C3-25-3		C6-5-2			# Gm sætTl, 0->b og c
+5	C2-7-6N					# Gm j
+6	C3-6-9N					# Gm TBA, start tromle
+13					x
+15					x
+1N					x
+2N					x
+3N					x
+4N	H6-NN
+5N	H6-MM
+6N	H11-C
+7N	H11-A
+8N	H10-J
+9N	H10-F
+10N	H10-NN
+11N	H10-MM
+12N	H10-LL
+13N	H10-JJ
+14N	H10-W
+15N	H10-U
+end
+
+kort	A6-3	0211	Gm
+1					x
+2	A5-7-9N					# Gm MQ1-9 h skift
+3	A5-16-9N				# Gm MQ 10-19 h skift
+5	A4-4-13					# Gm linie 39->MQo
+6	A5-6-9N					# Gm MQ39->MQ0
+7	A4-4-12					# Gm 0 -> MQo
+13					x
+15					x
+1N					x
+2N					x
+3N					x
+4N	H10-H
+5N	H10-E
+6N	H7-AA
+7N	H7-Y
+8N	H7-X
+9N	H7-V
+12N	H7-S
+13N	H7-P
+14N	H7-N
+15N	H7-L
+end
+
+kort	A6-4	0211	Gm
+1					x
+2	A5-5-15					# Gm AC00-9
+3	A5-16-15				# Gm AC10-10
+4	A5-6-10					# Gm MQ0-9
+5	A5-16-10				# Gm MQ10-19
+6	A5-6-8N					# Gm MQ0-9 v.skift
+7	A5-16-8N				# Gm MQ10-19 v.skift
+13					x
+15					x
+1N					x
+2N					x
+3N					x
+4N	H7-EE
+5N	H7-CC
+6N	H7-BB
+7N	H7-Z
+8N	H7-D
+9N	H7-B
+10N	H7-C
+11N	H7-A
+12N	H5-T
+13N	H5-R
+14N	H5-S
+15N	H5-P
+end
+
+kort	A6-5	0211	Gm
+1	A6-6-2				x
+2	A6-6-10					# Gm ADo(=OR 0-9)
+3	A6-6-10N				# Gm TIo-9
+4	A6-16-10N				# Gm Ti10-19	
+5	A5-6-12					# Gm MD00-9
+6	A5-16-12				# Gm MD10-19
+13					x
+15					x
+1N	A6-16-10			x
+2N	A6-6-3				x
+3N	STEL				x
+6N	H9-NN
+7N	H9-MM
+8N	H9-LL
+9N	H9-JJ
+10N	H8-T
+11N	H8-R
+12N	H8-S
+13N	H8-P
+14N	H8-C
+15N	H8-A
+end
+
+kort	A6-6	0224-1	O-OR-TI
+1					x
+2	A6-5-1				x
+3	A6-5-2N				x
+4					x
+7					x
+8					x
+10	A6-5-2				x
+11	C1-3-2				x
+13					x
+14					x
+15	KB1-D
+1N	KB1-A
+2N					x
+3N	A5-6-13		C1-6-14			# -1.5V*0
+5N	A5-6-14		C1-6-8			# L-0
+7N	C1-4-5		A6-8-7N
+8N	KB1-C
+9N	C1-4-2				x
+10N	A6-5-3				x
+12N	C6-25-14
+13N	A6-7-11N
+14N	A6-7-12N
+15N					x
+end
+
+kort	A6-7	0224-1 O-OR-TI
+1					x
+2					x
+3					x
+4					x
+7					x
+8					x
+10					x
+11					x
+13					x
+14					x
+15	KB1-J
+1N	KB1-E
+2N					x
+3N	-1.5V*1		C1-7-14
+5N	L-1		C1-7-8
+7N	C1-4-4
+8N	KB1-H
+9N					x
+10N					x
+11N	A6-6-13N
+12N	A6-6-14N
+13N	A6-8-11N
+14N	A6-8-12N
+15N					x
+end
+
+kort	A6-8	0224-1 O-OR-TI
+1					x
+2					x
+3					x
+4					x
+7	STEL				x
+8					x
+10					x
+11					x
+13					x
+14					x
+15	KB1-N
+1N	KB1-K
+2N					x
+3N	-1.5V*2		C1-8-14
+5N	L-2		C1-8-8
+7N	A6-6-7N				x
+8N	KB1-M
+9N					x
+10N					x
+11N	A6-7-13N
+12N	A6-7-14N
+13N	A6-9-11N
+14N	A6-9-12N
+15N					x
+end
+
+kort	A6-9	0224-1 O-OR-TI
+1					x
+2					x
+3					x
+4					x
+7					x
+8					x
+10					x
+11					x
+13					x
+14					x
+15	KB1-T
+1N	KB1-P
+2N					x
+3N	-1.5V*3		C1-9-14
+5N	L-3		C1-9-8
+7N					x
+8N	KB1-S
+9N					x
+10N					x
+11N	A6-8-13N
+12N	A6-8-14N
+13N	A6-10-11N
+14N	A6-10-12N
+15N					x
+end
+
+kort	A6-10	0224-1 O-OR-TI
+1					x
+2					x
+3					x
+4					x
+7					x
+8					x
+10					x
+11					x
+13					x
+14					x
+15	KB1-X
+1N	KB1-U
+2N					x
+3N	-1.5V*4		C1-10-14
+5N	L-4		C1-10-8
+7N					x
+8N	KB1-W
+9N					x
+10N					x
+11N	A6-9-13N
+12N	A6-9-14N
+13N	A6-11-11N
+14N	A6-11-12N
+15N					x
+end
+
+kort	A6-11	0224-1 O-OR-TI
+1					x
+2					x
+3					x
+4					x
+7					x
+8					x
+10					x
+11					x
+13					x
+14					x
+15	KB1-BB
+1N	KB1-Y
+2N					x
+3N	-1.5V*5		C1-11-14
+5N	L-5		C1-11-8
+7N					x
+8N	KB1-AA
+9N					x
+10N					x
+11N	A6-10-13N
+12N	A6-10-14N
+13N	A6-12-11N
+14N	A6-12-12N
+15N					x
+end
+
+kort	A6-12	0224-1 O-OR-TI
+1					x
+2					x
+3					x
+4					x
+7					x
+8					x
+10					x
+11					x
+13					x
+14					x
+15	KB1-FF
+1N	KB1-CC
+2N					x
+3N	-1.5V*6		C1-12-14
+5N	L-6		C1-12-8
+7N					x
+8N	KB1-EE
+9N					x
+10N					x
+11N	A6-11-13N
+12N	A6-11-14N
+13N	A6-13-11N
+14N	A6-13-12N
+15N					x
+end
+
+kort	A6-13	0224-1 O-OR-TI
+1					x
+2					x
+3					x
+4					x
+7	STEL				x
+8					x
+10					x
+11					x
+13					x
+14					x
+15	KB1-LL
+1N	KB1-HH
+2N					x
+3N	-1.5V*7		C1-13-14
+5N	L-7		C1-13-8
+7N					x
+8N	KB1-KK
+9N					x
+10N					x
+11N	A6-12-13N
+12N	A6-12-14N
+13N	A6-14-11N
+14N	A6-14-12N
+15N					x
+end
+
+kort	A6-14	0224-1 O-OR-TI
+1					x
+2					x
+3					x
+4					x
+7					x
+8					x
+10					x
+11					x
+13					x
+14					x
+15	KB1-V
+1N	KB1-DD
+2N					x
+3N	-1.5V*8		C1-14-14
+5N	L-8		C1-14-8
+7N					x
+8N	KB1-NN
+9N					x
+10N					x
+11N	A6-13-13N
+12N	A6-13-14N
+13N	A6-15-11N
+14N	A6-15-12N
+15N					x
+end
+
+kort	A6-15	0224-1 O-OR-TI
+1					x
+2					x
+3					x
+4					x
+7					x
+8					x
+10					x
+11					x
+13					x
+14					x
+15	KB1-R
+1N	KB1-Z
+2N					x
+3N	-1.5V*9		C1-15-14
+5N	L-9		C1-15-8
+7N					x
+8N	KB1-JJ
+9N					x
+10N					x
+11N	A6-14-13N
+12N	A6-14-14N
+13N	A6-16-11N
+14N	A6-16-12N
+15N	C3-25-9N			x
+end
+
+kort	A6-16	0224-1 O-OR-TI
+1					x
+2					x
+3					x
+4					x
+7					x
+8					x
+10	A6-5-1N				x
+11					x
+13					x
+14					x
+15	KB2-D
+1N	KB2-A
+2N					x
+3N	-1.5V*10		
+5N	L-10	
+7N	C1-4-6				x
+8N	KB2-C
+9N	C1-4-3				x
+10N	A6-5-4				x
+11N	A6-15-13N
+12N	A6-15-14N
+13N	A6-17-11N
+14N	A6-17-12N
+15N					x
+end
+
+kort	A6-17	0224-1 O-OR-TI
+1					x
+2					x
+3					x
+4					x
+7					x
+8					x
+10					x
+11					x
+13					x
+14					x
+15	KB2-J
+1N	KB2-E
+2N					x
+3N	-1.5V*11		
+5N	L-11	
+7N					x
+8N	KB2-H
+9N					x
+10N					x
+11N	A6-16-13N
+12N	A6-16-14N
+13N	A6-18-11N
+14N	A6-18-12N
+15N					x
+end
+
+kort	A6-18	0224-1 O-OR-TI
+1					x
+2					x
+3					x
+4					x
+7					x
+8					x
+10					x
+11					x
+13					x
+14					x
+15	KB2-N
+1N	KB2-K
+2N					x
+3N	-1.5V*12		
+5N	L-12	
+7N					x
+8N	KB2-M
+9N					x
+10N					x
+11N	A6-17-13N
+12N	A6-17-14N
+13N	A6-19-11N
+14N	A6-19-12N
+15N					x
+end
+
+kort	A6-19	0224-1 O-OR-TI
+1					x
+2					x
+3					x
+4					x
+7					x
+8					x
+10					x
+11					x
+13					x
+14					x
+15	KB2-T
+1N	KB2-P
+2N					x
+3N	-1.5V*13		
+5N	L-13	
+7N					x
+8N	KB2-S
+9N					x
+10N					x
+11N	A6-18-13N
+12N	A6-18-14N
+13N	A6-20-11N
+14N	A6-20-12N
+15N					x
+end
+
+kort	A6-20	0224-1 O-OR-TI
+1					x
+2					x
+3					x
+4					x
+7					x
+8					x
+10					x
+11					x
+13					x
+14					x
+15	KB2-X
+1N	KB2-U
+2N					x
+3N	-1.5V*14		
+5N	L-14	
+7N	A6-25-7N			x
+8N	KB2-W
+9N					x
+10N					x
+11N	A6-19-13N
+12N	A6-19-14N
+13N	A6-21-11N
+14N	A6-21-12N
+15N					x
+end
+
+kort	A6-21	0224-1 O-OR-TI
+1					x
+2					x
+3					x
+4					x
+7					x
+8					x
+10					x
+11					x
+13					x
+14					x
+15	KB2-BB
+1N	KB2-Y
+2N					x
+3N	-1.5V*15		
+5N	L-15	
+7N	C1-4-7				x
+8N	KB2-AA
+9N					x
+10N					x
+11N	A6-20-13N
+12N	A6-20-14N
+13N	A6-22-11N
+14N	A6-22-12N
+15N					x
+end
+
+kort	A6-22	0224-1 O-OR-TI
+1					x
+2					x
+3					x
+4					x
+7					x
+8					x
+10					x
+11					x
+13					x
+14					x
+15	KB2-FF
+1N	KB2-CC
+2N					x
+3N	-1.5V*16		
+5N	L-16
+7N					x
+8N	KB2-EE
+9N					x
+10N					x
+11N	A6-21-13N
+12N	A6-21-14N
+13N	A6-23-11N
+14N	A6-23-12N
+15N					x
+end
+
+kort	A6-23	0224-1 O-OR-TI
+1					x
+2					x
+3					x
+4					x
+7	STEL				x
+8					x
+10					x
+11					x
+13					x
+14					x
+15	KB2-LL
+1N	KB2-HH
+2N					x
+3N	-1.5V*17		
+5N	L-17
+7N					x
+8N	KB2-KK
+9N					x
+10N					x
+11N	A6-22-13N
+12N	A6-22-14N
+13N	A6-24-11N
+14N	A6-24-12N
+15N					x
+end
+
+kort	A6-24	0224-1 O-OR-TI
+1					x
+2					x
+3					x
+4					x
+7					x
+8					x
+10					x
+11					x
+13					x
+14	KB7-10				x
+15	KB2-V
+1N	KB2-DD
+2N					x
+3N	-1.5V*18		
+5N	L-18
+7N					x
+8N	KB2-NN
+9N					x
+10N					x
+11N	A6-23-13N
+12N	A6-23-14N
+13N	A6-25-11N
+14N	A6-25-12N
+15N					x
+end
+
+kort	A6-25	0224-1	O-OR-TI
+1	-31.5V				x
+# XXX: -10.5V or +10.5V ?
+2	+10.5V				x
+3	-13.5V				x
+4	-13.5V				x
+7					x
+8	-3.0V				x
+10	+4.5V				x
+11	-3.0V				x
+13	-1.5V				x
+14	B5-29-14			x
+15	KB2-R
+1N	KB2-Z
+2N	+1.5V				x
+3N	-1.5V*19
+5N	L-19
+7N	A6-20-7N
+8N	KB2-JJ
+9N					x
+10N					x
+11N	A6-24-13N
+12N	A6-24-14N
+13N	B5-29-11N
+14N	B5-29-12N
+15N	C3-25-10N			x
+end

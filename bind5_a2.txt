@@ -1,0 +1,627 @@
+tværtråd	A2
+2		15-6
+4	25-16
+5	25-16	15-6
+6	24-16
+7	25-16
+9	24-16
+10		15-6
+11	25-16	15-6
+12		15-6
+13		15-6
+14	19-16
+15	25-16	15-6
+3N		15-6
+4N		15-6
+5N	25-16	15-6
+6N	25-23	15-6
+7N		15-6	3-2
+9N	25-16
+10N	25-16
+11N	25-16
+12N	25-16
+13N	25-16
+14N	25-16
+15N	25-16
+end
+
+kort	A2-1	0209-5	Step
+5	C6-7-11N
+6	C6-7-4N
+# Not sure where pin 9's 13.5V wire goes
+9	A2-1-13N	-13.5V
+1N	A2-5-7N
+2N	A2-2-13N
+3N	A6-1-5
+6N	B1-27-10
+8N	STEL
+12N	A2-2-4
+13N	A2-1-9	A2-5-6N
+14N	A1-2-10N
+15N	A2-2-11N
+end
+
+kort	A2-2	0274	Halvadder med husker
+1	A4-3-7
+2	A2-3-2
+3	A2-3-3
+4	A2-1-12N	A2-3-4
+5	A2-4-14N
+6	A2-4-12N	A2-2-7
+7	A2-2-6
+8	A2-4-13N
+7N	STEL		x
+8N	H22-HH			# MQ9+MQ11
+9N	H22-FF			# MQ9+MQ10
+10N	A4-4-9	H22-MM		# Ho+Hoo
+11N	A2-1-15N A2-3-11N
+12N	A2-3-12N
+13N	A2-1-2N	A2-3-13N
+14N	A3-7-14N
+15N	A2-3-8			# H1
+end
+
+kort	A2-3	0274	Halvadder med husker
+1	A4-1-4N
+2	A4-3-5	A2-2-2
+3	B1-29-2	A2-2-3
+4	A2-2-4	A2-5-5N
+5	A2-3-15N
+6	A2-3-7	A4-3-6
+7	A2-3-6
+8	A2-2-15N
+7N			x
+8N	H22-KK			# Ho + H1
+9N	H22-LL			# Ho + H10
+10N	H22-JJ			# Hoo + MDo
+11N	A2-2-11N	A2-4-15N
+12N	A2-2-12N	A2-4-7N
+13N	-3.0V	A2-2-13N
+14N	A3-16-14N
+15N	A2-3-5			# _H10
+end
+
+kort	A2-4	0200-16	Standardinvertere
+1	A5-16-6
+2	A5-16-6N
+3	A2-4-2N A5-16-2N
+4	A3-5-15N
+7	A2-5-14N
+8	+4.5V	A2-4-8N
+9	STEL
+12	H22-X			# Hoo
+13	KF-C15			# _MQ10
+14	KF-K16			# _AC10
+15	KF-K17			# MD10
+2N	A2-4-3
+3N	A5-17-2N
+4N	A5-15-2N
+7N	-7.5V	A2-3-12N
+8N	A2-4-8
+9N	STEL
+12N	A2-2-6			# _MQ9
+13N	A2-2-8			# _MQ11
+14N	A2-2-5			# _MA10
+15N	A2-5-1 A2-3-11N
+end
+kort	A2-5	0229	Linie 00, blok tælling, fejlind. i MA, spild fl-fl
+1	A2-6-5	A2-4-15N
+2	A1-2-3
+3	A1-2-2
+4	A1-2-11N
+5	A1-6-11N
+6	A1-10-11N
+8	KB5-AA
+9	A4-2-9N
+10	A4-1-2N
+11	A3-1-6
+12	A4-4-2
+13	A4-2-8N
+14	STEL
+15	KB5-K	KB12-CC
+1N	A4-1-7
+2N	A3-2-2
+3N	A3-2-5
+4N	A5-3-7
+5N	A2-6-13	A2-3-4
+6N	A2-6-3N	A2-1-13N
+7N	+1.5V A2-1-1N
+8N	A2-16-9
+9N	A5-4-2
+10N	A5-4-6
+11N	A5-1-6
+12N	A2-16-8N	A2-6-8		# L0
+13N	A3-5-5N				# L00
+14N	-4.5V	A2-4-7
+15N	A2-16-6
+end
+
+kort	A2-6	0216A	SR-ADi-TAD
+2	C5-3-5	x
+5	A2-5-1	x
+8	A3-6-5N	A2-5-12N	# L-0
+10	A5-2-3		x
+11	A5-2-2		x
+12	A5-2-4		x
+13	A2-5-5N		x
+14	A2-16-2N	A3-6-3N	# -1.5V*
+15			x
+3N	A2-5-6N		x
+4N	A3-1-3		x
+5N	A3-1-2		x
+6N	A3-1-4		x
+7N			x
+12N	A1-15-4N
+13N	A1-17-4N
+14N	A1-15-5N
+15N	A1-17-5N
+end
+
+kort	A2-7	0216A	SR-AD1-TAD
+2			x
+5			x
+8	L-1
+10			x
+11			x
+12			x
+13			x
+14	-1.5V*1
+15			x
+3N			x
+4N			x
+5N			x
+6N			x
+7N			x
+9N	BF1-B12
+12N	A1-15-6N
+13N	A1-17-6N
+14N	A1-15-7N
+15N	A1-17-7N
+end
+kort	A2-8	0216A	SR-AD1-TAD
+2			x
+5			x
+8	L-2
+10			x
+11			x
+12			x
+13			x
+14	-1.5V*2
+15	STEL		x
+3N			x
+4N			x
+5N			x
+6N			x
+9N	BF1-C12
+12N	A1-15-8N
+13N	A1-17-8N
+14N	A1-15-9N
+15N	A1-17-9N
+end
+kort	A2-9	0216A	SR-AD1-TAD
+2			x
+5			x
+8	L-3
+10			x
+11			x
+12			x
+13			x
+14	-1.5V*3
+15			x
+3N			x
+4N			x
+5N			x
+6N			x
+7N			x
+8N	HK2-K
+9N	HK2-H	BF1-D12
+12N	A1-15-10N
+13N	A1-17-10N
+14N	A1-15-11N
+15N	A1-17-11N
+end
+
+kort	A2-10	0216A	SR-AD1-TAD
+2				x
+5				x
+8	L-4
+10				x
+11				x
+12				x
+13				x
+14	-1.5V*4
+15				x
+3N				x
+4N				x
+5N				x
+6N				x
+8N	HK2-P
+9N	HK2-M		BF1-E12
+12N	A1-15-12N
+13N	A1-17-12N
+14N	A1-15-13N
+15N	A1-17-13N
+end
+
+kort	A2-11	0216A	SR-AD1-TAD
+2			x
+5			x
+8	L-5
+10			x
+11			x
+12			x
+13			x
+14	-1.5V*5
+15			x
+3N			x
+4N			x
+5N			x
+6N			x
+7N			x
+8N	HK2-U
+9N	HK2-S	BF1-A11
+12N	A1-14-4N
+13N	A1-16-4N
+14N	A1-14-5N
+15N	A1-16-5N
+end
+
+kort	A2-12	0216A	SR-AD1-TAD
+2			x
+5			x
+8	L-6
+10			x
+11			x
+12			x
+13			x
+14	-1.5V*6
+15			x
+3N			x
+4N			x
+5N			x
+6N			x
+7N			x
+8N	HK2-Y
+9N	HK2-W	
+12N	A1-14-6N
+13N	A1-16-6N
+14N	A1-14-7N
+15N	A1-16-7N
+end
+
+kort	A2-13	0216A	SR-AD1-TAD
+2			x
+5			x
+8	L-7
+10			x
+11			x
+12			x
+13			x
+14	-1.5V*7
+15	STEL		x
+3N			x
+4N			x
+5N			x
+6N			x
+7N			x
+8N	HK2-CC	BF2-C12
+9N	HK2-AA	BF2-C11
+12N	A1-14-8N
+13N	A1-16-8N
+14N	A1-14-9N
+15N	A1-16-9N
+end
+
+kort	A2-14	0216A	SR-AD1-TAD
+2			x
+5			x
+8	L-8
+10			x
+11			x
+12			x
+13			x
+14	-1.5V*8
+15			x
+3N			x
+4N			x
+5N			x
+6N			x
+7N			x
+8N	HK2-HH	BF2-D12
+9N	HK2-EE	BF2-D11
+12N	A1-14-10N
+13N	A1-16-10N
+14N	A1-14-11N
+15N	A1-16-11N
+end
+
+kort	A2-15	0216A	SR-AD1-TAD
+2			x
+5	A2-16-4		x
+8	L-9
+10			x
+11			x
+12			x
+13	A2-16-7		x
+14	-1.5V*9
+15			x
+3N	A2-16-5		x
+4N			x
+5N			x
+6N			x
+7N	STEL		x
+8N	HK2-MM	BF2-E12
+9N	HK2-KK	BF2-E11
+12N	A1-14-12N
+13N	A1-16-12N
+14N	A1-14-13N
+15N	A1-16-13N
+end
+
+kort	A2-16	0212	AD2-TD-OT
+4	A2-15-5		x
+5	A2-15-3N	x
+6	A2-5-15N	x
+7	A2-15-13	x
+8	A2-17-1
+9	A2-5-8N	x
+10	A2-17-12
+11			x
+14	A5-3-7		x
+15			x
+2N	A2-6-14				# -1.5 * 0
+3N	-1.5V*10
+4N	L-10
+5N	A3-2-5		x
+8N	B3-50-2N	A2-5-12N	# L-0
+9N	A3-2-4		x
+10N	A3-2-2		x
+11N	A5-3-2		x
+12N	A5-3-6		x
+13N	A5-3-5		x
+14N	A5-3-4		x
+15N	A5-3-3		x
+end
+
+kort	A2-17	0212	AD2-TD-OT
+1	A2-16-8
+4			x
+5			x
+6			x
+7			x
+8	A2-18-1
+9			x
+10	A2-18-12
+11			x
+12	A2-16-10
+14			x
+15			x
+2N	-1.5V*1
+3N	-1.5V*11
+4N	L-11
+5N			x
+8N	L-1
+9N			x
+10N			x
+11N			x
+12N			x
+13N			x
+14N			x
+15N			x
+end
+
+kort	A2-18	0212	AD2-TD-OT
+1	A2-17-8
+4			x
+5			x
+6			x
+7			x
+8	A2-19-1
+9			x
+10	A2-19-12
+11	STEL		x
+12	A2-17-10
+14			x
+15			x
+2N	-1.5V*2
+3N	-1.5V*12
+4N	L-12
+5N			x
+8N	L-2
+9N			x
+10N			x
+11N			x
+12N			x
+13N			x
+14N			x
+15N			x
+end
+
+kort	A2-19	0212	AD2-TD-OT
+1	A2-18-8
+4			x
+5			x
+6			x
+7			x
+8	A2-20-1
+9			x
+10	A2-20-12
+11			x
+12	A2-18-10
+14	A2-20-6N	x
+15			x
+2N	-1.5V*3
+3N	-1.5V*13
+4N	L-13
+5N			x
+8N	L-3
+9N			x
+10N			x
+11N			x
+12N			x
+13N			x
+14N			x
+15N			x
+end
+
+kort	A2-20	0212	AD2-TD-OT
+1	A2-19-8
+4			x
+5			x
+6			x
+7			x
+8	A2-21-1
+9			x
+10	A2-21-12
+11			x
+12	A2-19-10
+15			x
+2N	-1.5V*4
+3N	-1.5V*14
+4N	L-14
+5N			x
+6N	A2-21-14	A2-19-14
+8N	L-4
+9N			x
+10N			x
+11N			x
+12N			x
+13N			x
+14N			x
+15N			x
+end
+
+kort	A2-21	0212	AD2-TD-OT
+1	A2-20-8
+4			x
+5			x
+6			x
+7			x
+8	A2-22-1
+9			x
+10	A2-22-12
+11			x
+12	A2-20-10
+14	A2-22-14	A2-20-6N 
+15			x
+2N	-1.5V*5
+3N	-1.5V*15
+4N	L-15
+5N			x
+8N	L-5
+9N			x
+10N			x
+11N			x
+12N			x
+13N			x
+14N			x
+15N			x
+end
+
+kort	A2-22	0212	AD2-TD-OT
+1	A2-21-8
+4			x
+5			x
+6			x
+7			x
+8	A2-23-1
+9			x
+10	A2-23-12
+11			x
+12	A2-21-10
+14	A2-23-6N	A2-21-14
+15	C2-22-4N		x
+2N	-1.5V*6
+3N	-1.5V*16
+4N	L-16
+5N			x
+8N	L-6
+9N			x
+10N			x
+11N			x
+12N			x
+13N			x
+14N			x
+15N			x
+end
+
+kort	A2-23	0212	AD2-TD-OT
+1	A2-22-8
+4			x
+5			x
+6			x
+7			x
+8	A2-24-1
+9			x
+10	A2-24-12
+11	STEL		x
+12	A2-22-10
+15			x
+2N	-1.5V*7
+3N	-1.5V*17
+4N	L-17
+5N			x
+6N	A2-22-14	x
+8N	L-7
+9N			x
+10N			x
+11N			x
+12N			x
+13N			x
+14N			x
+15N			x
+end
+
+kort	A2-24	0212	AD2-TD-OT
+1	A2-23-8
+4			x
+5			x
+6			x
+7			x
+8	A2-25-1
+9			x
+10	A2-25-12
+11	STEL		x
+12	A2-23-10
+15			x
+2N	-1.5V*8
+3N	-1.5V*18
+4N	L-18
+5N			x
+6N			x
+8N	L-8
+9N			x
+10N			x
+11N			x
+12N			x
+13N			x
+14N			x
+15N			x
+end
+
+kort	A2-25	0212-1	AD2-TD-OT
+1	A2-24-8
+4	-31.5V		x
+5	-13.5V		x
+6
+7	+10.5V		x
+8	A4-3-9
+9
+10	A4-3-8
+11			x
+12	A2-24-10
+15			x
+2N	-1.5V*9
+3N	-1.5V*19
+4N	L-19
+5N			x
+6N			x
+8N	L-9
+9N			x
+10N			x
+11N			x
+12N			x
+13N			x
+14N			x
+15N			x
+end

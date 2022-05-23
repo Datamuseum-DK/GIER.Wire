@@ -1,0 +1,2523 @@
+plade	0200-1	Til og fra HK invertere for BY8,9 gatekreds for HK
+image	0200-1.png	0200-1a.jpg	 0200-1b.jpg
+15	out	til gate HK
+3	in	OP LY 59 valgt
+12	out	til krydsfelt
+4	in	^BY8,9=1,0
+11	out	z til HK
+10	out	til z HK fl.fl
+6	in	j fra HK
+7	-31.5V
+7N	-13.5V
+14	-3.0V
+9	STEL
+8	+10.5V
+end
+
+plade	0200-2		0&1-stillingsforstærker til strimmellæser
+image	0200-2.png	0200-2a.jpg	 0200-2b.jpg
+8N	-13.5V
+8	STEL
+9	STEL
+9N	STEL
+2N	+10.5V
+3	in	rc2000.8
+4	in	rc2000.4
+5	in	rc2000.2
+6	in	rc2000.1
+3N	in	rc2000.el
+4N	in	rc2000.x
+5N	in	rc2000.o
+6N	in	rc2000.ch
+13	out	_BL6
+12	out	_BL???
+11	out	_BL8
+10	out	_BL9
+13N	out	_BL3
+12N	out	_BL4
+11N	out	_BL5
+10N	out	_BL2
+14N	out	Til 1N
+1N	in	Til 14N
+15N	out	Til Paritetscheck
+1	in	Nul stilling
+15	out	_Nul til BL
+2	in	rc2000.j
+14	out	_j
+end
+
+plade	0200-4	Kanalblokering
+image	0200-4a.jpg	 0200-4b.jpg
+6N	out	TKT-NP
+8	in	TkT=1 eller 0
+4	in	Skriv
+3	in	KPIIb
+2	in	KPIb
+15N	out	blok skriv
+1N	out	Kanal Blok. Omskifter
+15	out	Kanal Blok. Omskifter
+10	in	reserve
+11	in	reserve
+12	in	reserve
+13	in	x1
+14	in	x0
+5N	in	x0
+11N	in	Y0e
+7N	-13.5V
+5	-7.5V
+6	-1.5V
+9N	-1.5V
+9	STEL
+8N	+10.5V
+end
+
+plade	0200-5	Ka & Kb fl.fl. med invertere AC* (borgerlig/akademisk nul) 
+image	0200-5.png	0200-5a.jpg	 0200-5b.jpg
+7	-13.5V
+7N	-13.5V
+14N	-7.5V
+9	-1.5V
+9N	STEL
+8N	+10.5V
+11	out	Ka'
+13	out	Kb'
+5	inout	
+3	inout	
+10N	out	_Ka
+5N	in
+12N	out	_Kb
+3N	in
+6N	in
+4N	in
+11N	out	Ka
+13N	out	Kb
+6	in
+4	in
+10	out	_Ka'
+12	out	_Kb'
+15N	out	AC*
+1	+1.5V
+1N	out
+2N	in	W
+14	out	_AC*
+end
+
+plade	0200-6	Invertere til indikator 
+image	0200-6.png	0200-6a.jpg	 0200-6b.jpg
+7	-13.5V
+7N	-13.5V
+9	-1.5V
+9N	-1.5V
+6	in	ind[0]
+5	in	ind[1]
+4	in	ind[2]
+3	in	ind[3]
+2	in	ind[4]
+1	in	ind[5]
+6N	in	ind[6]
+5N	in	ind[7]
+4N	in	ind[8]
+3N	in	ind[9]
+2N	in	ind[10]
+1N	in	ind[11]
+10	out	ud[0]
+11	out	ud[1]
+12	out	ud[2]
+13	out	ud[3]
+14	out	ud[4]
+15	out	ud[5]
+10N	out	ud[6]
+11N	out	ud[7]
+12N	out	ud[8]
+13N	out	ud[9]
+14N	out	ud[10]
+15N	out	ud[11]
+end
+
+plade	0200-7	Mode betingelse og h. 
+image	0200-7.png	0200-7a.jpg	 0200-7b.jpg
+7	-13.5V
+15N	-13.5V
+9	STEL
+8N	STEL
+8	+10.5V
+7N	+10.5V
+4	in	sæt h=1
+10	out	h
+5	out	h
+12	out	^h
+13	out	h
+2	out	DM160
+1N	in	reset
+6	out	^h
+11	out	h
+3	in	set h=0
+9N	-7.5V
+10N	out	bet[0]
+6N	in	mode[0]
+11N	out	bet[1]
+5N	in	mode[1]
+12N	out	bet[2]
+4N	in	mode[2]
+13N	out	bet[3]
+3N	in	mode[3]
+15	out	bet[4]
+1	in	mode[4]
+2N	in	mode 1 ind
+14N	out	mode 1 ud
+end
+
+plade	0200-8		Invertere
+image	0200-8.png	0200-8a.jpg	 0200-8b.jpg
+7	-4.5V
+7N	-4.5V
+9	STEL
+9N	STEL
+8	+4.5V
+8N	+4.5V
+1	in	ind[0]
+2	in	ind[1]
+3	in	ind[2]
+4	in	ind[3]
+5	in	ind[4]
+6	in	ind[5]
+1N	in	ind[6]
+2N	in	ind[7]
+3N	in	ind[8]
+4N	in	ind[9]
+5N	in	ind[10]
+6N	in	ind[11]
+15	out	ud[0]
+14	out	ud[1]
+13	out	ud[2]
+12	out	ud[3]
+11	out	ud[4]
+10	out	ud[5]
+15N	out	ud[6]
+14N	out	ud[7]
+13N	out	ud[8]
+12N	out	ud[9]
+11N	out	ud[10]
+10N	out	ud[11]
+end
+
+plade	0200-9	KE Logik
+image	0200-9a.png	0200-9b.png	0200-9a.jpg	 0200-9b.jpg
+7	-7.5V
+7N	-7.5V
+9	STEL
+9N	STEL
+8	+4.5V
+8N	+4.5V
+14N	in	OR20
+12N	in	^OR22
+4N	in	^OR23
+13N	out
+2N	in	^TD*O
+3N	in	^OR27
+1N	in
+15N	out	^q
+1	in	^q
+15	out	q
+6N	in	I
+5N	in	K
+10N	out	^I*K
+11N	out	I*K
+11	+1.5V
+5	in	^B1
+3	in	B0
+4	in	B1
+10	out	^B
+12	out	^B
+13	out	^B
+2	in	^B
+14	out	B
+end
+
+plade	0200-10	Forstærker for BS
+image	0200-10.png	0200-10a.jpg	 0200-10b.jpg
+9	-7.5V
+9N	-7.5V
+7	+4.5V
+7N	+4.5V
+1	in	BSg
+2	in	Tastaturlampe ind''
+3	in
+4	in	^Z læser
+5	in	^Z' læser
+6	in	^Z læser
+1N	in	BS3
+2N	in	BS4
+3N	in	BS5
+4N	in	BS6
+5N	in	BS7
+6N	in	BS8
+15	out	1
+14	out	Tasturlampe ud'
+13	out
+12	out	Start (kun på GIER 0)
+11	out	Startsignal
+10	out	blok display
+15N	out	EL
+14N	out	X
+13N	out	0
+12N	out	8
+11N	out	4
+10N	out	2
+end
+
+plade	0200-11		Forstærker for perforrator
+image	0200-11.png
+end
+
+plade	0200-12		Forstærker for skrivemask.afkodn.
+image	0200-12.png
+end
+
+plade	0200-13		Stop spole&klar spole forstærker for perforrator
+image	0200-13.png
+end
+
+
+plade	0200-14		Invertere
+image	0200-14.png	0200-14a.jpg	 0200-14b.jpg
+7	-4.5V
+7N	-4.5V
+9	STEL
+9N	STEL
+8	+4.5V
+8N	+4.5V
+1	in
+2	in
+3	in
+4	in
+5	in
+6	in
+1N	in
+2N	in
+3N	in
+4N	in
+5N	in
+6N	in
+15	out
+14	out
+13	out
+12	out
+11	out
+10	out
+15N	out
+14N	out
+13N	out
+12N	out
+11N	out
+10N	out
+end
+
+plade	0200-15		Styring af tastaturinput
+image	0200-15.png
+end
+
+plade	0200-16 	Styring af tastaturinput?Inverter
+image	0200-16.png	0200-16a.jpg	 0200-16b.jpg
+8	+4.5V
+8N	+4.5V
+9	STEL
+9N	STEL
+7	-4.5V
+7N	-7.5V
+15N	-31.5V
+end
+
+plade	0200-25	Forstærkere og Za til printer
+image	0200-25.png
+end
+
+plade	0200-37	Z forstærker til perforrator & skrivem. stop-betingelse
+image	0200-37.png	0200-39a.jpg	 0200-39b.jpg
+end
+
+plade	0201	Adder
+image	0201a.png	0201b.png	0201-1a.jpg	0201-1b.jpg
+1	in	_H
+2	-4.5V
+3	in	Mi
+4	in	_Sp
+5	-31.5V
+6	-3.0V
+8	out	Linie
+11	-1.5V
+12	-3.0V
+14	in	_GsA
+15	in	_SA
+1N	-31.5V
+2N	-7.5V
+3N	+10.5V
+4N	-13.5V
+5N	in	_Mi
+7N	out	_Mu
+8N	in	H
+9N	-1.5V
+10N	STEL
+12N	-4.5V
+13N	out	Mu
+14N	in	MD
+15N	in	add/sub
+end
+
+plade	0201-1	Adder
+image	0201a.png	0201b.png	0201-1a.jpg	 0201-1b.jpg
+1	in	_H
+2	-4.5V
+3	in	Mi
+4	in	_Sp
+5	-31.5V
+6	-3.0V
+8	out	Linie
+11	-1.5V
+12	-3.0V
+14	in	_GsA
+15	in	_SA
+1N	-31.5V
+2N	-7.5V
+3N	+10.5V
+4N	-13.5V
+5N	in	_Mi
+7N	out	_Mu
+8N	in	H
+9N	-1.5V
+10N	STEL
+11N	out	_Mu
+12N	-4.5V
+13N	out	Mu
+14N	in	MD
+15N	in	add/sub
+end
+
+plade	0201-2	Adder
+image	0201a.png	0201b.png	0201-1a.jpg	0201-1b.jpg
+1	in	_H
+2	-4.5V
+3	in	Mi
+4	in	_Sp
+5	-31.5V
+6	-3.0V
+8	out	Linie
+11	-1.5V
+12	-3.0V
+14	in	_GsA
+15	in	_SA
+1N	-31.5V
+2N	-7.5V
+3N	+10.5V
+4N	-13.5V
+5N	in	_Mi
+7N	out	_Mu
+8N	in	H
+9N	-1.5V
+10N	STEL
+11N	out	_Mu
+12N	-4.5V
+13N	out	Mu
+14N	in	MD
+15N	in	add/sub
+end
+
+plade	0202-4	FB-BLs-Gp fl.fl
+image	0202-4a.png	0202-4b.png
+end
+
+plade	0202-7	Tastaturinput, case-shift.
+image	0202-7a.png	0202-7b.png
+end
+
+plade	0202-18 MD-40 MD-41
+image	0202-18.png	0202-18a.jpg	 0202-18b.jpg
+2	+10.5V
+7	STEL
+3	-13.5V
+1N	-1.5V
+13	-1.5V
+14	inout	Linie40
+6N	inout	Linie41
+8	in	GsMD[40]
+5N	in	GsMD[41]
+12	in	GmMD[40]
+10	in	GmMD[41]
+9	out	MD[40]
+2n	out	MD[41]
+6	out	^MD[40]
+4N	out	^MD[41]
+11	in	YE
+12N	in	YE
+15N	out	^MD[40]
+11N	out	^MD[41]
+end
+
+plade	0202-19	Z-perforator og Z-skrivemaskine
+image	0202-19a.png	0202-19b.png
+end
+
+plade	0202-21	AC00 - MD00 fl.fl.
+image	0202-21a.png	0202-21b.png	0202-21a.jpg	 0202-21b.jpg
+1	-31.5V
+1N	in	GsAC
+2	+10.5V
+2N	out	-
+3	-13.5V
+4	-7.5V
+4N	out	-
+5	out	MDoo til adder
+5N	in	Gs
+6	out	_MDoo
+6N	out	ACoo
+7	STEL
+7N	out	_ACoo
+8	in	_GsMD
+8N	out	1->ACoo
+9	out	MDoo
+9N	out	ACoo
+10	in	Gm
+10N	in	0>ACoo
+11	in	-
+11N	-13.5V
+12	in	GmMD
+13	-1.5V
+13N	NC
+14	inout	Linie 00
+14N	NC
+15	in	Gm
+15N	out	Dm160
+end
+
+plade	0202-22 MQ-MD-AR registre
+image	0202-22a.png	0202-22b.png	0202-22a.jpg	 0202-22b.jpg
+1	-31.5V
+2	+10.5V
+3	-13.5V
+4	-7.5V
+7	STEL
+9	in	MQ base
+10	in	Gm MQ
+14	inout	Linie
+13	-1.5V
+2N	out	MQ
+3N	in	sp
+4N	out	MQ
+5N	in	Gs MQ
+8N	in	Gm n+1
+9N	in	Gm n-1
+10N	in	n-1
+11N	out	skifte linie
+12N	in	n+1
+13N	+1.5V
+14N	-1.5V
+end
+
+plade	0202-23 MQ-MD-AR registre
+image	0202-22a.png	0202-22b.png	0202-22a.jpg	0202-22b.jpg
+1	-31.5V
+2	+10.5V
+3	-13.5V
+4	-7.5V
+7	STEL
+9	in	MQ base
+10	in	Gm MQ
+14	inout	Linie
+13	-1.5V
+2N	out	MQ
+3N	in	sp
+4N	out	MQ
+5N	in	Gs MQ
+8N	in	Gm n+1
+9N	in	Gm n-1
+10N	in	n-1
+11N	out	skifte linie
+12N	in	n+1
+13N	+1.5V
+14N	-1.5V
+end
+
+
+plade	0202-24 MQ-MD-AR registre
+image	0202-22a.png	0202-22b.png	0202-22a.jpg	0202-22b.jpg
+1	-31.5V
+2	+10.5V
+3	-13.5V
+4	-7.5V
+7	STEL
+9	in	MQ base
+10	in	Gm MQ
+14	inout	Linie
+13	-1.5V
+2N	out	MQ
+3N	in	sp
+4N	out	MQ
+5N	in	Gs MQ
+8N	in	Gm n+1
+9N	in	Gm n-1
+10N	in	n-1
+11N	out	skifte linie
+12N	in	n+1
+13N	+1.5V
+14N	-1.5V
+end
+
+plade	0202-25	Z forstærker til SL
+image	0202-25a.png	0202-25b.png	0202-25a.jpg	 0202-25b.jpg
+end
+
+plade	0203	Afkodning af FL
+image	0203.png	0203a.jpg	 0203b.jpg
+4	+10.5V
+7N	-1.5V
+5	-13.5V
+end
+
+plade	0203-1	Afkodning af FL
+image	0203-1.png	0203-1a.jpg	 0203-1b.jpg
+4	+10.5V
+12	STEL
+5	-1.5V
+7N	-1.5V
+end
+
+plade	0203-3	Skrivemask.afkodn. BS4-BS5-BS6
+image	0203-3.png
+end
+
+plade	0203-4	Skrivemask.afkodn. BS7-BS8-BS9
+image	0203-4.png
+end
+
+plade	0204	Registervalg til KB
+image	0204.png	0204a.jpg	 0204b.jpg
+end
+
+plade	0205 LI & H register
+image	0205a.png	0205b.png	0205a.jpg	 0205b.jpg
+1	in	Ciffertråd
+1N	in	Gm Li
+2	in	Ciffertråd
+2N	in	_Gs Li
+3	-31.5V
+3N	-1.5V
+4	+10.5V
+4N	in	n+1
+5	-13.5V
+5N	inout	Linie
+6	-4.5V
+6N	in	n-1
+7	in	Cifferpuls
+7N	in	Gm H
+8	-13.5V
+8N	in	Gm venstre sk
+9	-1.5V
+9N	in	Gm Højre Sk
+10	STEL
+10N	in	_Sp
+11	in	Nulstilling
+11N	-7.5V
+12	-3.0V
+12N	in	_GsH
+13	in	Strobe
+13N	out	_H til adder
+14	in	Læsetråd
+14N	out	H
+15	in	Læsetråd
+15N	out	_H
+end
+
+plade	0205-1	LI40-41, H40-41 (AC40-41)
+image	0205-1a.png	0205-1b.png	0205-1a.jpg	 0205-1b.jpg
+1	in	Ciffertråd
+1N	in	Gm Li
+2	in	Ciffertråd
+2N	in	_Gs Li
+3	-31.5V
+3N	-1.5V
+4	+10.5V
+4N	in	n+1
+5	-13.5V
+5N	inout	Linie
+6	-4.5V
+6N	in	n-1
+7	in	Cifferpuls
+7N	in	Gm H
+8	-13.5V
+8N	in	Gm venstre sk
+9	-1.5V
+9N	in	Gm Højre Sk
+10	STEL
+10N	in	_Sp
+11	in	Nulstilling
+11N	-1.5V
+12	-3.0V
+12N	in	_GsH
+13	in	Strobe
+13N	out	_H til adder
+14	in	Læsetråd
+14N	out	H
+15	in	Læsetråd
+15N	out	_H
+end
+
+plade	0205-2 LI & H register (XXX: not "som 205" 1N, 2N ?)
+image	0205a.png	0205b.png	0205a.jpg	0205b.jpg
+1	in	Ciffertråd
+1N	in	Gm Li
+2	in	Ciffertråd
+2N	in	_Gs Li
+3	-31.5V
+3N	-1.5V
+4	+10.5V
+4N	in	n+1
+5	-13.5V
+5N	inout	Linie
+6	-4.5V
+6N	in	n-1
+7	in	Cifferpuls
+7N	in	Gm H
+8	-13.5V
+8N	in	Gm venstre sk
+9	-1.5V
+9N	in	Gm Højre Sk
+10	STEL
+10N	in	_Sp
+11	in	Nulstilling
+11N	-7.5V
+12	-3.0V
+12N	in	_GsH
+13	in	Strobe
+13N	out	_H til adder
+14	in	Læsetråd
+14N	out	H
+15	in	Læsetråd
+15N	out	_H
+end
+
+plade	0205-3 LI & H register
+image	0205a.png	0205b.png	0205a.jpg	0205b.jpg
+end
+
+plade	0205-4	_SL', linie 42, blok, Gm-TK 
+image	0205-4a.png	0205-4b.png	0205-4a.jpg	 0205-4b.jpg
+3	-13.5V
+5	-7.5V
+11N	-1.5V
+10	STEL
+10N	+1.5V
+12	+4.5V
+4	+10.5V
+3N	-3.0V
+14	in	SPa
+4N	inout
+15	in	SPb
+6N	inout
+13N	in	KPIIb
+9N	in	strobe
+14N	inout
+15N	out
+5N	out	Linie42
+end
+
+plade	0206 Valg af adresseregister
+image	0206.png	0206a.jpg	 0206b.jpg
+12	-13.5V
+15	-31.5V
+4N	in	AD1
+6N	in	AD1
+8N	in	AD1
+10N	in	AD1
+12N	in	AD1
+1N	in	AD1 valgt
+2N	in	TA valgt
+5N	in	TA
+7N	in	TA
+9N	in	TA
+11N	in	TA
+13N	in	TA
+2	out	ud
+3	out	ud
+4	out	ud
+5	out	ud
+6	out	ud
+end
+
+plade	0207	Matrix Drivtrin.
+image	0207.png	0207a.jpg	 0207b.jpg
+15	in	Sp.
+1N	in	Konst str.skr.
+6N	in	Lp.
+10	in	Konst str.læs.
+13	out	afkodning[0]
+3N	out	afkodning[1]
+1	out	matix1[0]
+2	out	matix2[0]
+3	out	matix3[0]
+4	out	matix4[0]
+5	out	matix5[0]
+6	out	matix6[0]
+7	out	matix7[0]
+8	out	matix8[0]
+8N	out	matix1[1]
+9N	out	matix2[1]
+10N	out	matix3[1]
+11N	out	matix4[1]
+12N	out	matix5[1]
+13N	out	matix6[1]
+14N	out	matix7[1]
+15N	out	matix8[1]
+end
+
+plade	0208	_SA og add-sub fl.fl
+image	0208.png	0208a.jpg	 0208b.jpg
+12	+10.5V
+14	+4.5V
+5N	+1.5V
+10	+1.5V
+6	STEL
+7N	STEL
+6N	-3.0V
+15N	-3.0V
+14N	-7.5V
+13	-13.5V
+1	-31.5V
+11	-31.5V
+15	in	GmH
+1N	in	GmH v.sk
+2N	in	GmH h.sk
+3N	in	Gm MD
+4N	out	^Sa
+9N	in
+10N	in
+8N	out
+11N	in	Gs add
+12N	in	Gs sub
+13N	out
+2	out	add-sub 00-9
+3	out	add-sub 10-19
+4	out	add-sub 20-29
+5	out	add-sub 30-39
+end
+
+plade	0209 MA Flip-flop
+image	0209.png	0209a.jpg	 0209b.jpg
+1N	+1.5V
+12N	+10.5V
+5N	+4.5V
+8N	STEL
+2N	-3.0V
+14N	-7.5V
+13N	-13.5V
+9	-13.5V
+1	-31.5V
+8	-31.5V
+15N	-31.5V
+end
+
+plade	0209-1	MA B fl.fl.
+image	0209-1.png	0209-1a.jpg	 0209-1b.jpg
+12N	+10.5V
+3	+4.5V
+1N	+1.5V
+8N	STEL
+2N	-1.5V
+14N	-7.5V
+13N	-13.5V
+9	-13.5V
+1	-31.5V
+8	-31.5V
+15N	-31.5V
+end
+
+plade	0209-2	Mode 1 og 2 fl.fl.
+image	0209-2a.png	0209-2b.png	0209-2a.jpg	 0209-2b.jpg
+5	out	^Mode 1 ud
+3N	in	Fra KE Kerne 119
+4N	in	Fra KE Kerne 119
+8	out
+11	in	1 stilling
+4	in	^Mode 5
+10N	out
+6N	out	Til DM160
+7N	in	0-stilling
+1N	in	0-stilling
+11N	in	0-stilling
+7	in	^VAC
+3	out	Til Mode 5
+15N	-31.5V
+1	-13.5V
+13N	-13.5V
+14N	-7.5V
+2	-4.5V
+2N	-3.0V
+8N	STEL
+6	STEL
+5N	+4.5V
+12N	+10.5V
+end
+
+plade	0209-3	Mode 3 & 4 fl.fl.
+image	0209-3.png	0209-3a.jpg	 0209-3b.jpg
+15N	-31.5V
+1	-13.5V
+13N	-13.5V
+14N	-7.5V
+2	-4.5V
+9	-4.5V
+2N	-3.0V
+8N	STEL
+5N	+4.5V
+12N	+10.5V
+11N	in	0-stilling
+1N	in	0-stilling
+7N	in	0-stilling[m3]
+12	in	0-stilling[m4]
+6N	out	til DM160[m3]
+13	out	til DM160[m4]
+10N	out	[m3]
+10	out	[m4]
+8	out	[m3]
+3	out	[m4]
+4N	in	fra KE kerne 121[m3?]
+3N	in	fra KE kerne 121[m3?]
+14	in	fra KE kerne 122[m4?]
+15	in	fra KE kerne 122[m4?]
+5	out	^mode3 ud
+7	out	^mode4 ud
+end
+
+plade	0209-4	b + c fl.fl
+image	0209-4.png	0209-4a.jpg	 0209-4b.jpg
+2	in	0->b og c
+4	in
+3	in	^Mode5
+5	out	^b*Mode5
+1N	out	b*Mode5
+6	in
+3N	in	Kerne182[b]
+4N	in	Kerne182[b]
+15	in	Kerne183[c]
+14	in	Kerne183[c]
+10N	out	[b]
+10	out	[c]
+9N	in	1-still[b]
+11	in	1-still[c]
+7N	in	reset[b]
+12	in	reset[c]
+6N	out	DM160
+13	out	DM160
+15N	-31.5V
+14N	-13.5V
+13N	-7.5V
+2N	-3.0V
+9	STEL
+8N	STEL
+5N	+4.5V
+1	+10.5V
+12N	+10.5V
+end
+
+plade	0209-6	Mode 5 og HP fl.fl.
+image	0209-6.png	0209-6a.jpg	 0209-6b.jpg
+8	in	^reset
+13	out	^HP
+10	out	HP
+11	in	^1->HP
+14	out	
+15	in
+7	in	Fra Mode 1
+6	in	VAC
+9N	in
+1N	in	intern
+11N	in	MA1
+7N	in	^BY0
+10N	out	^Mode 5
+4N	in	MA1
+5N	in	MA1
+3N	in
+6N	out	Mode 5
+5	out	Mode 5 ud
+15N	-31.5V
+1	-13.5V
+12	-13.5V
+13N	-13.5V
+14N	-7.5V
+2N	-3.0V
+2	-4.5V
+8N	STEL
+9	+10.5V
+12N	+10.5V
+end
+
+plade	0209-5	Step
+image	0209-5.png	0209-5a.jpg	 0209-5b.jpg
+12N	+10.5V
+1N	+1.5V
+8N	STEL
+7	-3.0V
+2N	-3.0V
+13N	-13.5V
+15N	-31.5V
+9	NC
+6N	out	_Step ud
+10N	inout
+3N	in	Gm step ind
+6	out	_MA1
+14N	in	MA
+5	out	MA1
+10	out	MA1
+end
+
+plade	0210	Gs Generator
+image	0210.png	0210a.jpg	 0210b.jpg
+1	+10.5V
+2N	+10.5V
+9	+1.5V
+8	STEL
+13	-1.5V
+12	-3.0V
+3N	-4.5V
+14	-13.5V
+4N	in	kerne-[0]
+6N	in	kerne-[1]
+8N	in	kerne-[2]
+10N	in	kerne-[3]
+12N	in	kerne-[4]
+14N	in	kerne-[5]
+5N	in	kerne+[0]
+7N	in	kerne+[1]
+9N	in	kerne+[2]
+11N	in	kerne+[3]
+13N	in	kerne+[4]
+15N	in	kerne+[5]
+7	out	Gs[0]
+6	out	Gs[1]
+5	out	Gs[2]
+4	out	Gs[3]
+3	out	Gs[4]
+2	out	Gs[5]
+end
+
+plade	0211	Gm-generator
+image	0211.png	0211a.jpg	 0211b.jpg
+1	+10.5V
+1N	+4.5V
+15	STEL
+3N	STEL
+13	-1.5V
+2N	-13.5V
+4N	in	kerne-[0]
+6N	in	kerne-[1]
+8N	in	kerne-[2]
+10N	in	kerne-[3]
+12N	in	kerne-[4]
+14N	in	kerne-[5]
+5N	in	kerne+[0]
+7N	in	kerne+[1]
+9N	in	kerne+[2]
+11N	in	kerne+[3]
+13N	in	kerne+[4]
+15N	in	kerne+[5]
+7	out	Gm[0]
+6	out	Gm[1]
+5	out	Gm[2]
+4	out	Gm[3]
+3	out	Gm[4]
+2	out	Gm[5]
+end
+
+plade	0212 AD2, OT, TD registre
+image	0212a.png	0212b.png	0212a.jpg	 0212b.jpg
+1	out	OT
+3	out	AD2
+4	-31.5V
+5	-13.5V
+6	inout	OT blok tæll
+7	+10.5V
+8	in	Sym trign
+11	STEL
+1N	out	_OT
+2N	-1.5V
+3N	-1.5V
+4N	out	Linie
+8N	inout	Linie
+9N	in	GmAD2
+10N	in	Gm OT
+11N	in	Gs OT
+14N	in	_GsAD2 skrå
+15N	in	GsAD2
+end
+
+plade	0212-1	AD2, OT, TD registre
+image	0212a.png	0212b.png	0212a.jpg	0212b.jpg
+1	out	OT
+3	out	AD2
+4	-31.5V
+5	-13.5V
+6	inout	OT blok tæll
+7	+10.5V
+8	in	Sym trign
+11	STEL
+1N	out	_OT
+2N	-1.5V
+3N	-1.5V
+4N	inout	Linie
+8N	inout	Linie
+9N	in	GmAD2
+10N	in	Gm OT
+11N	in	Gs OT
+14N	in	_GsAD2 skrå
+15N	in	GsAD2
+end
+
+plade	0212-2	TKT, TOT, TBA registre
+image	0212-2a.png	0212-2b.png	0212-2a.jpg	 0212-2b.jpg
+4	-13.5V
+11	STEL
+7	+10.5V
+10	in
+14	in
+15	out
+12	out
+13	out
+4N	out
+3N	out
+1	out
+1N	out
+7N	in
+8	in
+end 
+
+plade	0212-4	Styrekredse 2 for skrivemaskine
+image	0212-4a.png	0212-4b.png
+end
+
+plade	0213	Ind og udgange
+image	0213.png	0213a.jpg	 0213b.jpg
+6	+10.5V
+1	+1.5V
+5	-1.5V
+4	in	Linie ind[7]
+2N	in	Linie ind[6]
+4N	in	Linie ind[5]
+6N	in	Linie ind[4]
+8N	in	Linie ind[3]
+10N	in	Linie ind[2]
+12N	in	Linie ind[1]
+14N	in	Linie ind[0]
+10	in	Gm[0]
+11	in	Gm[1]
+12	in	Gm[2]
+13	in	Gm[3]
+14	in	Gm[4]
+15	in	Gm[5]
+1N	in	Gm[6]
+7	in	Gm[7]
+15N	out	ud til base[0]
+13N	out	ud til base[1+7]
+11N	out	ud til base[2]
+9N	out	ud til base[3]
+7N	out	ud til base[4]
+5N	out	ud til base[5]
+3N	out	ud til base[6]
+9	in	ind[8]
+8	in	ind[9]
+2	out	linie[8]
+3	out	linie[9]
+end
+
+plade	0214	Forstærkere
+image	0214.png	0214a.jpg	 0214b.jpg
+6N	+10.5V
+10	+1.5V
+15	-1.5V
+14	-
+12	-7.5V
+7N	-13.5V
+1	-31.5V
+8N	in	ind[0]
+9N	in	ind[1]
+10N	in	ind[2]
+11N	in	ind[3]
+12N	in	ind[4]
+13N	in	ind[5]
+14N	in	ind[6]
+15N	in	ind[7]
+2	out	ud[7]
+3	out	ud[6]
+4	out	ud[5]
+5	out	ud[4]
+6	out	ud[3]
+7	out	ud[2]
+8	out	ud[1]
+9	out	ud[0]
+4N	in	ind[8]
+5N	out	ud[8]
+end
+
+plade	0214-1	SP -H og -MQ forstærker
+image	0214-1.png	0214-1a.jpg	 0214-1b.jpg
+6N	+10.5V
+5N	STEL
+3N	STEL
+10	STEL
+15	-1.5V
+14	-4.5V
+7N	-13.5V
+1	-31.5V
+8N	in	ind[0 H12-26]
+9N	in	ind[1 H00-11]
+10N	in	ind[2 MQ]
+11N	in	ind[3 MQ]
+15N	in	ind[4 H27-39]
+9	out	ud[0 H12-26]
+8	out	ud[1 H00-11]
+7	out	ud[2 MQ]
+6	out	ud[3 MQ]
+2	out	ud[4 H27-39]
+12N	in	ind[5]
+13N	in	ind[6]
+14N	in	ind[7]
+5	out	ud[5]
+4	out	ud[6]
+3	out	ud[7]
+end
+
+plade	0214-3	klockpulsforstærkere
+image	0214-3.png	0214-3a.jpg	 0214-3b.jpg
+6N	+10.5V
+10	STEL
+15	-1.5V
+12	-7.5V
+14	-13.5V
+7N	-13.5V
+1	-31.5V
+# 4N not on diagram
+4N	STEL
+10N	in	ind[display]
+7	out	ud[display]
+11N	in	ind[0->Linie]
+6	out	ud[0->Linie]
+12N	in	ind[KPo B]
+5	out	ud[KPo B]
+13N	in	ind[KPo A,1]
+4	out	ud[KPo A,1]
+14N	in	ind[KPo A,2]
+3	out	ud[KPo A,2]
+15N	in	ind[KPo A,3]
+2	out	ud[KPo A,3]
+9N	in	ind[KP B]
+8	out	ud[KP B]
+8N	in	ind[KP A]
+11	out	ud[KP A]
+end
+
+plade	0214-4	Forstærkere og tælling i OT&TD
+image	0214-4.png	0214-4a.jpg	 0214-4b.jpg
+end
+
+plade	0214-5	FL, startkredse
+image	0214-5.png	0214-5a.jpg	 0214-5b.jpg
+6N	+10.5V
+10	STEL
+15	-1.5V
+12	-4.5V
+14	-13.5V
+7N	-13.5V
+1	-31.5V
+end
+
+plade	0214-6	Magnetspole forst.
+image	0214-6.png
+end
+
+plade	0214-7	Forstærkere
+image	0214-7.png	0214-7a.jpg	 0214-7b.jpg
+14	NC
+1	-31.5V
+2	out	udg[8]
+2N	STEL
+3	out	udg[7]
+4	out	udg[6]
+4N	in	indg[0]
+5	out	udg[5]
+5N	out	udg[0]
+6	out	udg[2]
+6N	+10.5V
+7	out	udg[1]
+7N	-13.5V
+8	out	udg[4]
+8N	in	indg[3]
+9	out	udg[3]
+9N	in	indg[4]
+10	+1.5V
+10N	in	indg[1]
+11N	in	indg[2]
+12	-7.5V
+12N	in	indg[5]
+13N	in	indg[6]
+14N	in	indg[7]
+15	-1.5V
+15N	in	indg[8]
+end
+
+plade	0214-8	Forstærkere
+image	0214-8.png	0214-8a.jpg	 0214-8b.jpg
+1	-31.5V
+7N	-13.5V
+12	-7.5V
+15	-1.5V
+10	STEL
+6N	+10.5V
+4N	in	ind[0]
+5N	out	ud[0]
+8N	in	ind[1]
+9	out	ud[1]
+9N	in	ind[2]
+8	out	ud[2]
+10N	in	ind[3]
+7	out	ud[3]
+11N	in	ind[4]
+6	out	ud[4]
+12N	in	ind[5]
+5	out	ud[5]
+13N	in	ind[6]
+4	out	ud[6]
+14N	in	ind[7]
+3	out	ud[7]
+15N	in	ind[8]
+2	out	ud[8]
+end
+
+plade	0215	Spild i AC, sum Gs & plus
+image	0215a.png	0215b.png	0215a.jpg	 0215b.jpg
+15	+10.5V
+5	+1.5V
+1N	STEL
+8N	STEL
+11	-1.5V
+7N	-7.5V
+8	-13.5V
+9N	-13.5V
+6N	-31.5V
+end
+
+plade	0216 SR, AD1, TA registre
+2	out	afkodning AD1
+5	-31.5V
+8	inout	Linie
+10	in	_Gs
+11	in	Gs
+12	in	Gs
+13	+10.5V
+14	-1.5V
+15	STEL
+1N	out	SR
+2N	out	_SR
+3N	-13.5V
+4N	in	Gm
+5N	in	Gm
+6N	in	Gs
+7N	STEL
+8N	out	-
+9N	out	-
+12N	out	AD1
+13N	out	_AD1
+14N	out	TA
+15N	out	_TA
+end
+
+plade	0216-1	IN-TK registre
+image	0216-1.png	0216-1a.jpg	 0216-1b.jpg
+5	-31.5V
+3N	-13.5V
+14	-1.5V
+15	STEL
+13	+10.5V
+6N	out	_I via 100k
+2N	out	_I
+13N	out	_TK
+1N	out	I
+12N	out	TK
+11N	in	_blokGmTk
+4N	in	GmI
+9N	in	GmTK
+10	in	GsI
+11	in	GsTK
+8	in	Linie
+end
+
+plade	0216A-1	z læser, z HK, sum jLY 
+image	0216A-1.png	0216A-1a.jpg	 0216A-1b.jpg
+11N	in	j tastatur
+12	in	BY afk.af T
+6N	in	Gmj
+2	in	Reset
+14N	out	^zjLY
+15N	out	zjLY
+11	in	^BY afk. af HK
+12N	out	^zHK
+13N	out	zHK
+5N	in	BY afk af HK
+10N	in	Gm I Zl
+4N	in	BY afk af L
+10	in	^BY afk af L
+1N	out	^Zl
+2N	out	Zl
+7N	in	^1tegn
+5	-31.5V
+3N	-13.5V
+14	-3.0V
+15	STEL
+4	+1.5V
+13	+10.5V
+end
+
+plade	0216-4	BL, jSY, BY
+image	0216-4.png	0216-4a.jpg	 0216-4b.jpg
+5	-31.5V
+3N	-13.5V
+14	-1.5V
+15	STEL
+13	+10.5V
+8	inout	Linie
+10	in	GsBL
+12	in	GsBY
+4N	in	GmBL
+6N	in	GmBY
+10N	out	0->BL
+1N	out	BL
+14N	out	BY
+2N	out	_BL
+15N	out	_BY
+11	in	js
+5N	in	Gmj
+1	in	RESET
+12N	out	jsy
+13N	out	_jsy
+end
+
+plade	0216-7 BL, BS, BY, YE registre
+image	0216-7.png	0216-7a.jpg	 0216-7b.jpg
+5	-31.5V
+3N	-13.5V
+14	-1.5V
+15	STEL
+13	+10.5V
+8	inout	Linie
+10	in	GsBL
+11	in	GsBS
+12	in	GsBY
+4N	in	GmBL
+5N	in	GmBS
+6N	in	GmBY
+10N	in	0->BL
+1N	out	BL
+12N	out	BS
+14N	out	BY
+2N	out	_BL
+13N	out	_BS
+15N	out	_BY
+11N	out	_BY*
+end
+
+plade	0216-8	BY0 & BY1 YE registre 
+image	0216-8.png	0216-8a.jpg	 0216-8b.jpg
+5	-31.5V
+3N	-13.5V
+15	STEL
+13	+10.5V
+10N	in	reset
+4N	out	100k[1]
+11N	out	100k[0]
+13N	out	^BY1
+15N	out	^BY0
+12N	out	BY1
+14N	out	BY0
+5N	in	GmBY1
+6N	in	GmBY0
+11	in	GsBY1
+12	in	GsBY0
+1N	inout	Linie1
+8	inout	Linie0
+2N	inout	-1.5V*1
+14	inout	-1.5V*1
+end
+
+plade	0216A	SR, AD1, TA registre
+image	0216A.png	0216Aa.jpg	 0216Ab.jpg
+13	+10.5V
+7N	STEL
+15	STEL
+14	-1.5V
+3N	-13.5V
+5	-31.5V
+end
+
+plade	0219	SP-adder mente 39
+image	0219.png	0219a.jpg	 0219b.jpg
+8N	+10.5V
+2	STEL
+15	-1.5V
+7N	-3.0V
+9	-4.5V
+10N	-7.5V
+9N	-13.5V
+1	-31.5V
+15N	-31.5V
+end
+
+plade	0221	Styrekredse FL.
+image	0221.png	0221a.jpg	 0221b.jpg
+3N	+10.5V
+4N	+4.5V
+2N	+1.5V
+1N	STEL
+13N	-3.0V
+1	-13.5V
+7	-13.5V
+6	-31.5V
+end
+
+plade	0221-1	Temperaturovervågning
+image	0221-1.png
+end
+
+plade	0222	Ordreafkodning
+image	0222.png	0222a.jpg	 0222b.jpg
+1	-13.5V
+3N	-7.5V
+15	STEL
+2N	-4.5V
+4N	-1.5V
+1N	+10.5V
+6N	in	Mode
+15N	in	6
+14N	in	5
+13N	in	4
+12N	in	3
+10N	in	2
+11N	in	_2
+8N	in	1
+9N	in	_1
+6	out	ud.til.bet[0]
+5	out	ud.til.bet[1]
+4	out	ud.til.bet[2]
+3	out	ud.til.bet[3]
+13	out	ud.op[0]
+12	out	ud.op[1]
+11	out	ud.op[2]
+10	out	ud.op[3]
+end
+
+plade	0222-1	Afkodning af IA
+image	0222-1.png	0222-1a.jpg	 0222-1b.jpg
+6N	-13.5V
+3N	-7.5V
+4N	+4.5V
+1N	+10.5V
+12N	in
+10N	in
+11N	in
+8N	in
+9N	in
+6	out	R|O
+5	out	a|W
+4	out	P|K
+3	out	T|N
+13	out	^R|^O
+12	out	^a|^W
+11	out	^P|^K
+10	out	^T|^N
+end
+
+plade	0222-2	Afkodning af IO
+image	0222-2.png	0222-2a.jpg	 0222-2b.jpg
+1	-13.5V
+3N	-7.5V
+2N	STEL
+4N	+4.5V
+1N	+10.5V
+10N	in	^OR33e
+11N	in	OR33e
+8N	in	^OR34e
+9N	in	OR34e
+6	in	B3(L)
+5	in	B2(N)
+4	in	B1(M)
+3	in	B0(I)
+13	out	^B3
+12	out	^B2
+11	out	^B1
+10	out	^B0
+end
+
+plade	0222-3	Afkodning af OR(28-29) og OR(30-31)
+image	0222-3.png	0222-3a.jpg	 0222-3b.jpg
+3N	-4.5V
+2N	-1.5V
+1N	+10.5V
+10N	in
+11N	in
+8N	in
+9N	in
+6	out
+5	out
+4	out
+3	out
+end
+
+plade	0222-5	Mode 2 holdekreds
+image	0222-5.png
+1N	-31.5V
+4N	-13.5V
+3N	-7.5V
+10	out	til afk.trans[op62]
+15N	in	Mode 1
+14N	in	fra optrans[op62]
+13	out	Styring af Mode 2
+11	in	til afk.trans[op36-37]
+13N	in	fra optrans[op36-37]
+end
+
+plade	0222-6	Sp, H, MQ primær
+image	0222-6.png
+1N	+10.5V
+8N	+1.5V
+3N	STEL
+12	-1.5V
+12N	-3.0V
+13	-4.5V
+14N	-13.5V
+6N	-31.5V
+# XXX: 11 looks connected from picture on wiki
+11	+4.5V
+end
+
+plade 0222-7	Afkodning af indlæsning BY8-9 
+image	0222-7.png
+1	-13.5V
+3N	-4.5V
+2N	STEL
+4N	+1.5V
+1N	+10.5V
+10N	in	BY9
+11N	in	^BY9
+8N	in	BY8
+9N	in	^BY8
+6	out	Zlæser
+5	out	Zby1,0
+4	out	Ztastatur
+13	out	^læser
+12	out	^by1,0
+11	out	^tatatur
+3	out
+10	out	^BY8*^BY9
+end
+
+plade	0223 Betingelsesafkodning
+image	0223a.png	0223b.png
+8N	-13.5V
+7N	-7.5V
+10N	-1.5V
+4N	out	ud[0]
+1N	out	ud[1]
+13	out	ud[2]
+10	out	ud[3]
+7	out	ud[4]
+4	out	ud[5]
+1	out	ud[6]
+5N	in	bet[0]
+2N	in	bet[1]
+14	in	bet[2]
+11	in	bet[3]
+8	in	bet[4]
+5	in	bet[5]
+2	in	bet[6]
+6N	in	Fra op.[0]
+3N	in	Fra op.[1]
+15	in	Fra op.[2]
+12	in	Fra op.[3]
+9	in	Fra op.[4]
+6	in	Fra op.[5]
+3	in	Fra op.[6]
+9N	in	diode-matrix
+11N	in	diode-matrix
+12N	in	diode-matrix
+13N	in	diode-matrix
+14N	in	diode-matrix
+15N	in	diode-matrix
+end
+
+plade	0223-1 Betingelsesafkodning
+image	0223-1.png
+8N	-13.5V
+10N	-1.5V
+6N	in	Mode 5
+4N	out	_Mode 5
+6	in	Fra op. skr'
+3	in	Fra op. læs'
+5	in	bet. skr'
+2	in	bet. læs'
+4	out	ud skr'
+1	out	ud læs'
+end
+
+plade	0224	OR-TI-O og liniekreds
+image	0224a.png	0224b.png
+2	+10.5V
+2N	+1.5V
+7	STEL
+13	-1.5V
+3N	out	-1.5V*
+8	-3.0V
+4	-13.5V
+3	-13.5V
+1	-31.5V
+6	out	_ORe
+12	out	_OR
+9	out	OR
+5	out	ORe
+10	in	GmOR
+11	in	GsOR
+5N	in	Linie
+9N	in	GsTi
+10N	in	GMTi
+12N	out	Ti(?)
+14N	in	_ind(?)
+15N	in	_SKti
+13N	in	ind(?)
+11N	out	Ti(?)
+7N	in	Gs0->Linie
+14	in	1-stille alle
+15	in	1-stille
+4N	out	DM160 grid
+8N	in	0-stille
+end
+
+# XXX: Guess
+plade	0224-1	OR-TI-O og liniekreds (XXX: term 10 ??)
+image	0224a.png	0224b.png
+1	-31.5V
+2N	+1.5V
+7	STEL
+13	-1.5V
+3N	out	-1.5V*
+8	-3.0V
+#11	-3.0V
+#10	+4.5V
+2	+10.5V
+3	-13.5V
+4	-13.5V
+6	out	_ORe
+12	out	_OR
+9	out	OR
+5	out	ORe
+10	in	GmOR
+11	in	GsOR
+5N	in	Linie
+9N	in	GsTi
+10N	in	GMTi
+12N	out	Ti(?)
+14N	in	_ind(?)
+15N	in	_SKti
+13N	in	ind(?)
+11N	out	Ti(?)
+7N	in	Gs0->Linie
+14	in	1-stille alle
+15	in	1-stille
+4N	out	DM160 grid
+8N	in	0-stille
+end
+
+plade	0224-2	OR-TI-O og liniekreds
+image	0224a.png	0224b.png
+2	+10.5V
+2N	+1.5V
+7	STEL
+13	-1.5V
+3N	out	-1.5V*
+8	-3.0V
+4	-13.5V
+3	-13.5V
+1	-31.5V
+6	out	_ORe
+12	out	_OR
+9	out	OR
+5	out	ORe
+10	in	GmOR
+11	in	GsOR
+5N	in	Linie
+9N	in	GsTi
+10N	in	GMTi
+12N	out	Ti(?)
+14N	in	_ind(?)
+15N	in	_SKti
+13N	in	ind(?)
+11N	out	Ti(?)
+7N	in	Gs0->Linie
+14	in	1-stille alle
+15	in	1-stille
+4N	out	DM160 grid
+8N	in	0-stille
+end
+
+plade	0225	Konstantstrømgen.
+image	0225.png
+5	+24.0V
+1	-1.5V
+2	-1.5V
+3	-1.5V
+4	-31.5V
+14N	out	læsestrøm
+12N	out	LP sekundær 
+13N	out	LP sekundær
+15N	out	skrivestrøm
+end
+
+plade	0229	Linie 00, blok tælling, fejlind i MA, spild fl.fl
+image	0229a.png	0229b.png
+5N	+10.5V
+7N	+1.5V
+14	STEL
+14N	-4.5V
+6N	-13.5V
+1	-31.5V
+4	in
+5	in	Kpo
+6	in
+3	in	KPA
+2	in	Fra MA
+15	out	TO til KB
+13	out	Spild
+9	out	^Spild
+8	out	til DM160
+11	in	Gm Spild H
+12	in	Ho + Hoo
+3N	in	GmTD
+4N	in	Gs39->TD
+8N	out	Blok Tæll TD
+10	in	GsMD00-9
+1N	in	SigmaGs
+12N	in	Linie0
+11N	in	Gs AC00-9
+10N	in	Gs H00-9
+9N	in	Gs Adder 00-19
+13N	out	Linie00
+2N	in	Gm 0T
+15N	out	Blok Tæll OT
+end
+
+plade	0231	Styring af indikator
+image	0231.png
+3N	-13.5V
+1	STEL
+15	STEL
+5	in
+8	in	Or38
+1N	out
+2N	out
+4	in
+6	in
+7	in	GmIO
+3	in
+10	out
+9	out
+2	in
+11N	in
+15N	out
+14N	out
+4N	in	OR39
+10N	in
+7N	in
+6N	in	GmIO
+9N	in
+13N	out
+12N	out
+5N	in	Or38
+8N	in
+end
+
+plade	0233	Indikator operationer
+image	0233.png
+11N	in
+3N	in	
+1N	in
+10N	in
+9N	in
+7N	in	B'3
+6N	in
+5N	in
+2N	in	^B'3
+15	out	Linie ud[1]
+15N	in	Linie ind[1]
+14N	out	^B
+13N	in	Linie ind[0]
+12	out	Linie ud[0]
+1	in
+12N	in
+2	in
+9	in
+10	in
+3	in
+4	in
+5	in	B'3
+7	in
+8	in
+6	in	^B'3
+13	-13.5V
+14	-3.0V
+8N	+1.5V
+11	+10.5V
+end
+
+plade	0234	Tidsgenerator-FL
+image	0234a.png	0234b.png
+10	+10.5V
+3N	+10.5V
+13	STEL
+1N	-1.5V
+14	-3.0V
+2N	-4.5V
+5	-7.5V
+12	-13.5V
+14N	-31.5V
+4	out	Strobe Prim
+9N	out	Strobe Prim
+7N	in	LPY~
+8N	in	LPY~
+10N	out	Cifferpuls prim
+9	in	Cifferpuls
+13N	out	SPXogY
+3	in	Nul KL
+11N	out	Nul prim
+12N	out	Nul prim
+2	in	LPX prim
+1	out	LPX til 0207
+11	out	Slut
+15	in	reset
+6	out	LPY
+end
+
+plade	0239	Skriv fl.fl. og skriv forstærker
+image	0239a.png	0239b.png
+1N	in
+14N	out	Skr.str.b
+1	in	Skr.str
+11N	in	_KPIIb
+10N	in	_SKR-TP
+4	in	KPIIa
+3	out	Skr.str.a
+2	-31.5V
+15N	-13.5V
+10	STEL
+13N	-1.5V
+8	+1.5V
+6	+10.5V
+9N	-31.5V
+12N	out	-19.5V ud
+6N	in	læs
+8N	out	LF åbning
+5	-13.5V
+7	out	-13.5 til plade 240 og 257-1
+end
+
+plade	0240	Afkodning af TK-X
+image	0240.png
+1	-31.5V
+7	in	PL0239--13.5V
+8N	-1.5V
+5	STEL
+3	+10.5V
+13	out	TRX[0]
+14	out	TRX[1]
+15	out	TRX[2]
+1N	out	TRX[3]
+11	in	BKN5h
+14N	in	_4
+15N	in	4
+13N	in	1
+12N	in	2
+11N	in	3
+10N	in	_5
+9N	in	5
+end
+
+plade	0240-1	Afkodning af TK-X
+image	0240-1.png
+1	-31.5V
+7	in	PL0239--13.5V
+8N	-1.5V
+5	STEL
+3	+10.5V
+13	out	TRX[0]
+14	out	TRX[1]
+15	out	TRX[2]
+1N	out	TRX[3]
+11	in	BKN5h
+14N	in	4
+15N	in	_4
+13N	in	1
+12N	in	2
+11N	in	3
+10N	in	5
+9N	in	_5
+end
+
+plade	0241	Kanalvalg tromle
+image	0241.png
+9N	out	Læs str.a
+15N	out	Læs str.b
+2	in	_YLæs
+14N	in	_Ylæs
+3	inout	TRY (0-15)
+12N	inout	TRY (0-15)
+4	inout	TRY (0-15)
+13N	inout	TRY (0-15)
+1	STEL	TRY (0-15) skærm
+7N	STEL	TRY (0-15) skærm
+5	in	skr.str a
+6	in	Y skriv
+10N	in	Y skriv
+11N	in	skr.str b
+1N	-13.5V
+end
+
+plade	0244	Schmitt trigger
+image	0244.png
+12N	+10.5V
+4	+4.5V
+14N	STEL
+15N	-1.5V
+13N	-13.5V
+6N	in	normal start
+4N	in	mikro start
+2N	in	mikro stop
+12	in	Manuel start fra SL
+14	in
+5N	out	normal start
+3N	out	mikro start
+1N	out	mikro stop
+13	out	manuel start fra SL
+15	out	
+end
+
+plade	0246	Adder tromle
+image	0246.png
+7	out	L[0]
+15N	in	Gs
+10	in	^Mind
+12	in	^TOT[0]
+3N	in	^TOT[1]
+11	in	^TBA[0]
+4N	in	^TBA[1]
+15	in	TOT[0]
+1N	in	TOT[1]
+14	in	TBA[0]
+2N	in	TBA[1]
+13	in	Mind
+8N	out	Mud
+5N	out	^Mud
+2	-13.5V
+14N	-13.5V
+8	-3.0V
+7N	-3.0V
+5	in	-1.5V*[0]
+11N	in	-1.5V*[1]
+9	STEL
+6N	STEL
+3	+10.5V
+13N	+10.5V
+end
+
+plade	0248	Diodelogik, TR
+image	0248a.png	0248b.png	0248c.png
+end
+
+plade	0249	Osc & klipper
+image	0249a.png	0249b.png
+3	+10.5V
+5N	+1.5V
+14	STEL
+13	-1.5V
+7	-4.5V
+15	-7.5V
+6N	-13.5V
+1	-31.5V
+1N	out	Klokpuls
+12	in	Mikrotrin
+10	in	Step
+5	in	stop
+6	in	stop
+4	in	registervælger
+2	out	klipper
+4N	out	Sp adder prim
+7N	out	Klokpuls A
+13N	in	gate 5+7
+8N	out	Klokpuls C
+12N	in	gate 5+6
+11N	in	gate 6 + stop
+9N	out	Klokpuls B
+10N	in	gate 7
+14N	in	gate 5+8
+15N	in	gate 8
+end
+
+plade	0251	Paritetscheck for indlæsning
+image	0251.png
+9N	out	Paritet ud
+13	in	_BL6
+12	in	_BL7
+14	in	_BL5
+11	in	_BL8
+15	in	_BL4
+8	in	_BL2
+1N	in	_BL3
+10	in	_BL9
+14N	-31.5V
+15N	-13.5V
+5	STEL
+13N	+10.5V
+end
+
+plade	0251-1	Paritetsbit for perforrator
+image	0251-1.png
+end
+
+plade	0252	Start stop logik
+image	0252a.png	0252b.png
+12N	+10.5V
+4N	+1.5V
+15	STEL
+1N	STEL
+8N	-1.5V
+8	-3.0V
+11N	-7.5V
+14N	-13.5V
+13N	-31.5V
+15N	out	stop ved skift
+3	in	stop ^Gs stop B'
+2	in	stop trigger 1
+9	in	^VAC
+1	in	^mikrostop
+4	in	^mode 5
+9N	out	VAC
+7	in	^stop2
+5	in	^stop normal
+6	in	^stop 1
+11	in	^reset
+7N	out	VAC
+6N	out	^VAC
+10	in	^start normal
+13	in	^start2
+12	in	^start1
+10N	out	^VAC
+14	inout	fra Mode 2 | Til i-løkke lampe
+end
+
+plade	0253	Microtemp, reset & SP-halvadder
+image	0253a.png	0253b.png
+1N	+10.5V
+5N	STEL
+3N	-1.5V
+4	-4.5V
+2N	-13.5V
+10	NC
+7N	in	Mikrotstart ind.
+6N	in	Gate
+15N	out	Blok for mikrotart
+1	out	Mikrostart ud
+3	in	KP0A ind
+2	out	SP halvadder
+5	in	reset fra kb
+6	out	reset1
+7	out	reset2
+14	out	reset3
+15	out	reset4
+12	in	ind fra display
+13	out	ud til klarlampe
+end
+
+plade	0254	Højttalerforstærker i KB
+image	0254.png
+end
+
+plade	0257	Tromleklokpulsforstærker
+image	0257.png
+15N	-13.5V
+14N	-1.5V
+15	+10.5V
+6	STEL
+7	STEL
+3	in	TRb
+5	STEL	TRskærm
+1	in	TRa
+6N	out	KPxa
+7N	out	KPxa
+8N	out	KPxa
+11N	out	KPxb
+12N	out	KPxb
+13N	out	KPxb
+end
+
+plade	0257-1	Tromlesignalforstærker
+image	0257-1.png
+2N	in	PL0239--13.5V
+11N	out	SPb[0]
+12N	out	SPb[1]
+13N	out	SPb[2]
+6N	out	SPa[0]
+7N	out	SPa[1]
+8N	out	SPb[2]
+3	in	Læs.str.b
+8	in	LF åbning
+1	in	Læs.str.a
+15N	-13.5V
+15	+10.5V
+5	STEL
+6	STEL
+7	STEL
+4N	STEL
+14N	-1.5V
+end
+
+plade	0258	VAB, SLB fl.fl., FLF.
+image	0258a.png	0258b.png
+9	+10.5V
+8N	+10.5V
+10	+1.5V
+11	STEL
+9N	STEL
+5N	-1.5V
+6N	-3.0V
+1	-7.5V
+7N	-13.5V
+15	-31.5V
+end
+
+plade	0259	Stop flip-flop
+image	0259a.png	0259b.png
+5	+10.5V
+6	+1.5V
+12	STEL
+2N	-3.0V
+2	-7.5V
+1N	-13.5V
+end
+
+plade	0260	Halvordsforskydning
+image	0260.png
+1N	+10.5V
+13	+1.5V
+12	STEL
+3N	-3.0V
+2N	-13.5V
+10	in
+11	in
+3	in
+5	in
+7	in
+9	in
+5N	in
+7N	in
+9N	in
+11N	in
+13N	in
+15N	in
+2	out
+4	out
+6	out
+8	out
+4N	out
+6N	out
+8N	out
+10N	out
+12N	out
+14N	out
+end
+
+plade	0261	TOT - NP - ETP - ^SL & blok skriv 
+image	0261a.png	0261b.png
+5N	-13.5V
+6N	-7.5V
+9	STEL
+14	STEL
+15	STEL
+4N	+1.5V
+12N	+10.5V
+4	+10.5V
+5	in	^skriv
+6	in	KPIa
+3N	out	^TOT-EIP
+3	in	^TR'
+2	in	KPIIb
+1	out	^SL
+7	-1.5V
+8	in	KPIb
+2N	out	^TOT-NP
+11N	in	TKT->41
+10N	out	^TKT->41
+9N	out	^TKT->41
+end
+
+plade	0261-1	_Klipper, _SL", Gs stop B. og par.fejl
+image	0261-1a.png	0261-1b.png
+12N	+10.5V
+4	+10.5V
+9	STEL
+6N	-1.5V
+7	-7.5V
+5N	-13.5V
+6	-31.5V
+end
+
+plade	0262	TI42 og SKR TP
+image	0262a.png	0262b.png
+5	out	^PFT
+4N	out	TI42
+4	out	^TI42
+15N	inout	strobe
+3	in	Linie42
+6N	-13.5V
+5N	-7.5V
+13	STEL
+12N	STEL
+8N	+10.5V
+7	out	Skift'''
+2	in	KPIIb
+2N	out	^SKR TP
+9	in	KPIIIb
+14	in	^TI0
+10	in	KPIIIa
+8	-3.0V
+1	-1.5V
+6	+1.5V
+14N	+4.5V
+end
+
+plade	0263	Paritetsfejl
+image	0263a.png	0263b.png
+1	-13.5V
+3	-1.5V
+13N	STEL
+4	STEL
+2	+10.5V
+7	-7.5V
+10	+1.5V
+5N	out	DM160 PF
+4N	in	_TKT=41
+3N	in	RESET
+9	out	_TKT NP
+5	in	_TR'
+15N	in	Annul. af. Tr. Paritet
+15	in	KPIIa
+12	in	_PFT
+14	out	PF
+1N	in	_Læs
+2N	in	_SL
+end
+
+plade 0264	Læs-skriv.
+image	0264a.png	0264b.png
+1	-31.5V
+14N	-13.5V
+13N	-1.5V
+12N	STEL
+15N	+10.5V
+4	out	Læs Y
+4N	in	^TKT->41
+12	in	^reset
+7N	out	^Læs
+5N	out	Læs'
+6N	out	Læs'
+2N	in	b*Mode5
+3N	in	op.afk.skr
+1N	in	Gm Start TR
+10N	-3.0V
+8N	+1.5V
+9N	out	^TR'
+11N	out	TR''
+7	out
+5	out	skr.str
+6	out	M
+14	out	^M
+15	out	^skr
+13	out	skr
+8	out	skr'
+11	in	OP afk.læs
+10	in	^b*mode5
+9	in	blok skriv
+3	out	skr.Y
+end
+
+plade 0265	Y afkodning
+image	0265.png
+2N	-31.5V
+13	-19.5V
+2	-13.5V
+12	-3.0V
+3	STEL
+4	STEL
+1	+10.5V
+1N	out	TR-y[0]
+3N	out	TR-y[1]
+5N	out	TR-y[2]
+7N	out	TR-y[3]
+4N	in	6
+6N	in	7
+9N	in	8
+8N	in	^8
+10N	in	9
+11N	in	^9
+14	in	Læs y
+15N	out	^ylæs[0]
+14N	out	^ylæs[1]
+13N	out	^ylæs[2]
+12N	out	^ylæs[3]
+15	in	skrivy
+5	out	yskriv[0]
+7	out	yskriv[1]
+9	out	yskriv[2]
+11	out	yskriv[3]
+end
+
+plade	0266	TA-AD1 fl.fl., skift, TRsync & TKT-TP 
+image	0266a.png	0266b.png
+15N	-31.5V
+4	-13.5V
+4N	-13.5V
+13N	-13.5V
+14N	-7.5V
+5N	+1.5V
+6N	STEL
+1N	STEL
+6	+10.5V
+2N	-1.5V
+9	in	_Gs FL fra AD1 til TA
+8	in	reserve
+7	out	TA valgt
+10	out	AD1 valgt
+12	in	_Reset
+11	in	reserve
+13	in	_Gs FL fra TA til AD1
+15	in	_Fs stop B
+3N	out	_TKT-TP
+14	in	Skift
+9N	out	Skift TI0-9
+10N	out	Skift TI10-19
+11N	out	Skift TI20-29
+12N	out	Skift TI30-41
+2	in	TR
+3	in	Gm sæt TR-bet.
+5	out	TR lampe spdg.
+1	out	TL
+end
+
+plade	0267	Tromleomdrejningsretning
+image	0267.png
+end
+
+plade	0269	Styrekredse for perforrator
+image	0269a.png	0269b.png
+end
+
+plade	0270	FB forstærker
+image	0270.png
+end
+
+plade	0271	Drivtrin for skrivemask.
+image	0271a.png	0271b.png
+end
+
+plade	0272-1	Klarsignal fra SL
+image	0272-1.png
+1	-13.5V
+3	STEL
+13	+10.5V
+1N	out	^j'
+4	in	^j
+end
+
+plade	0272-2	Styrekredse 1 for skrivemaskine
+image	0272-2a.png	0272-2b.png
+end
+
+plade	0273	Afkodning af tastatur input
+image	0273a.png	0273b.png
+end
+
+plade	0273-1	Afkodning af tastatur input
+image	0273a.png	0273b.png
+end
+
+plade	0273-2	Afkodning af tastatur input
+image	0273a.png	0273b.png
+end
+
+plade	0274	Halvadder med husker
+image	0274.png
+4	+10.5V
+7N	STEL
+13N	-3.0V
+12N	-7.5V
+11N	-31.5V
+end
+
+plade	0275	NTC-holder
+image	0275.png
+end
+
+plade	0276	Kobling YE til MD
+image	0276.png
+1	-7.5V
+2	STEL
+6	+1.5V
+7	+10.5V
+11	in
+12	in
+13	in
+10	in
+1N	in
+2N	in
+3N	in
+9	in
+15	in
+6N	in
+8	in
+14	in
+4N	in
+7N	in
+3	out
+5	out
+9N	out
+10N	out
+end
+
+plade	1000-10	CO, CO' & Opt fl.fl AOK Gm* MD Adr 00
+image	1000-10a.png	1000-10b.png
+14	+10.5V
+12N	+1.5V
+1	STEL
+15	STEL
+1N	STEL
+3N	-3.0V
+3	-13.5V
+7	-13.5V
+11N	-13.5V
+9N	-31.5V
+end
+
+plade	DM160
+# XXX: Uden dok...
+1N	1V-AC-A
+2N	+50V
+3N	1V-AC-B
+1	1V-AC-A
+2	+50V
+3	1V-AC-B
+6	-3.0V
+7	-3.0V
+end
+plade	tom
+end

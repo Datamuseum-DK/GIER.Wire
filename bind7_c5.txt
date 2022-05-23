@@ -1,0 +1,705 @@
+tværtråd	C5
+3	18-16	15-13	12-10
+5	25-22
+6	25-22	19-14	11-9
+7	25-22
+9	20-12	9-6	4-1
+12	20-12	11-9	2-1
+15	25-22	20-14	11-8	7-1
+3N	20-16	15-7	6-1
+4N	25-22
+6N	20-17	16-9	8-1
+7N	20-1
+8N	20-1
+9N	20-1
+10N	20-1
+11N	20-1
+14N	25-22
+15N	25-22
+end
+
+kort	C5-1	0223	Betingelsesafkodning
+1	H17-H
+2	KF-C12
+3	C4-1-3
+4	H17-F
+5	KF-E17
+6	C4-1-5
+7	H17-E
+8	KF-G15
+9					x
+10	H17-D
+11	KF-J15
+12					x
+13	H17-C
+14	KF-A7
+15					x
+1N	H17-B
+2N	KF-B7
+3N					x
+4N	H17-A
+5N	KF-D4
+6N					x
+7N					x
+8N					x
+9N					x
+10N					x
+11N					x
+12N	KF-J18
+15N	KF-C10
+end
+
+kort	C5-2	0223	Betingelsesafkodning
+1	H17-R
+2	KF-D15
+3	C4-3-5
+4	H17-P
+5	KF-D17
+6	C4-2-4
+7	H17-N
+8	KF-G16
+9	C4-2-3				x
+10	H17-M
+11	KF-J16
+12	C5-3-6				x
+13	H17-L
+14	KF-A8
+15					x
+1N	H17-K
+2N	KF-B9
+3N					x
+4N	H17-J
+5N	KF-D7
+6N					x
+7N					x
+8N					x
+9N					x
+10N					x
+11N					x
+12N	KF-H16
+13N	KF-C8
+14N	KF-C7
+15N	KF-D1
+end
+
+kort	C5-3	0223	Betingelsesafkodning
+1	H17-Y
+2	KF-B8
+3	C4-3-6
+4	H17-X
+5	A2-6-2
+6	C5-2-12		C5-4-6
+7	H17-W
+8	KF-G18
+9	C2-1-3				x
+10	H17-V
+11	KF-J17
+12	C4-3-4
+13	H17-U
+14	KF-E1
+15					x
+1N	H17-T
+2N	KF-B1
+3N					x
+4N	H17-S
+5N	KF-D12
+6N					x
+7N					x
+8N					x
+9N					x
+10N					x
+11N					x
+14N	KF-C11
+end
+
+kort	C5-4	0223	Betingelsesafkodning
+1	H17-FF
+2	KF-A5
+3	C4-4-3
+4	H17-EE
+5	B6-26-5
+6	C5-3-6		C5-4-12
+7	H17-DD
+8	KF-K15
+9					x
+10	H17-CC
+11	B6-26-13
+12	C5-4-6		C4-5-6
+13	H17-BB
+14	KF-D3
+15					x
+1N	H17-AA
+2N	KF-D9
+3N					x
+4N	H17-Z
+5N	KF-C2
+6N					x
+7N					x
+8N					x
+9N					x
+10N					x
+11N					x
+13N	KF-E2
+14N	KF-B2
+15N	KF-A4
+end
+
+kort	C5-5	0223	Betingelsesafkodning
+1	H18-A
+4	H17-NN
+7	H17-MM
+10	H17-LL
+13	H17-KK
+14	KF-B3
+15					x
+1N	H17-JJ
+2N	KF-A2
+3N					x
+4N	H17-HH
+5N	KF-B12
+6N					x
+7N	C4-5-3N				x
+8N					x
+9N	C6-5-10				x
+10N					x
+11N	C6-5-10N			x
+14N	KF-A6
+15N	KF-A3
+end
+
+kort	C5-6	0223	Betingelsesafkodning
+1	H18-J
+4	H18-H
+5	KF-E18
+6	C4-6-4
+7	H18-F
+8	KF-A1
+9	C4-7-6				x
+10	H18-E
+11	KF-B4
+12	C5-7-12
+13	H18-D
+14	KF-C4
+15					x
+1N	H18-C
+2N	KF-C5
+3N	C6-3-13N			x
+4N	H18-B
+5N	KF-C3
+6N					x
+7N					x
+8N					x
+9N					x
+10N					x
+11N					x
+15N	KF-E6
+end
+
+kort	C5-7	0223	Betingelsesafkodning
+1	H18-S
+2	KF-A15
+3	C4-6-3
+4	H18-R
+5	KF-A9
+6	C4-7-3
+7	H18-P
+8	KF-D6
+9					x
+10	H18-N
+11	KF-E4
+12	C4-7-4		C5-6-12
+13	H18-M
+14	KF-D5
+15	C4-8-4				x
+1N	H18-L
+2N	KF-D11
+3N					x
+4N	H18-K
+5N	KF-D2
+6N					x
+7N					x
+8N					x
+9N					x
+10N					x
+11N					x
+15N	KF-C1
+end
+
+kort	C5-8	0223	Betingelsesafkodning
+1	H18-Z
+2	KF-A10
+3	C4-11-4
+4	H18-Y
+5	KF-B11
+6	C4-9-5
+7	H18-X
+8	KF-E7
+9					x
+10	H18-W
+11	KF-E3
+12	C4-11-3
+13	H18-V
+14	KF-D8
+15					x
+1N	H18-U
+2N	KF-E11
+3N					x
+4N	H18-T
+5N	KF-E10
+6N	C6-3-10N			x
+7N					x
+8N					x
+9N					x
+10N					x
+11N					x
+13N	KF-E5
+end
+
+kort	C5-9	0223	Betingelsesafkodning
+1	H18-HH
+2	KF-D10
+3	C4-10-3
+4	H18-FF
+5	KF-A14
+6					x
+7	H18-EE
+8	KF-E16
+9					x
+10	H18-DD
+11	KF-B13
+12	C6-3-15				x
+13	H18-CC
+14	KF-C9
+15					x
+1N	H18-BB
+2N	KF-A11
+3N					x
+4N	H18-AA
+5N	KF-B10
+6N	C6-3-11N			x
+7N					x
+8N					x
+9N					x
+10N					x
+11N					x
+13N	KF-A12
+14N	KF-F7
+end
+
+kort	C5-10	0223	Betingelsesafkodning
+1	H19-B
+2	KF-E9
+3	C5-11-9				x
+4	H19-A
+5	KF-E14
+6					x
+7	H18-NN
+8	KF-H15
+9	C4-10-5
+10	H18-MM
+11	KF-E8
+12					x
+13	H18-LL
+14	KF-E12
+15					x
+1N	H18-KK
+2N	KF-D14
+3N					x
+4N	H18-JJ
+5N	KF-B14
+6N					x
+7N					x
+8N					x
+9N					x
+10N					x
+11N					x
+13N	KF-A13
+14N	KF-J12
+end
+
+kort	C5-11	0223	Betingelsesafkodning
+1	H19-K
+2	KF-D13
+3					x
+4	H19-J
+5	KF-E13
+6	C4-10-6				x
+7	H19-H
+8	KF-G17
+9	C5-10-3
+10	H19-F
+11	KF-C13
+12					x
+13	H19-E
+14	KF-C14
+15	C4-11-5				x
+1N	H19-D
+2N	KF-K10
+3N					x
+4N	H19-C
+5N	KF-H12
+6N					x
+7N					x
+8N					x
+9N					x
+10N					x
+11N					x
+12N	KF-B6
+13N	KF-K12
+15N	KF-G12
+end
+
+kort	C5-12	0223	Betingelsesafkodning
+1	H19-T
+2	KF-K14
+3	C4-12-6				x
+4	H19-S
+5	KF-K11
+6	C5-13-6
+7	H19-R
+8	A5-15-2N
+9					x
+10	H19-P
+11	KF-K13
+12					x
+13	H19-N
+14	KF-G13
+15	C4-10-4		C5-13-15
+1N	H19-M
+2N	KF-F10
+3N					x
+4N	H19-L
+5N	KF-J14
+6N					x
+7N					x
+8N					x
+9N					x
+10N					x
+11N					x
+12N	KF-B5
+13N	KF-H14
+15N	KF-J13
+end
+
+kort	C5-13	0223	Betingelsesafkodning
+1	H19-AA
+2	KF-J7
+3					x
+4	H19-Z
+5	KF-J8
+6	C4-14-4		C5-12-6
+7	H19-Y
+8	KF-H8
+9	C4-13-5				x
+10	H19-X
+11	A4-3-3		KF-K7
+12					x
+13	H19-W
+14	KF-J9
+15	C5-12-15
+1N	H19-V
+2N	KF-G7
+3N					x
+4N	H19-U
+5N	KF-H7
+6N					x
+7N					x
+8N					x
+9N					x
+10N					x
+11N					x
+12N	KF-C6
+13N	KF-F14
+15N	KF-H18
+end
+
+kort	C5-14	0223	Betingelsesafkodning
+1	H19-JJ
+2	KF-J10
+3					x
+4	H19-HH
+5	KF-K6
+6	C4-13-3				x
+7	H19-FF
+8	KF-G8
+9					x
+10	H19-EE
+11	KF-G9
+12					x
+13	H19-DD
+14	KF-H5
+15	C6-3-12N			x
+1N	H19-CC
+2N	KF-G10
+3N					x
+4N	H19-BB
+5N	KF-F9
+6N					x
+7N					x
+8N					x
+9N					x
+10N					x
+11N					x
+end
+
+kort	C5-15	0223	Betingelsesafkodning
+1	H20-C
+2	KF-H2
+3	C4-14-6				x
+4	H20-B
+5	KF-H4
+6					x
+7	H20-A
+8	KF-F3
+9					x
+10	H19-NN
+11	KF-K4
+12					x
+13	H19-MM
+14	KF-K3
+15					x
+1N	H19-LL
+2N	KF-F6
+3N	C4-14-3				x
+4N	H19-KK
+5N	KF-H9
+6N					x
+7N					x
+8N					x
+9N					x
+10N					x
+11N					x
+end
+
+kort	C5-16	0223	Betingelsesafkodning
+1	H20-L
+2	KF-F5
+3	C4-15-4				x
+4	H20-K
+5	KF-G3
+6					x
+7	H20-J
+8	KF-H11
+9					x
+10	H20-H
+11	KF-K8
+12	C4-16-4				x
+13	H20-F
+14	KF-K9
+15					x
+1N	H20-E
+2N	C5-20-2N
+3N					x
+4N	H20-D
+5N	KF-G2
+6N					x
+7N					x
+8N					x
+9N					x
+10N					x
+11N					x
+end
+
+kort	C5-17	0223	Betingelsesafkodning
+1	H20-U
+2	KF-K2
+3					x
+4	H20-T
+5	KF-G6
+6					x
+7	H20-S
+8	KF-J3
+9					x
+10	H20-R
+11	KF-H3
+12					x
+13	H20-P
+14	KF-G5
+15					x
+1N	H20-N
+2N	KF-H1
+3N	C4-12-4				x
+4N	H20-M
+5N	KF-H6
+6N	C4-13-6				x
+7N					x
+8N					x
+9N					x
+10N					x
+11N					x
+12N	KF-J6
+end
+
+kort	C5-18	0223	Betingelsesafkodning
+1	H20-BB
+2	KF-G11
+3					x
+4	H20-AA
+5	KF-J1
+6					x
+7	H20-Z
+8	KF-F8
+9					x
+10	H20-Y
+11	KF-J5
+12					x
+13	H20-X
+14	KF-F12
+15					x
+1N	H20-W
+2N	KF-J11
+3N					x
+4N	H20-V
+5N	KF-F4
+6N					x
+7N					x
+8N					x
+9N					x
+10N					x
+11N					x
+12N	KF-J2
+end
+
+kort	C5-19	0223	Betingelsesafkodning
+1	H20-KK
+2	
+4	H20-JJ
+5	KF-H17
+6					x
+7	H20-HH
+8	KF-G4
+9					x
+10	H20-FF
+11	KF-F2
+12					x
+13	H20-EE
+14	KF-F1
+15					x
+1N	H20-DD
+2N	KF-K1
+3N					x
+4N	H20-CC
+5N	KF-J4
+6N					x
+7N					x
+8N					x
+9N					x
+10N					x
+11N					x
+15N	KF-H10
+end
+
+kort	C5-20	0223	Betingelsesafkodning
+1	H21-D
+2	KF-D16
+3	C4-3-3
+4	H21-C
+5	A5-15-4N
+6	C5-20-9
+7	H21-B
+8	KF-F13
+9	C5-20-6				x
+10	H21-A
+11	KF-H13
+12					x
+13	H20-NN
+14	KF-G14
+15					x
+1N	H20-MM
+2N	KF-F11		C5-16-2N
+3N					x
+4N	H20-LL
+5N	KF-K5
+6N					x
+7N	C5-21-5				x
+8N	C5-21-7N			x
+9N					x
+10N	C5-21-9N			x
+11N					x
+15N	KF-G1
+end
+
+kort	C5-21	0200-4	Kanalblokering
+2	C5-22-12N
+3	C5-23-11N
+4	C6-22-7
+5	-7.5V		C5-20-7N
+6	C5-21-9N	C5-22-14N
+8	C3-14-15
+9	STEL
+13	C3-20-14
+14	C3-20-13	C5-21-5N
+15	OMSK-21-15
+1N	OMSK-21-1N
+5N	C5-21-14
+6N	C6-23-9
+7N	C5-22-15N	C5-20-8N
+8N	C5-22-15
+9N	C5-21-6		C5-20-10N
+11N	C3-24-1N
+15N	C6-22-9
+end
+
+kort	C5-22	0257 Læseforstærker
+1	TRC-P-1
+3	TRC-N-1
+5	TRC-G-1		STEL		x
+6					x
+7					x
+15	C5-21-8N			x
+4N	STEL				x
+6N	C6-24-6
+7N	C4-25-15
+11N	C6-24-8
+12N	C5-21-2
+14N	C5-21-6				x
+15N	C5-21-7N			x
+end
+
+kort	C5-23	0257 Læseforstærker
+1	TRC-P-2
+3	TRC-N-2
+5	TRC-G-2				x
+6	STEL				x
+7					x
+15					x
+4N					x
+6N	C4-25-4
+7N	C6-23-15
+8N	C3-15-8
+11N	C6-24-2		C5-21-3
+12N	C4-25-11N
+13N	C6-25-2
+14N					x
+15N					x
+end
+
+kort	C5-24	0257 Læseforstærker
+1	TRC-P-3
+3	TRC-N-3
+5	TRC-G-3				x
+6					x
+7	STEL				x
+15					x
+4N					x
+6N	C6-25-10
+11N	C6-25-9
+14N					x
+15N					x
+end
+
+kort	C5-25	0257-1 Læseforstærker
+1	C4-24-9N
+3	C4-24-15N
+5					x
+6					x
+7					x
+8	C4-25-8N
+15	+10.5V				x
+2N	C4-25-7
+4N	STEL				x
+6N	C6-21-14
+11N	C6-21-15
+14N	-1.5V				x
+15N	-13.5V				x
+end

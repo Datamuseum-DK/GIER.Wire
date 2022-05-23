@@ -1,0 +1,582 @@
+tværtråd	C4
+1	24-17	16-1
+5	24-17
+15		16-1
+1N	24-17	16-1
+2N		16-1
+3N		16-1
+4N		16-1
+6N		16-1
+7N	24-17
+8N		16-1
+9N	24-17	16-1
+10N		16-1
+11N	24-17	16-1
+14N		16-13 12-9 8-5 4-1
+15N	24-17	16-9 8-1
+end
+
+kort C4-1	0222	Ordre afkodning
+1					x
+3	C5-1-3
+5	C5-1-6
+6	C4-2-6
+10	H15-KK
+11			H15-P
+12	H15-R
+13	H16-EE
+15					x
+1N					x
+2N					x
+3N					x
+4N					x
+6N	C6-1-9				x
+8N					x
+9N					x
+10N					x
+11N					x
+12N	C4-3-12N
+13N	C4-2-13N
+14N					x
+15N					x
+end
+
+kort C4-2	0222	Ordre afkodning
+1					x
+3	C5-2-9		C2-4-15
+4	C5-2-6
+6	C4-4-4		C4-1-6
+10	H16-U		H21-S
+11	H16-T
+12	H16-S
+13	H16-DD
+15					x
+1N					x
+2N					x
+3N					x
+4N					x
+6N					x
+8N					x
+9N					x
+10N					x
+11N					x
+12N	C4-4-12N
+13N	C4-5-13N	C4-1-13N
+14N					x
+15N					x
+end
+
+kort C4-3	0222	Ordre afkodning
+1					x
+3	C5-20-3
+4	C5-3-12
+5	C6-22-3N	C5-2-3
+6	C6-22-11	C5-3-3
+10	H16-K
+11	H16-R
+12	H16-P
+13	H16-N
+15	STEL				x
+1N					x
+2N					x
+3N					x
+4N					x
+6N					x
+8N					x
+9N					x
+10N					x
+11N					x
+12N	C4-5-12N	C4-1-12N
+13N	C4-4-13N
+14N					x
+15N					x
+end
+
+kort C4-4	0222	Ordre afkodning
+1					x
+3	C4-8-3		C5-4-3
+4	C4-12-5		C4-2-6
+5	C4-7-3
+10	H15-Z
+11	H16-CC
+12	H15-S
+13	H15-BB
+15					x
+1N					x
+2N					x
+3N					x
+4N					x
+6N					x
+8N					x
+9N					x
+10N					x
+11N					x
+12N	C4-6-12N	C4-2-12N
+13N	C4-7-13N	C4-3-13N
+14N	C4-9-14N			x
+15N					x
+end
+
+# XXX: passer ikke med maskine vedr. ben 4, 5, 6
+kort C4-5	0222	Ordre afkodning
+1					x
+#5	C4-5-6		C5-5-12			# OP 44,45
+5	C4-5-6					# OP 44,45
+6	C4-5-5		C5-4-12
+10	H16-JJ
+11	H16-HH
+12	H16-FF		C4-5-13
+13	H16-Z		C4-5-12
+15					x
+1N					x
+2N					x
+3N	C5-5-7N				x
+4N					x
+6N					x
+8N					x
+9N					x
+10N					x
+11N					x
+12N	C4-7-12N	C4-3-12N
+13N	C4-6-13N	C4-2-13N
+14N					x
+15N					x
+end
+
+kort C4-6	0222	Ordre afkodning
+1					x
+3	C4-10-5		C5-7-3
+4	C5-6-6
+5	C4-7-5		C4-6-6
+6	C4-7-6		C4-6-5
+10	H16-Y
+11	H15-X
+12	H15-W
+13	H15-T
+15					x
+1N					x
+2N					x
+3N					x
+4N					x
+6N			C6-6-13		x
+8N					x
+9N					x
+10N					x
+11N					x
+12N	C4-8-12N	C4-4-12N
+13N	C4-9-13N	C4-5-13N
+14N					x
+15N					x
+end
+
+kort C4-7	0222	Ordre afkodning
+1					x
+3	C5-7-6		C4-4-5
+4	C5-7-12
+5	C4-6-5		C6-6-11
+6	C4-6-6		C5-6-9
+10	H16-V
+11	H15-J
+12	H16-M
+13	C6-6-13N	H16-L
+15					x
+1N					x
+2N					x
+3N					x
+4N					x
+6N					x
+8N					x
+9N					x
+10N					x
+11N					x
+12N	C4-9-12N	C4-5-12N
+13N	C4-8-13N	C4-4-13N
+14N					x
+15N					x
+end
+
+kort C4-8	0222	Ordre afkodning
+1					x
+3	C4-4-3
+4	C5-7-15		C4-12-5
+10	H15-JJ
+11	H16-AA
+12	H15-HH
+13	H15-FF
+15	STEL				x
+1N					x
+2N					x
+3N					x
+4N					x
+6N					x
+8N					x
+9N					x
+10N					x
+11N					x
+12N	C4-10-12N	C4-6-12N
+13N	C4-11-13N	C4-7-13N
+14N	C4-13-14N			x
+15N	B5-29-6				x
+end
+
+kort C4-9	0222	Ordre afkodning
+1					x
+5	C5-8-6
+10	H15-NN
+11	H15-MM
+12	H15-LL
+13	H15-EE
+15					x
+1N					x
+2N					x
+3N					x
+4N					x
+6N					x
+8N					x
+9N					x
+10N					x
+11N					x
+12N	C4-11-12N	C4-7-12N
+13N	C4-10-13N	C4-6-13N
+14N	C4-4-14N			x
+15N					x
+end
+
+kort C4-10	0222	Ordre afkodning
+1					x
+3	C5-9-3
+4	C5-12-15
+5	C5-10-9		C4-6-3
+6	C5-11-6
+10	H15-DD
+11	H15-CC
+12	H15-Y
+13	H15-M
+15					x
+1N					x
+2N					x
+3N					x
+4N					x
+6N					x
+8N					x
+9N					x
+10N					x
+11N					x
+12N	C4-12-12N	C4-8-12N
+13N	C4-13-13N	C4-9-13N
+14N					x
+15N					x
+end
+
+kort C4-11	0222	Ordre afkodning
+1					x
+3	C5-8-12
+4	C5-8-3
+5	C5-11-15
+6	C4-12-3
+10	H16-J
+11	H16-D
+12	H16-C
+13	H16-H
+15					x
+1N					x
+2N					x
+3N					x
+4N					x
+6N					x
+8N					x
+9N					x
+10N					x
+11N					x
+12N	C4-13-12N	C4-9-12N
+13N	C4-12-13N	C4-8-13N
+14N					x
+15N					x
+end
+
+kort C4-12	0222	Ordre afkodning
+1					x
+3	C4-11-6		C4-12-4
+4	C5-17-3N	C4-12-3
+5	C4-8-4		C4-4-4
+6	C5-12-3
+10	H16-F
+11	H16-E
+12	H16-BB
+13	H15-V
+15					x
+1N					x
+2N					x
+3N					x
+4N					x
+6N					x
+8N					x
+9N					x
+10N					x
+11N					x
+12N	C4-14-12N	C4-10-12N
+13N	C4-15-13N	C4-11-13N
+14N	B5-30-6				x
+15N					x
+end
+
+kort C4-13	0222	Ordre afkodning
+1					x
+3	C5-14-6
+4	C4-13-5
+5	C4-13-4		C5-13-9
+6	C5-17-6N
+10	H15-H
+11	H15-C
+12	H15-B
+13	H15-F
+15					x
+1N					x
+2N					x
+3N					x
+4N					x
+6N					x
+8N					x
+9N					x
+10N					x
+11N					x
+12N	C4-15-12N	C4-11-12N
+13N	C4-14-13N	C4-10-13N
+14N	C4-8-14N			x
+15N					x
+end
+
+kort C4-14	0222	Ordre afkodning
+1					x
+3	C5-15-3N
+4	C5-13-6
+5	C4-14-6
+6	C4-14-5		C5-15-3
+10	H15-L
+11	H15-U
+12	H15-E
+13	H15-D
+15					x
+1N					x
+2N					x
+3N					x
+4N					x
+6N					x
+8N					x
+9N					x
+10N					x
+11N					x
+12N	C4-16-12N	C4-12-12N
+13N	B5-31-6		C4-13-13N
+14N					x
+15N					x
+end
+
+kort C4-15	0222	Ordre afkodning
+1					x
+3	C4-15-4
+4	C5-16-3		C4-15-3
+5	C4-16-3		C4-15-6
+6	C4-15-5
+10	H16-B
+11	H16-A
+12	H16-NN
+13	H16-MM
+15					x
+1N					x
+2N					x
+3N					x
+4N					x
+6N					x
+8N					x
+9N					x
+10N					x
+11N					x
+12N	B5-32-6		C4-13-12N
+13N	C4-16-13N	C4-12-13N
+14N					x
+15N					x
+end
+
+kort C4-16	0222	Ordre afkodning
+1	C4-17-1N			x
+3	C4-15-5		C4-16-4
+4	C5-16-12	C4-16-3
+10	H16-LL
+11	H16-KK
+12	H16-X
+13	H16-W
+15					x
+1N	C4-25-6				x
+2N	-4.5V				x
+3N	-7.5V				x
+4N	C4-25-13N			x
+6N					x
+8N	B5-34-5				x
+9N	B5-34-6				x
+10N	B5-33-5				x
+11N	B5-33-6				x
+12N	B5-32-5		C4-14-12N
+13N	B5-31-5		C4-15-13N
+14N	B5-30-5				x
+15N	B5-29-5				x
+end
+
+kort C4-17	0241	Kanalvalg
+1	TRY-G-14			x
+2	C3-21-13N
+3	TRY-P-14
+4	TRY-N-14
+5					x
+6	C3-21-9
+1N	C4-16-1				x
+7N	TRY-G-15			x
+10N	C3-21-11
+11N					x
+12N	TRY-P-15
+13N	TRY-N-15
+14N	C3-21-12N
+15N					x
+end
+
+kort C4-18	0241	Kanalvalg
+1	TRY-G-12			x
+2	C3-21-15N
+3	TRY-P-12
+4	TRY-N-12
+5					x
+6	C3-21-5
+1N					x
+7N	TRY-G-13			x
+10N	C3-21-7
+11N					x
+12N	TRY-P-13
+13N	TRY-N-13
+14N	C3-21-14N
+15N					x
+end
+
+kort C4-19	0241	Kanalvalg
+1	TRY-G-10			x
+2	C3-22-13N
+3	TRY-P-10
+4	TRY-N-10
+5					x
+6	C3-22-9
+1N					x
+7N	TRY-G-11			x
+10N	C3-22-11
+11N					x
+12N	TRY-P-11
+13N	TRY-N-11
+14N	C3-22-12N
+15N					x
+end
+
+kort C4-20	0241	Kanalvalg
+1	TRY-G-8			x
+2	C3-22-15N
+3	TRY-P-8
+4	TRY-N-8
+5					x
+6	C3-22-5
+1N					x
+7N	TRY-G-9			x
+10N	C3-22-7
+11N					x
+12N	TRY-P-9
+13N	TRY-N-9
+14N	C3-22-14N
+15N					x
+end
+
+kort C4-21	0241	Kanalvalg
+1	TRY-G-6			x
+2	C3-23-13N
+3	TRY-P-6
+4	TRY-N-6
+5					x
+6	C3-23-9
+1N					x
+7N	TRY-G-7			x
+10N	C3-23-11
+11N					x
+12N	TRY-P-7
+13N	TRY-N-7
+14N	C3-23-12N
+15N					x
+end
+
+kort C4-22	0241	Kanalvalg
+1	TRY-G-4			x
+2	C3-23-15N
+3	TRY-P-4
+4	TRY-N-4
+5					x
+6	C3-23-5
+1N					x
+7N	TRY-G-5			x
+10N	C3-23-7
+11N					x
+12N	TRY-P-5
+13N	TRY-N-5
+14N	C3-23-14N
+15N					x
+end
+
+kort C4-23	0241	Kanalvalg
+1	TRY-G-2			x
+2	C3-24-13N
+3	TRY-P-2
+4	TRY-N-2
+5					x
+6	C3-24-9
+1N					x
+7N	TRY-G-3			x
+10N	C3-24-11
+11N					x
+12N	TRY-P-3
+13N	TRY-N-3
+14N	C3-24-12N
+15N					x
+end
+
+kort C4-24	0241	Kanalvalg
+1	STEL		TRY-G-0	x
+2	C3-24-15N
+3	TRY-P-0
+4	TRY-N-0
+5	C4-25-3				x
+6	C3-24-5
+1N	C4-25-15N			x
+7N	STEL 		TRY-G-1		x
+9N	C5-25-1				x
+10N	C3-24-7
+11N	C4-25-14N			x
+12N	TRY-P-1
+13N	TRY-N-1
+14N	C3-24-14N
+15N	C5-25-3				x
+end
+
+kort C4-25	0239	Skr. fl-fl og skr. forstærker
+1	C6-22-5
+2	-31.5V
+3	C4-24-5
+4	C5-23-6N
+5	-13.5V
+6	+10.5V		C4-16-1N
+7	C3-20-7		C5-25-2N
+8	+1.5V
+10	STEL
+15	C5-22-7N
+6N	C6-22-5N
+8N	C5-25-8
+9N	-31.5V
+10N	C6-25-2N
+11N	C5-23-12N
+12N	C3-24-13
+13N	-1.5V		C4-16-4N
+14N	C4-24-11N
+15N	-13.5V		C4-24-1N
+end

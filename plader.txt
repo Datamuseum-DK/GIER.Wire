@@ -1,0 +1,177 @@
+gier
+# Gier Teknisk Beskrivelse Ex. 22 bind 5
+COL	A 1
+SLOT	1	DM160	Lampeplade
+SLOT	2-13	0209	MA flip-flop
+SLOT	14-17	0206	Valg af adresse register
+SLOT	18	0214-3	Klokpulsforstærkere
+SLOT	19-22	0209-1	MA B flip-flop
+SLOT	23	DM160	Lampeplade
+SLOT	24	0261-1	Klipper, SL" og Gs stop B bagkant
+SLOT	25	0258	VAB, SLB fl-fl FLF
+COL	A 2
+SLOT	1	0209-1	Step
+SLOT	2-3	0274	Halvadder med husker
+SLOT	4	0200-16	Standardinvertere
+SLOT	5	0229	Linie 00, blok tælling, fejlind i MA, spild fl.fl.
+SLOT	6-15	0216A	SR-AD1-TAD
+SLOT	16-24	0212	AD2-TD-OT
+SLOT	25	0212-1	AD2-TD-OT
+COL	A 3
+SLOT	1-4	0211	Gm
+SLOT	5-6	0205-2	LI og H
+SLOT	7-25	0205	LI og H
+COL	A 4
+SLOT	1	0215	Halvadder, logik mm.
+SLOT	2	0214-7	Standard forstærkere
+SLOT	3	0214-4	Standard forstærkere
+SLOT	4	0213	Ind og udgange
+SLOT	5-10	0201	Adder
+SLOT	11	0201-1	Adder
+SLOT	12-15	0201	Adder
+SLOT	16	0201-1	Adder
+SLOT	17-20	0201	Adder
+SLOT	21	0201-1	Adder
+SLOT	22-25	0201	Adder
+COL	A 5
+SLOT	1-4	0210	Gs Generator
+SLOT	5	0202-21	AC-MD-MQ
+SLOT	6	0202-23	AC-MD-MQ
+SLOT	7-14	0202-22	AC-MD-MQ
+SLOT	15-17	0202-24	AC-MD-MQ
+SLOT	18-25	0202-22	AC-MD-MQ
+COL	A 6
+SLOT	1-5	0211	Gm
+SLOT	6-25	0224-1	O-OR-TI
+# Gier Teknisk Beskrivelse Ex. 22 bind 6
+COL	B 1
+SLOT	26	0244	Start-Stop
+SLOT	27	0249	Osc og klipper
+SLOT	28	0252	Start-stop logik
+SLOT	29	0253	Mikrotem, kPo->SpH
+SLOT	30	0259	Prim.Sp test fl-fl stop
+SLOT	31-32	0203-1	Afkodning af FL
+SLOT	33	0214-5	FL.startkredse
+SLOT	34	0234  	Tidsgenerator for FL
+SLOT	35-36	0221  	Styrekredse til FL
+SLOT	39	0225	FL konstantstrømsgenerator
+SLOT	42	0225	FL konstantstrømsgenerator
+SLOT	43	0203	Afkodning af FL
+SLOT	44-47	0207	Matrix drivtrin
+SLOT	48	0222-6	SpH, MQ primær
+COL	B 2
+SLOT	26-28	0211	Gm
+SLOT	29-47	0205	Li-H
+SLOT	48	0205-3	Li-H
+SLOT	49-50	0205-1	Li-H
+COL	B 3
+SLOT	26	0210	Gs
+SLOT	27	0214-1	Sp.H og MQ
+SLOT	28	0208	Ad-Sub.SA
+SLOT	29	0201-2	Adder
+SLOT	30-33	0201	Adder
+SLOT	34   	0201-1	Adder
+SLOT	35-38	0201	Adder
+SLOT	39   	0201-1	Adder
+SLOT	40-43	0201	Adder
+SLOT	44   	0201-1	Adder
+SLOT	45-48	0201	Adder
+SLOT	49	0219	Sp add og Mente til 39
+SLOT	50	0213	Ind- og udg.
+COL	B 4
+SLOT	26-28	0210	Gs
+SLOT	29-47	0202-22	AC-MD-MQ
+SLOT	48	0202-23	AC-MD-MQ
+SLOT	49	0202-18	MD40 og 41
+SLOT	50	0214	Standard forstærker
+COL	B 5
+SLOT	26-28	0211	Gm
+SLOT	29-49	0224	O-OR-TI
+SLOT	50	0224-2	O-OR-TI
+COL	B 6
+SLOT	26	1000-10	Co-,Co'- og Opt fl-fl AOK, Gm* MD, Adr.00
+SLOT	27-31	0276	Kobling Ye til MD
+SLOT	36	0200-14	Standardinvertere
+SLOT	37	0200-8	Standardinvertere
+SLOT	38-39	0222-3	Afkodning af OR 28-29 og OR 30-31
+SLOT	40	0260	Halvordsforskydning
+SLOT	42-47	0276	Kobling af YE til MD
+# Gier Teknisk Beskrivelse Ex. 22 bind 6
+COL	C 1
+SLOT	1-2	0204	Registervalg til KB
+SLOT	3-5	0210	Gs
+SLOT	6-15	0216-1	In og TK
+SLOT	16-17	0200-6	Inverter til indikator
+SLOT	18-20	0231	Styring af Indikator
+SLOT	21-25	0233	Indikator operationer
+COL	C 2
+SLOT	1	0200-1	Til og Fra HK, inv. for BY8-9, Gatekreds for HK
+SLOT	2	0216-8	BY0 og BY1 YE registre
+SLOT	3	0202-20	Z forstærker til strimmellæser
+SLOT	4	0200-268 Z forstærker til perforator og skrivemaskine
+SLOT	5	0200-10	Forstærker til BS
+SLOT	6	0222-78	Afkodning af indlæsning
+SLOT	7	0216A-1	Zlæser, Zhk, Sigma jLY
+SLOT	8	0216-4	BL - jSY - BY
+SLOT	9-15	0216-7	BL-BS-BY
+SLOT	16	0272-1	Klarsignal fra strimmellæser
+SLOT	17	0200-1	Ostill og Istillingsforst. til strimmellæser
+SLOT	18	0251	Paritetscheck for indlæsning
+SLOT	19	0216-00	BS YE register og forstærker for BS samt F-FL med gates
+SLOT	20	0200-9	KE logik
+SLOT	21	0200-5	Ka og Kb fl-fl AC*
+SLOT	22	0214-8	Standard forstærkere
+SLOT	23	0222-2	Afkodning af IO
+SLOT	24-25	0222-1	Afkodning af IA
+COL	C 3
+SLOT	1-5	0246	Adder, tromle
+SLOT	6-15	0212-2	TkT-TOT-TBA
+SLOT	16-19	0240	Afkodning af Tk-x
+SLOT	20	0240-1	Afkodning af Tk-x
+SLOT	21-24	0265	Y afkodning
+SLOT	25	0266	TAD<->AD1 fl-fl, skift, TR synk TkT-TP
+COL	C 4
+SLOT	1-16	0222	Ordre afkodning
+SLOT	17-24	0241	Kanalvalg
+SLOT	25	0239	Skr fl-fl og skr forstærker
+COL	C 5
+SLOT	1-20	0223	Betingelsesafkodning
+SLOT	21	0200-4	Kanalblokering
+SLOT	22-24	0257	Læseforstærker
+SLOT	25	0257-1	Læseforstærker
+COL	C 6
+SLOT	1	0209-2	Mode 1 og 2
+SLOT	2	0209-3	Mode 3 og 4
+SLOT	3	0200-7	Mode betingelse og h
+SLOT	4	0223-1	Betingelsesafkodning
+SLOT	5	0209-4	b+c
+SLOT	6	0222-5	Mode 2 Holdekreds
+SLOT	7	0209-6	Mode 5 og HP fl-fl
+SLOT	21	0205-4	Linie 42, blok Gm-Tk
+SLOT	22	0264	Læs-Skriv
+SLOT	23	0263	Paritetsfejl
+SLOT	24	0261	TOT-NP-ETP, SL og blok skriv
+SLOT	25	0262	TI42 og Skr TP
+COL	D 1
+SLOT	1	0270	FB forstærker
+SLOT	2	0200-13	Stop spole og klar spole forstærker
+SLOT	3	0269	Styrekreds for perforator
+SLOT	4	0202-19	Z fl-f for perforator og skrivemaskine
+SLOT	5	0202-4	FB-BLs-GP fl-fl
+SLOT	6	0214-6	Magnetspole forstærker
+SLOT	7	0251-1	Paritetsbit til perforator
+SLOT	8	0200-11	Drivtrin for perforator
+SLOT	9	0200-12	Drivtrin til skrivemaskeineafkodning
+SLOT	10	0203-3	Skrivemaskineafkodning BS 4, 5 og 6
+SLOT	11	0203-4	Skrivemaskineafkodning BS 7, 8 og 9
+SLOT	12-15	0271	Drivtrin for skrivemaskine
+SLOT	16	0272-2	Styrekredse for skrivemaskine 1
+SLOT	17	0212-4	Styrekredse for skrivemaskine 2
+SLOT	18	0202-7	Upper case lower case
+SLOT	19	0200-15	Styring af tastaturinput
+SLOT	20	0273	Afkodning af tastatur
+SLOT	21	0273-1	Afkodning af tastatur ind
+SLOT	22	0273-2	Afkodning af tastatur ind
+SLOT	23	0200-25	Forstærkere og Za til Printer
+SLOT	24	1000-00	
+end

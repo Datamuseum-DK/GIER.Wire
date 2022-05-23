@@ -1,0 +1,341 @@
+tværtråd	B6
+1	47-42		31-27
+2	47-42		31-27
+6	47-42		31-27
+7	47-42		31-27
+9		37-36
+12	47-42		31-27
+13	47-42		31-27
+1N	40-38
+#2N	39-38				# Findes ikke
+#3N	39-38				# Findes ikke
+#7N	37-36				# Findes ikke
+#8N	37-36				# Findes ikke
+9N	37-36
+end
+
+kort	B6-26	1000-10	Co-,Co' og Opt fl-fl, AOK, Gm*, MD, Adr.00
+2	B3-26-5
+3	-13.5V
+4	B3-26-6
+5	C5-4-5
+11	BF2-C10
+12	BF1-D10
+13	C5-4-11
+14	+10.5V
+15	STEL
+1N	STEL
+2N	BF2-A10
+3N	-3.0V
+6N	BF1-E10
+8N	C2-22-15N
+9N	-31.5V
+10N	B6-27-12
+12N	+1.5V
+13N	BF2-B10
+14N	C2-8-5N
+15N	BF2-D10
+end
+
+kort	B6-27	0276	Kobling af YE til MD
+1	-7.5V			x
+2	STEL			x
+3	A5-6-11
+5	A5-7-11
+6	+1.5V			x
+7	+10.5V			x
+8	HK1-C				# Hul 12 & Linie 0
+9	BF1-A1
+12	B6-26-10N		x	# BY 8,9 = 1,0
+13	C2-1-15			x
+14	HK1-H				# Hul 11 & Linie 1
+15	BF1-B1
+3N	BF1-D1
+6N	BF1-C1
+9N	A5-9-11
+10N	A5-8-11
+end
+
+kort	B6-28	0276	Kobling af YE til MD
+1				x
+2				x
+3	A5-10-11
+5	A5-11-11
+6				x
+7				x
+9	BF1-E1
+12				x
+13				x
+15	BF1-A2
+3N	BF1-C2
+6N	BF1-B2
+9N	A5-13-11
+10N	A5-12-11
+end
+
+kort	B6-29	0276	Kobling af YE til MD
+1				x
+2				x
+3	A5-14-11
+5	A5-15-11
+6				x
+7				x
+9	BF1-D2
+12				x
+13				x
+15	BF1-E2
+3N	BF1-B3
+4N	HK1-U
+6N	BF1-A3
+7N	HK1-S
+9N	A5-17-11
+10N	A5-16-11
+end
+
+kort	B6-30	0276	Kobling af YE til MD
+1				x
+2				x
+3	A5-18-11
+5	A5-19-11
+6				x
+7				x
+8	HK1-W
+9	BF1-C3
+12				x
+13				x
+14	HK1-Y
+15	BF1-D3
+3N	BF1-A4
+4N	HK1-CC
+6N	BF1-E3
+7N	HK1-AA
+9N	A5-21-11
+10N	A5-20-11
+end
+
+kort	B6-31	0276	Kobling af YE til MD
+1	B6-42-1			x
+2	STEL			x
+3	A5-22-11
+5	A5-23-11
+6	B6-42-6			x
+7	B6-42-7			x
+8	HK1-EE
+9	BF1-B4
+12	B6-42-12		x
+13	B6-42-13		x
+14	HK1-HH
+15	BF1-C4
+3N	BF1-E4
+4N	HK1-MM
+6N	BF1-D4
+7N	HK1-KK
+9N	A5-25-11
+10N	A5-24-11
+end
+
+kort	B6-36	0200-14	Standardinvertere
+1	B2-49-12N
+2	B4-47-2N
+3	B4-47-4N
+4	B5-49-12
+5	B5-39-12
+6	B5-36-12
+7	-4.5V		B6-37-7
+8	+4.5V		B6-37-8
+9				x
+10	KF-B17				# Or27
+11	KF-B18				# Or30
+12	H22-M				# Or40
+13	KF-A16				# MQ38
+14	KF-A17				# _MQ38
+15	KF-A18				# LI40
+1N	B5-36-9
+2N	B5-35-12
+3N	B5-35-9
+4N	B5-33-12
+5N	B5-32-12
+6N	B5-30-9
+7N	B6-37-7		B6-37-7N
+8N	B6-37-8		B6-37-8N
+9N	STEL			x
+10N	KF-C18				# _OR21
+11N	H22-L				# OR23
+12N	KF-B15				# OR24
+13N	KF-B16				# _OR26
+14N	H22-K				# OR26
+15N	H22-J				# _OR27
+end
+
+kort	B6-37	0200-8	Standardinvertere
+1	B4-48-2N
+7	B6-36-7N	B6-36-7
+8	B6-36-8N	B6-36-8
+9	STEL			x
+15	H22-N				# _MQ39
+7N	B6-38-3N	B6-36-7N
+8N			B6-36-8N
+9N				x
+end
+
+kort	B6-38	0222-3	Afkodning af OR28-29 og OR30-31
+3	H22-R
+4	H22-P
+5	H22-S
+1N	+10.5V			x
+2N	-1.5V		B6-39-2N
+3N	B6-37-7N	B6-39-3N
+8N	B5-38-5
+9N	B5-38-6
+10N	B5-37-5
+11N	B5-37-6
+end
+
+kort	B6-39	0222-3	Afkodning af OR28-29 og OR30-31
+3	KF-C17
+5	H22-U
+6	H22-T
+1N				x
+2N	B6-38-2N
+3N	B6-38-3N
+8N	B5-40-5
+9N	B5-40-6
+10N	B5-39-5
+11N	B5-39-6
+end
+
+kort	B6-40	0260	Halvordsforskydning
+2	B5-29-5N
+3	B5-39-5N
+4	B5-30-5N
+5	B5-40-5N
+6	B5-31-5N
+7	B5-41-5N
+8	B5-32-5N
+9	B5-42-5N
+10	H6-HH
+11	H6-KK
+12	STEL
+13	+1.5V
+1N				x
+2N	-13.5V
+3N	-3.0V
+4N	B5-33-5N
+5N	B5-43-5N
+6N	B5-34-5N
+7N	B5-44-5N
+8N	B5-35-5N
+9N	B5-45-5N
+10N	B5-36-5N
+11N	B5-46-5N
+12N	B5-37-5N
+13N	B5-47-5N
+14N	B5-38-5N
+15N	B5-48-5N
+end
+
+kort	B6-42	0276	Kobling YE til MD
+1	B6-31-1			x
+2	STEL			x
+3	B4-29-11
+5	B4-30-11
+6	B6-31-6			x
+7	B6-31-7			x
+9	BF1-A5
+12	B6-31-12		x
+13	B6-31-13		x
+15	BF1-B5
+3N	BF1-D5
+6N	BF1-C5
+9N	B4-32-11
+10N	B4-31-11
+end
+
+kort	B6-43	0276	Kobling YE til MD
+1				x
+2				x
+3	B4-33-11
+5	B4-34-11
+6				x
+7				x
+9	BF1-E5
+12				x
+13				x
+15	BF1-A6
+3N	BF1-C6
+6N	BF1-B6
+9N	B4-36-11
+10N	B4-35-11
+end
+
+kort	B6-44	0276	Kobling YE til MD
+1				x
+2				x
+3	B4-37-11
+5	B4-38-11
+6				x
+7				x
+9	BF1-D6
+12				x
+13				x
+15	BF1-E6
+3N	BF1-B7
+6N	BF1-A7
+9N	B4-40-11
+10N	B4-39-11
+end
+
+kort	B6-45	0276	Kobling YE til MD
+1				x
+2				x
+3	B4-41-11
+5	B4-42-11
+6				x
+7				x
+9	BF1-C7
+12				x
+13				x
+15	BF1-D7
+3N	BF1-A8
+4N	HK1-L
+6N	BF1-E7
+7N	HK1-F
+9N	B4-44-11
+10N	B4-43-11
+end
+
+kort	B6-46	0276	Kobling YE til MD
+1				x
+2				x
+3	B4-45-11
+5	B4-46-11
+6				x
+7				x
+8	HK1-R
+9	BF1-B8
+12				x
+13				x
+14	HK1-V
+15	BF1-C8
+3N	BF1-E8
+4N	HK1-DD
+6N	BF1-D8
+7N	HK1-Z
+9N	B4-48-11
+10N	B4-47-11
+end
+
+kort	B6-47	0276	Kobling YE til MD
+1				x
+2	STEL			x
+3	B4-49-11
+5	B4-49-12N
+6				x
+7				x
+8	HK1-NN
+9	BF1-A9
+12				x
+13				x
+14	HK1-JJ
+15	BF1-B9
+end

@@ -1,0 +1,631 @@
+tværtråd	C3
+1 24-21 20-16
+2 24-21 		5-1
+3 24-21 20-16 		5-1
+4 24-21		15-6
+5       20-16	
+7	20-16	15-6
+8			5-1
+9			5-1
+11		15-6
+12 24-21
+13 24-21
+14 24-21	15-10
+15 24-21	14-10
+2N 24-21
+3N		15-6
+6N			5-1
+7N		15-6	5-1
+8N 24-21 20-16
+9N 24-21 20-16	15-6
+10N 24-21 20-16 	8-6
+11N 24-21 	15-6
+13N 20-17 		5-1
+14N 20-16 		5-1
+15N 20-16 	15-6	5-1
+end
+
+kort C3-1	0246	Adder, tromle
+2				x
+3				x
+5	C3-7-2N				# -1.5*1
+7	C3-7-8N				# L-1
+9	STEL			x
+10	C3-2-5N
+11	C3-7-2
+12	C3-7-1N
+13	C3-2-8N
+14	C3-7-3
+15	C3-7-1
+1N	C3-6-1
+2N	C3-6-3
+3N	C3-6-1N
+4N	C3-6-2
+6N	STEL			x
+7N				x
+9N	C3-6-8N	C2-3-13N		# L-0
+11N	C3-6-2N	C2-3-10N		# -1.5*0
+13N				x
+14N				x
+15N	C1-3-5			x
+end
+
+kort C3-2	0246	Adder, tromle
+2				x
+3				x
+5	C3-9-2N				# -1.5*3
+7	C3-9-8N				# L-3
+8				x
+9				x
+10	C3-3-5N
+11	C3-9-2
+12	C3-9-1N
+13	C3-3-8N
+14	C3-9-3
+15	C3-9-1
+1N	C3-8-1
+2N	C3-8-3
+3N	C3-8-1N
+4N	C3-8-2
+5N	C3-1-10
+6N				x
+7N				x
+8N	C3-1-13
+9N	C3-8-8N	C2-3-14N		# L-2
+11N	C3-8-2N	C2-3-11N		# -1.5*2
+13N				x
+14N				x
+15N				x
+end
+
+kort C3-3	0246	Adder, tromle
+2				x
+3				x
+5	C3-11-2N			# -1.5*5
+7	C3-11-8N			# L-5
+8				x
+9				x
+10	C3-4-5N
+11	C3-11-2
+12	C3-11-1N
+13	C3-4-8N
+14	C3-11-3
+15	C3-11-1
+1N	C3-10-1
+2N	C3-10-3
+3N	C3-10-1N
+4N	C3-10-2
+5N	C3-2-10
+6N				x
+7N				x
+8N	C3-2-13
+9N	C3-10-8N			# L-4
+11N	C3-10-2N			# -1.5*4
+13N				x
+14N				x
+15N				x
+end
+
+kort C3-4	0246	Adder, tromle
+2	C3-5-14N		x
+3	C3-5-13N		x
+5	C3-13-2N			# -1.5 * 7
+7	C3-13-8N			# L-7
+8				x
+9				x
+10	C3-5-5N
+11	C3-13-2
+12	C3-13-1N
+13	C3-5-8N
+14	C3-13-3
+15	C3-13-1
+1N	C3-12-1
+2N	C3-12-3
+3N	C3-12-1N
+4N	C3-12-2
+5N	C3-3-10
+6N				x
+7N	C3-5-8			x
+8N	C3-3-13
+9N	C3-12-8N			# L-6
+11N	C3-12-2N			# -1.5*6
+13N				x
+14N				x
+15N				x
+end
+
+kort C3-5	0246	Adder,tromle
+2	C3-6-4			x
+3	C3-6-7			x
+5	C3-15-2N			# -1.5*9
+7	C3-15-8N			# L-9
+8	C3-4-7N			x
+9	STEL			x
+10	C6-22-14
+11	C3-15-2
+12	C3-15-1N
+13	C6-22-6
+14	C3-15-3
+15	C3-15-1
+1N	C3-14-1
+2N	C3-14-3
+3N	C3-14-1N
+4N	C3-14-2
+5N	C3-4-10
+6N	STEL			x
+7N	C3-21-12		x
+8N	C3-4-13
+9N	C3-14-8N			# L-8
+11N	C3-14-2N			# -1.5*8
+13N	C3-4-3			x
+14N	C3-4-2			x
+15N	C3-25-9			x
+end
+
+kort C3-6	0212-2	TkT-TOT-TBA
+1	C3-1-1N
+2	C3-1-4N
+3	C3-1-2N
+4	C3-5-2				x
+5	A1-23-6N
+7	C3-5-3				x
+8	C3-7-1
+11					x
+1N	C3-1-3N
+2N	C2-6-14		C3-1-11N		# -1.5*0
+3N					x
+7N					x
+8N	C2-6-8		C3-1-9N			# L-0
+9N	A6-2-6				x
+10N					x
+11N					x
+15N					x
+end
+
+kort C3-7	0212-2	TkT-TOT-TBA
+1	C3-1-15		C3-6-8
+2	C3-1-11
+3	C3-1-14
+4					x
+5	A1-23-7N
+7					x
+8	C3-8-1
+11					x
+1N	C3-1-12
+2N	C2-6-2N		C3-1-5			# -1.5*1
+3N					x
+7N					x
+8N	C2-6-1N		C3-1-7			# L-1
+9N					x
+11N					x
+15N					x
+end
+
+kort	C3-8	0212-2	TkT-TOT-TBA
+1	C3-2-1N		C3-7-8
+2	C3-2-4N	
+3	C3-2-2N
+4					x
+5	A1-23-8N
+7					x
+8	C3-9-1
+11	STEL				x
+1N	C3-2-3N
+2N	C2-8-14		C3-2-11N		# -1.5*2
+3N					x
+7N					x
+8N	C2-8-8		C3-2-9N			# L-2
+9N					x
+10N	C3-25-5N			x
+11N					x
+15N					x
+end
+
+kort	C3-9	0212-2	TkT-TOT-TBA
+1	C3-2-15		C3-8-8
+2	C3-2-11	
+3	C3-2-14
+4					x
+5	A1-23-9N
+7					x
+8	C3-10-1
+11	STEL				x
+1N	C3-2-12
+2N	C2-9-14		C3-2-5			# -1.5*3
+3N					x
+7N					x
+8N	C2-9-8		C3-2-7			# L-3
+9N					x
+10N	KB9-F
+11N	A5-2-6				x
+15N					x
+end
+
+kort	C3-10	0212-2	TkT-TOT-TBA
+1	C3-3-1N		C3-9-8
+2	C3-3-4N
+3	C3-3-2N
+4					x
+5	A1-23-10N
+7					x
+8	C3-11-1
+10	C3-11-13
+11					x
+14					x
+15					x
+1N	C3-3-3N
+2N	C2-10-14	C3-3-11N		# -1.5*4
+3N					x
+4N	C3-12-4N
+7N					x
+8N	C2-10-8		C3-3-9N			# L-4
+9N					x
+10N	KB9-L
+11N					x
+15N					x
+end
+
+kort	C3-11	0212-2	TkT-TOT-TBA
+1	C3-3-15		C3-10-8
+2	C3-3-11
+3	C3-3-14
+4					x
+5	A1-23-11N
+7					x
+8	C3-12-1
+10	C3-12-13
+11					x
+13	C3-10-10
+14					x
+15					x
+1N	C3-3-12
+2N	C2-11-14	C3-3-5			# -1.5*5
+3N					x
+7N					x
+8N	C2-11-8		C3-3-7			# L-5
+9N					x
+10N	KB9-R
+11N					x
+15N					x
+end
+
+kort	C3-12	0212-2	TkT-TOT-TBA
+1	C3-4-1N		C3-11-8
+2	C3-4-4N
+3	C3-4-2N
+4					x
+5	A1-23-12N
+7					x
+8	C3-13-1
+10	C3-13-13
+11					x
+13	C3-11-10
+14					x
+15					x
+1N	C3-4-3N
+2N	C2-12-14	C3-4-11N			# -1.5*6
+3N					x
+4N	C3-15-4N	C3-10-4N
+7N					x
+8N	C2-12-8		C3-4-9N 			# L-6
+9N					x
+10N	KB9-V
+11N					x
+15N					x
+end
+
+kort	C3-13	0212-2	TkT-TOT-TBA
+1	C3-4-15		C3-12-8
+2	C3-4-11
+3	C3-4-14
+4					x
+5	A1-23-13N
+7					x
+8	C3-14-1
+10	C3-14-13
+11	STEL				x
+13	C3-12-10
+14					x
+15					x
+1N	C3-4-12
+2N	C2-13-14	C3-4-5			# -1.5*7
+3N					x
+7N					x
+8N	C2-13-8		C3-4-7			# L-7
+9N					x
+10N	KB9-Z
+11N					x
+15N					x
+end
+
+kort	C3-14	0212-2	TkT-TOT-TBA
+1	C3-5-1N		C3-13-8
+2	C3-5-4N
+3	C3-5-2N
+4					x
+5	A1-23-14N
+7					x
+8	C3-15-1
+10	C3-15-13
+11					x
+13	C3-13-10
+14					x
+15	C5-21-8				x
+1N	C3-5-3N
+2N	C3-5-11N	C2-14-14		# -1.5*8
+3N					x
+7N					x
+8N	C3-5-9N		C2-14-8			# L-8
+9N					x
+10N	KB9-DD
+11N					x
+15N					x
+end
+
+kort	C3-15	0212-2	TkT-TOT-TBA
+1	C3-5-15		C3-14-8
+2	C3-5-11
+3	C3-5-14
+4	C3-21-2				x
+5	A1-23-15N
+7	C3-16-3				x
+8	C5-23-8N
+10	C3-25-3N
+11					x
+13	C3-14-10
+14	C6-23-9				x
+1N	C3-5-12
+2N	C2-15-14	C3-5-5			# -1.5*9
+3N	C6-24-3N			x
+4N	C6-24-11N	C3-12-4N
+7N	C6-24-2N			x
+8N	C3-5-7		C2-15-8			# L-9
+9N	C6-22-1N			x
+10N	KB9-JJ
+11N					x
+15N	B3-26-3				x
+end
+
+kort	C3-16	0240	Afkodning af Tk-x
+1					x
+3	C3-15-7				x
+5	STEL				x
+7					x
+13	TRX-16
+14	TRX-17
+15	TRX-18
+1N	TRX-19
+8N					x
+9N	C1-11-12N			x
+10N	C1-11-13N			x
+11N	C3-18-11N	C1-9-13N
+12N	C3-19-12N	C1-8-13N
+13N	C1-7-12N
+14N	C1-10-13N			x
+15N	C1-10-12N			x
+end
+
+kort	C3-17	0240	Afkodning af Tk-x
+1					x
+3					x
+5					x
+7					x
+13	TRX-12
+14	TRX-13
+15	TRX-14
+1N	TRX-15
+8N					x
+9N					x
+10N					x
+11N	C3-19-11N	C1-9-12N
+12N	C3-18-12N	C1-8-12N
+13N	C1-7-13N			x
+14N					x
+15N					x
+end
+
+kort	C3-18	0240	Afkodning af Tk-x
+1					x
+3					x
+5					x
+7					x
+13	TRX-8
+14	TRX-9
+15	TRX-10
+1N	TRX-11
+8N					x
+9N					x
+10N					x
+11N	C3-20-11N	C3-16-11N
+12N	C3-17-12N
+13N					x
+14N					x
+15N					x
+end
+
+kort	C3-19	0240	Afkodning af Tk-x
+1					x
+3					x
+5					x
+7					x
+13	TRX-4
+14	TRX-5
+15	TRX-6
+1N	TRX-7
+8N					x
+9N					x
+10N					x
+11N	C3-17-11N
+12N	C3-20-12N	C3-16-12N
+13N					x
+14N					x
+15N					x
+end
+
+kort	C3-20	0240-1	Afkodning af Tk-x
+1	C3-21-2N			x
+3	C3-21-1				x
+5	STEL		R11-7		x
+7			C4-25-7		x
+11	R11-5
+13	TRX-0		C5-21-14
+14	TRX-1		C5-21-13
+15	TRX-2
+1N	TRX-3
+8N	C3-25-2N			x
+9N					x
+10N					x
+11N	C3-18-11N
+12N	C3-19-12N
+13N					x
+14N					x
+15N					x
+end
+
+kort	C3-21	0265	Y afkodning
+1	C3-20-3				x
+2	C3-15-4				x
+3					x
+4					x
+5	C4-18-6					# Y12 skriv
+7	C4-18-10N				# Y13 skriv
+9	C4-17-6					# Y14 skriv
+11	C4-17-10N				# Y15 skriv
+12	C3-5-7N				x
+13					x
+14	C6-22-4				x	# Læs Y
+15	C6-22-3				x	# Skriv y
+1N						# TR Y*12
+2N	C3-20-1				x
+3N						# TR Y*13
+4N	C3-22-4N	C1-12-12N		# TK 6
+5N						# TR Y*14
+6N	C3-23-6N	C1-13-12N		# TK7
+7N						# KR Y*15
+8N	C1-14-12N			x	# TK8
+9N	C1-14-13N			x	# TK_8
+10N	C1-15-12N			x	# TK9
+11N	C1-15-13N			x	# TK_9
+12N	C4-17-14N				# _Y15 læs
+13N	C4-17-2					# _Y14 læs
+14N	C4-18-14N				# _Y13 læs
+15N	C4-18-2					# _Y12 læs
+end
+
+kort	C3-22	0265	Y afkodning
+1					x
+2					x
+3	STEL				x
+4					x
+5	C4-20-6					# Y8 skriv
+7	C4-20-10N				# Y9 skriv
+9	C4-19-6					# Y10 skriv
+11	C4-19-10N				# Y11 skriv
+12					x
+13					x
+14					x	# Læs Y
+15					x	# Skriv y
+1N						# TR Y*8
+2N					x
+3N						# TR Y*9
+4N	C3-21-4N				# TK 6
+5N						# TR Y*10
+6N	C3-24-6N	C1-13-13N		# TK_7
+7N						# KR Y*11
+8N					x	# TK8
+9N					x	# TK_8
+10N					x	# TK9
+11N					x	# TK_9
+12N	C4-19-14N				# _Y11 læs
+13N	C4-19-2					# _Y10 læs
+14N	C4-20-14N				# _Y9 læs
+15N	C4-20-2					# _Y8 læs
+end
+
+kort	C3-23	0265	Y afkodning
+1					x
+2					x
+3					x
+4					x
+5	C4-22-6					# Y4 skriv
+7	C4-22-10N				# Y5 skriv
+9	C4-21-6					# Y6 skriv
+11	C4-21-10N				# Y7 skriv
+12					x
+13					x
+14					x	# Læs Y
+15					x	# Skriv y
+1N						# TR Y*4
+2N					x
+3N						# TR Y*5
+4N	C3-24-4N	C1-12-13N
+5N						# TR Y*6
+6N	C3-21-6N
+7N						# KR Y*7
+8N					x	# TK8
+9N					x	# TK_8
+10N					x	# TK9
+11N					x	# TK_9
+12N	C4-21-14N				# _Y7 læs
+13N	C4-21-2					# _Y6 læs
+14N	C4-22-14N				# _Y5 læs
+15N	C4-22-2					# _Y4 læs
+end
+
+kort	C3-24	0265	Y afkodning
+1	C3-25-6				x
+2	C3-25-4				x
+3					x
+4	STEL				x
+5	C4-24-6					# Y0 skriv
+7	C4-24-10N				# Y1 skriv
+9	C4-23-6					# Y2 skriv
+11	C4-23-10N				# Y3 skriv
+12	-3.0V				x
+13	C4-25-12N			x
+14					x	# Læs Y
+15					x	# Skriv y
+1N	C5-21-11N				# TR Y*0
+2N	C3-25-15N			x
+3N						# TR Y*1
+4N	C3-23-4N
+5N						# TR Y*2
+6N	C3-22-6N
+7N						# KR Y*3
+8N					x	# TK8
+9N					x	# TK_8
+10N					x	# TK9
+11N					x	# TK_9
+12N	C4-23-14N				# _Y3 læs
+13N	C4-23-2					# _Y2 læs
+14N	C4-24-14N				# _Y1 læs
+15N	C4-24-2					# _Y0 læs
+end
+
+kort	C3-25	0266	TAD-AD1 fl.fl skift TR synk, TkT-TP
+1	H22-DD
+2	C6-22-11N
+3	A6-2-4
+4	C3-25-13N	C3-24-2
+5	A1-23-5N
+6	+10.5V		C3-24-1
+7	A1-17-2N
+9	C3-5-15N
+10	A1-17-1N
+12	B1-29-15	C6-23-3N
+13	A5-2-5		C3-25-15
+14	C6-25-7
+15	C3-25-13
+1N	STEL
+2N	-1.5V		C3-20-8N
+3N	C3-15-10
+5N	+1.5V		C3-8-10N
+6N	STEL					# Nulskinner A6--B5
+9N	A6-15-15N
+10N	A6-25-15N
+11N	B5-29-15N
+12N	B5-39-15N
+13N	-13.5V		C3-25-4
+14N	-7.5V
+15N	-31.5V		C3-24-2N
+end

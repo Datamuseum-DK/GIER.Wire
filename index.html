@@ -1,0 +1,825 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF8">
+
+    <!-- GIER trådning data: PHK -->
+    <!-- Javascript kode: MK -->
+  
+    <!-- The javascript tabs is taken from: http://www.elated.com -->
+    <!-- This page is copyright Elated Communications Ltd. (www.elated.com) -->
+
+    <title>GIER wire</title>
+
+    <style type="text/css">
+      body { font-size: 80%; font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif; }
+      ul#tabs { list-style-type: none; margin: 30px 0 0 0; padding: 0 0 0.3em 0; }
+      ul#tabs li { display: inline; }
+      ul#tabs li a { color: #42454a; background-color: #dedbde; border: 1px solid #c9c3ba; border-bottom: none; padding: 0.3em; text-decoration: none; }
+      ul#tabs li a:hover { background-color: #f1f0ee; }
+      ul#tabs li a.selected { color: #000; background-color: #f1f0ee; font-weight: bold; padding: 0.7em 0.3em 0.38em 0.3em; }
+      div.tabContent { border: 1px solid #c9c3ba; padding: 0.5em; background-color: #f1f0ee; }
+      div.tabContent.hide { display: none; }
+      table {border-style: solid; border-width: 2px; border-color: black; border-collapse: collapse; }
+      td {border-top: 1px solid black; border-right: 1px solid black; }
+      th {border-top: 1px solid black; border-right: 1px solid black; }
+    </style>
+
+    <script type="text/javascript">
+
+    var inputFiles = new Array( "bind3_krydsfelt.txt", "bind3_stik_bf.txt", "bind3_stik_hk.txt", "bind3_stik_h.txt", "bind3_stik_kb.txt",
+				"bind3_stik_s.txt", "bind5_a1.txt", "bind5_a2.txt", "bind5_a3.txt", "bind5_a4.txt", "bind5_a5.txt", "bind5_a6.txt",
+				"bind6_b1.txt", "bind6_b2.txt", "bind6_b3.txt", "bind6_b4.txt", "bind6_b5.txt", "bind6_b6.txt",
+				"bind7_c1.txt", "bind7_c2.txt", "bind7_c3.txt", "bind7_c4.txt", "bind7_c5.txt", "bind7_c6.txt",
+				"nets.txt", "plader.txt", "plade.txt");
+    var tabLinks = new Array();
+    var contentDivs = new Array();
+    var lines = new Array();
+    var iline = 0;
+    var fields = new Array();
+    var stiklist = new Array();
+    var stiklbllist = new Array();
+    var stikbenlist = new Array();
+    var tværtrådlist = new Array();
+    var tværtrådbenlist = new Array();
+    var kortlist = new Array();
+    var kortpladelist = new Array();
+    var korttekstlist = new Array();
+    var kortbenlist = new Array();
+    var pladelist = new Array();
+    var pladeimagelist = new Array();
+    var netlist = new Array();
+    var historylist = new Array();
+    var debuglines = '';
+    var oldkort = '';
+
+    function init()
+    {
+      initTabs();
+      initData();
+      initOversigt();
+    }
+
+    function getstik()
+    {
+      var stik=fields[1];
+      stiklist.push(stik);
+      debuglines += 'Stik: '+stik+'\n';
+      stikbenlist[stik] = new Array();
+      iline++;
+      getfields();
+      while(fields[0]!='end')
+      {
+	if(fields[0]=='lbl')
+	{
+	  stiklbllist[stik] = fields.slice(1);
+	}
+	else
+	{
+	  stikbenlist[stik][fields[0]] = fields.slice(1);
+	}
+	iline++;
+	getfields();
+      }
+    }
+
+    function gettværtråd()
+    {
+      var row=fields[1];
+      tværtrådlist.push(row);
+      debuglines += 'Tværtråd: '+row+'\n';
+      iline++;
+      getfields();
+      tværtrådbenlist[row] = new Array();
+      while(fields[0]!='end')
+      {
+	ben = fields[0];
+	if(ben != '')
+	{
+	  tværtrådbenlist[row][ben] = new Array();
+	  for(var i=1; i<fields.length; i++)
+	  {
+	    if(fields[i] != '')
+	    {
+	      var range = fields[i].split('-');
+	      if(range.length==2)
+	      {
+		var i1=parseInt(range[0]);
+		var i2=parseInt(range[1]);
+		if(i1>i2)
+		{
+		  var i3=i1;
+		  i1=i2;
+		  i2=i3;
+		}
+		tværtrådbenlist[row][ben].push(Array(i1,i2));
+	      }
+	    }
+	  }
+	}
+	iline++;
+	getfields();
+      }
+    }
+
+    function getkort()
+    {
+      var kort=fields[1];
+      kortlist.push(kort);
+      debuglines += 'Kort: '+kort+' '+fields[2]+'\n';
+      kortpladelist[kort] = fields[2];
+      korttekstlist[kort] = fields.slice(3).join(' ');
+      kortbenlist[kort] = new Array();
+      iline++;
+      getfields();
+      while(fields[0]!='end')
+      {
+	kortbenlist[kort][fields[0]] = fields.slice(1);
+	iline++;
+	getfields();
+      }
+    }
+
+    function getgier()
+    {
+      iline++;
+      getfields();
+      while(fields[0]!='end')
+      {
+	iline++;
+	getfields();
+      }
+    }
+
+    function getplade()
+    {
+      plade=fields[1];
+      pladelist.push(plade);
+      debuglines += 'Plade: '+plade+'\n';
+      iline++;
+      getfields();
+      while(fields[0]!='end')
+      {
+	if(fields[0]=='image')
+	{
+	  pladeimagelist[plade] = new Array();
+	  for(i=1; i<fields.length; i++)
+	  {
+	    pladeimagelist[plade].push(fields[i]);
+	  }
+	}
+	iline++;
+	getfields();
+      }
+    }
+
+    function getnetnames()
+    {
+      iline++;
+      getfields();
+      while(fields[0]!='end')
+      {
+	var i=1;
+	while(fields[i]=='') i++;
+	netlist[fields[0]] = fields[i];
+	iline++;
+	getfields();
+      }
+    }
+
+
+    function getfields()
+    {
+      while((lines[iline]==''||lines[iline].substr(0,1)=='#') && iline<lines.length-1) iline++;
+      fields = lines[iline].replace(/\t/g," ").split(' ');
+    }
+
+    function initData()
+    {
+      if (window.XMLHttpRequest)
+      {
+	xmlhttp=new XMLHttpRequest();
+      }
+      else
+      {
+        xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+      }
+      debuglines = "<pre>";
+      for (fileno in inputFiles)
+      {
+	debuglines += '\n\nFilename: '+inputFiles[fileno]+'\n\n';
+	xmlhttp.open("GET",inputFiles[fileno],false);
+	if(xmlhttp.overrideMimeType)
+	{
+	  xmlhttp.overrideMimeType("text/html; charset=UTF-8");
+	}
+	xmlhttp.send();
+	str=xmlhttp.responseText; 
+	lines = str.split('\n');
+	iline = 0;
+	while(iline<lines.length)
+	{
+	  getfields();
+	  if(fields.length>0)
+	  {
+	    if(fields[0]=='stik')
+	    {
+	      getstik();
+	    }
+	    else if(fields[0]=='tværtråd')
+	    {
+	      gettværtråd();
+	    }
+	    else if(fields[0]=='kort')
+	    {
+	      getkort();
+	    }
+	    else if(fields[0]=='gier')
+	    {
+	      getgier();
+	    }
+	    else if(fields[0]=='plade')
+	    {
+	      getplade();
+	    }
+	    else if(fields[0]=='netnames')
+	    {
+	      getnetnames();
+	    }
+	    else if(fields[0]=='')
+	    {
+	    }
+	    else
+	    {
+	      debuglines += 'Ukendt: '+fields[0]+'\n';
+	    }
+	  }
+	  iline++;
+	}
+      }
+      debuglines += "\n\ntværtrådbenlist:\n\n";
+      for(var row in tværtrådbenlist)
+      {
+        debuglines += '  Række: '+row+'\n';
+	for(var ben in tværtrådbenlist[row])
+	{
+	  debuglines += '    Ben: '+ben+' ';
+	  for(var range in tværtrådbenlist[row][ben])
+	  {
+	    debuglines += tværtrådbenlist[row][ben][range][0];
+	    debuglines += '-';
+	    debuglines += tværtrådbenlist[row][ben][range][1];
+	    debuglines += ' ';
+	  }
+	  debuglines += '\n';
+	}
+      }
+
+      debuglines += "</pre>";
+      document.getElementById("debugdata").innerHTML = debuglines;
+    }
+
+    function skuffekort(txt, hidden)
+    {
+      if(hidden)
+      {
+	return '<td>&nbsp;';
+      }
+      else
+      {
+	return '<td><a id="skuffe_'+txt+'" title="'+kortpladelist[txt]+': '+korttekstlist[txt]+'" href="#kort_'+txt+'" onclick="selectkort(\''+txt+'\',\'\');">'+txt+'</a>';
+      }
+    }
+
+    function registerbits(bit1,bitn,list)
+    {
+      /* registerbits(-1,41,Array(-1,19,"A5",5,20,41,"B4",29)); */
+      var html='';
+      var len=list.length/4;
+      for(var i=-1; i<=41; i++)
+      {
+	if(i<bit1 || i>bitn)
+	{
+	  html += '<td>&nbsp';
+	}
+	else
+	{
+	  for(var j=0; j<len; j++)
+	  {
+	    var k=j*4;
+	    if(i>=list[k] && i<=list[k+1])
+	    {
+	      html += skuffekort(list[k+2]+"-"+(i-list[k]+list[k+3]),0);
+	    }
+	  }
+	}
+      }
+      return html;
+    }
+
+    function initOversigt()
+    {
+      var row,col;
+
+      var oversigtdata = '<h2>Skuffer</h2>';
+
+      // A
+
+      oversigtdata += '<table border=1>';
+      oversigtdata += '<tr><td>&nbsp;';
+      for(col=1;col<=25;col++)
+      {
+	oversigtdata += '<th>'+col;
+      }
+      oversigtdata += '<tr><th>&nbsp;<th>&nbsp;<th>&nbsp;<th>&nbsp;<th>Bit:<th>00';
+      for(col=0;col<=19;col++)
+      {
+	oversigtdata += '<th>'+col;
+      }
+      for(row=1;row<=6;row++)
+      {
+	oversigtdata += '<tr><th>A'+row;
+	for(col=1;col<=25;col++)
+	{
+	  oversigtdata += skuffekort("A"+row+"-"+col,0);
+	}
+      }
+      oversigtdata += '</table>';
+      oversigtdata += '<br>';
+
+      // B
+
+      oversigtdata += '<table border=1>';
+      oversigtdata += '<tr><td>&nbsp;';
+      for(col=26;col<=50;col++)
+      {
+	oversigtdata += '<th>'+col;
+      }
+      oversigtdata += '<tr><th>&nbsp;<th>&nbsp;<th>&nbsp;<th>Bit:';
+      for(col=20;col<=41;col++)
+      {
+	oversigtdata += '<th>'+col;
+      }
+      for(row=1;row<=6;row++)
+      {
+	oversigtdata += '<tr><th>B'+row;
+	for(col=26;col<=50;col++)
+	{
+	  oversigtdata += skuffekort("B"+row+"-"+col,
+	     (row==1&&(col==37||col==38||col==40||col==41||col==49||col==50))||
+	     (row==6&&((col>=32&&col<=35)||col==41||col>=48)));
+	}
+      }
+      oversigtdata += '</table>';
+      oversigtdata += '<br>';
+
+      // C
+
+      oversigtdata += '<table border=1>';
+      oversigtdata += '<tr><td>&nbsp;';
+      for(col=1;col<=25;col++)
+      {
+	oversigtdata += '<th>'+col;
+      }
+      for(row=1;row<=6;row++)
+      {
+	oversigtdata += '<tr><th>C'+row;
+	for(col=1;col<=25;col++)
+	{
+	  oversigtdata += skuffekort("C"+row+"-"+col,
+	     (row==2&&col==19)||
+	     (row==6&&col>=8&&col<=20));
+	}
+      }
+      oversigtdata += '</table>';
+      oversigtdata += '<br>';
+
+      // D1
+
+      oversigtdata += '<table border=1>';
+      oversigtdata += '<tr><td>&nbsp;';
+      for(col=1;col<=24;col++)
+      {
+	oversigtdata += '<th>'+col;
+      }
+      oversigtdata += '<tr><th>D1';
+      for(col=1;col<=24;col++)
+      {
+	oversigtdata += skuffekort("D1-"+col,col==24);
+      }
+      oversigtdata += '</table>';
+      oversigtdata += '<br>';
+
+      // D2
+
+      oversigtdata += '<table border=1>';
+      oversigtdata += '<tr><td>&nbsp;';
+      for(col=44;col<=52;col++)
+      {
+	oversigtdata += '<th>'+col;
+      }
+      oversigtdata += '<tr><th>D2';
+      for(col=44;col<=52;col++)
+      {
+	oversigtdata += skuffekort("D2-"+col,col==52);
+      }
+      oversigtdata += '</table>';
+
+      oversigtdata += '<h2>Stik</h2>';
+
+      oversigtdata += '<table border=1>';
+
+      var i=0;
+      for(var stiknr in stiklist)
+      {
+	var stik = stiklist[stiknr];
+	if(i%10 == 0) oversigtdata += '<tr>';
+	oversigtdata += '<td><a href="#stik_'+stik+'" onclick="selectstik(\''+stik+'\',\'\');">'+stik+'</a>';
+	i=i+1;
+      }
+
+      oversigtdata += '</table>';
+
+      oversigtdata += '<h2>Registernavne</h2>';
+
+      oversigtdata += '<table border=1>';
+
+      oversigtdata += '<tr><th>Dokumentation<th>Manøvrebord';
+      for(var i=-1; i<=41; i++)
+      {
+	oversigtdata += '<th>';
+	if(i==-1)
+	{
+	  oversigtdata += '00';
+	}
+	else
+	{
+	  oversigtdata += i;
+	}
+      }
+
+      oversigtdata += '<tr><td>AC<td>R';
+      oversigtdata += registerbits(-1,41,Array(-1,19,"A5",5,20,41,"B4",29));
+      oversigtdata += '<tr><td>MQ<td>M';
+      oversigtdata += registerbits(0,39,Array(0,19,"A5",6,20,39,"B4",29));
+      oversigtdata += '<tr><td>MD<td>O';
+      oversigtdata += registerbits(0,41,Array(0,19,"A5",6,20,41,"B4",29));
+      oversigtdata += '<tr><td>H<td>H';
+      oversigtdata += registerbits(-1,39,Array(-1,19,"A3",5,20,41,"B2",29));
+      oversigtdata += '<tr><td>LI<td>L';
+      oversigtdata += registerbits(0,41,Array(-1,19,"A3",5,20,41,"B2",29));
+      oversigtdata += '<tr><td>OR<td>F';
+      oversigtdata += registerbits(0,41,Array(0,19,"A6",6,20,41,"B5",29));
+      oversigtdata += '<tr><td>OT<td>r1';
+      oversigtdata += registerbits(0,9,Array(0,9,"A2",16));
+      oversigtdata += '<tr><td>SR<td>s1';
+      oversigtdata += registerbits(0,9,Array(0,9,"A2",6));
+      oversigtdata += '<tr><td>AD1<td>r2';
+      oversigtdata += registerbits(0,9,Array(0,9,"A2",6));
+      oversigtdata += '<tr><td>AD2<td>s2';
+      oversigtdata += registerbits(0,9,Array(0,9,"A2",16));
+      oversigtdata += '<tr><td>IN<td>in';
+      oversigtdata += registerbits(0,9,Array(0,9,"C1",6));
+      oversigtdata += '<tr><td>TA<td>ta';
+      oversigtdata += registerbits(0,9,Array(0,9,"A2",6));
+      oversigtdata += '<tr><td>TK<td>tk';
+      oversigtdata += registerbits(0,9,Array(0,9,"C1",6));
+      oversigtdata += '<tr><td>BL<td>bl';
+      oversigtdata += registerbits(2,9,Array(2,9,"C2",8));
+      oversigtdata += '<tr><td>BS<td>bs';
+      oversigtdata += registerbits(3,9,Array(3,9,"C2",9));
+      oversigtdata += '<tr><td>BY<td>by';
+      oversigtdata += registerbits(0,9,Array(0,0,"C2",2,1,1,"C2",2,2,9,"C2",8));
+
+      oversigtdata += '</table>';
+
+      document.getElementById("oversigtdata").innerHTML = oversigtdata;
+    }
+
+    function updatehistory()
+    {
+      var historyhtml='';
+
+      for (var h in historylist)
+      {
+	historyhtml += historylist[h]+'<br>';
+      }
+      document.getElementById("historiedata").innerHTML = historyhtml;
+    }
+
+    function addhistory(txt)
+    {
+      historylist.unshift(txt);
+      updatehistory();
+    }
+
+    function addlink(txt)
+    {
+      var result='';
+      var c1=txt.substr(0,1);
+      var c2=txt.substr(1,1);
+      var fields=txt.split("-");
+      if((c1=='A'||c1=='B'||c1=='C'||c1=='D') &&
+	 (c2>='1' && c2<='6'))
+      {
+	if(fields.length==2)
+	{
+	  result = '<a title="'+kortpladelist[txt]+': '+korttekstlist[txt]+'" href="#kort_'+txt+'" onclick="selectkort(\''+txt+'\',\'\');">'+txt+'</a>';
+	}
+	else if(fields.length==3)
+	{
+	  var kort=fields[0]+'-'+fields[1];
+	  result = '<a title="'+kortpladelist[kort]+': '+korttekstlist[kort]+'" href="#kort_'+kort+'" onclick="selectkort(\''+kort+'\',\''+fields[2]+'\');">'+kort+'</a>'+
+	    '-'+'<a href="#wire_'+txt+'" onclick="selectwire(\''+txt+'\');">'+fields[2]+'</a>';
+	}
+      }
+      else if(fields[0] in stikbenlist)
+      {
+	result = '<a href="#stik_'+fields[0]+'" onclick="selectstik(\''+fields[0]+'\',\''+fields[1]+'\');">'+fields[0]+'</a>'+
+	  '-'+fields[1];
+      }
+      else
+      {
+	result=txt;
+      }
+      if(txt in netlist) result += '('+netlist[txt]+')';
+      return result;
+    }
+
+    function selectstik(stik,ben)
+    {
+      var stikhtml='<h2>Stik '+stik+'</h2>';
+      stikhtml += '<table border=1>';
+      if(stik in stiklbllist)
+      {
+	stikhtml += '<tr><th>Ben';
+	for (var lblid in stiklbllist[stik])
+	{
+	  if(stiklbllist[stik][lblid]=='') continue;
+	  stikhtml += '<th>'+stiklbllist[stik][lblid];
+	}
+      }
+      for (var bennr in stikbenlist[stik])
+      {
+	if(bennr == ben)
+	{
+	  stikhtml += '<tr><th bgcolor=green>'+bennr;
+	}
+	else
+	{
+	  stikhtml += '<tr><th>'+bennr;
+	}
+	for (var bentrådning in stikbenlist[stik][bennr])
+	{
+	  if(stikbenlist[stik][bennr][bentrådning]!='')
+	  {
+	    if(stikbenlist[stik][bennr][bentrådning].charAt(0)=='#')
+	    {
+	      stikhtml += '<td>'+stikbenlist[stik][bennr].slice(bentrådning).join(' ');
+	      break;
+	    }
+	    else
+	    {
+	      stikhtml += '<td>'+addlink(stikbenlist[stik][bennr][bentrådning]);
+	    }
+	  }
+	}
+      }
+      stikhtml += '</table>';
+      document.getElementById("stikdata").innerHTML = stikhtml;
+      tabLinks['stik'].onclick();
+      addhistory('<a href="#stik_'+stik+'" onclick="selectstik(\''+stik+'\',\''+ben+'\');">Stik: '+stik+'</a>');
+    }
+
+    function vistværtråd(kort,ben)
+    {
+      var html='';
+      var row=kort.split('-')[0];
+      var col=parseInt(kort.split('-')[1]);
+      if(row in tværtrådbenlist)
+      {
+	if(ben in tværtrådbenlist[row])
+	{
+	  for(var range in tværtrådbenlist[row][ben])
+	  {
+	    var i1=tværtrådbenlist[row][ben][range][0];
+	    var i2=tværtrådbenlist[row][ben][range][1];
+	    if(col >= i1 && col<=i2)
+	    {
+	      html += '<td>Tværtråd: '+row+'-'+i1+' - '+row+'-'+i2;
+	      var html2 = '';
+	      for(var i=i1; i<=i2; i++)
+	      {
+		if(i==col) continue;
+		var kort=row+'-'+i;
+		for (var bentrådning in kortbenlist[kort][ben])
+		{
+		  if(kortbenlist[kort][ben][bentrådning]!='')
+		  {
+		    if(kortbenlist[kort][ben][bentrådning].charAt(0)=='#')
+		    {
+		      break;
+		    }
+		    else if(kortbenlist[kort][ben][bentrådning]=='x')
+		    {
+		      continue;
+		    }
+		    else
+		    {
+		      if(html2 != '') html2 += ', ';
+		      html2 += kort+': '+addlink(kortbenlist[kort][ben][bentrådning]);
+		    }
+		  }
+		}
+	      }
+	      if(html2 != '')
+	      {
+		html += '('+html2+')';
+	      }
+	    }
+	  }
+	}
+      }
+      return html;
+    }
+
+    function selectkort(kort,ben)
+    {
+      var plade=kortpladelist[kort];
+      var pladehtml='<h2>Plade '+plade+'</h2>';
+      for (var id in pladeimagelist[plade])
+      {
+        if(pladeimagelist[plade][id] != '')
+	{
+	  pladehtml += '<p><img src="'+pladeimagelist[plade][id]+'"></p>';
+	}
+      }
+      document.getElementById("pladedata").innerHTML = pladehtml;
+      var korthtml='<h2>Kort: '+kort+' plade: '+plade+': '+korttekstlist[kort]+'</h2>';
+      korthtml+='<table border=1>';
+      for (var bennr in kortbenlist[kort])
+      {
+	var forventtværtråd=0;
+	if(bennr == ben)
+	{
+	  korthtml += '<tr><th bgcolor=green>'+bennr;
+	}
+	else
+	{
+	  korthtml += '<tr><th>'+bennr;
+	}
+	for (var bentrådning in kortbenlist[kort][bennr])
+	{
+	  if(kortbenlist[kort][bennr][bentrådning]!='')
+	  {
+	    if(kortbenlist[kort][bennr][bentrådning].charAt(0)=='#')
+	    {
+	      korthtml += '<td>'+kortbenlist[kort][bennr].slice(bentrådning).join(' ');
+	      break;
+	    }
+	    else if(kortbenlist[kort][bennr][bentrådning]=='x')
+	    {
+	      forventtværtråd=1;
+	    }
+	    else
+	    {
+	      korthtml += '<td>'+addlink(kortbenlist[kort][bennr][bentrådning]);
+	    }
+	  }
+	}
+	var tværtrådtekst=vistværtråd(kort,bennr);
+	if(tværtrådtekst != '')
+	{
+	  korthtml += tværtrådtekst;
+	}
+	else
+	{
+	  if(forventtværtråd)
+	  {
+	    korthtml += '<td bgcolor=red>Tværtråd forventet';
+	  }
+	}
+      }
+      korthtml += '</table>';
+      document.getElementById("kortdata").innerHTML = korthtml;
+      if(oldkort != '')
+      {
+	document.getElementById("skuffe_"+oldkort).style.background = '#f1f0ee';
+      }
+      document.getElementById("skuffe_"+kort).style.background = '#ff8080';
+      oldkort=kort;
+      tabLinks['kort'].onclick();
+      addhistory('<a title="'+kortpladelist[kort]+': '+korttekstlist[kort]+'" href="#kort_'+kort+'" onclick="selectkort(\''+kort+'\',\''+ben+'\');">Kort: '+kort+'</a>');
+    }
+
+    function initTabs() {
+
+      // Grab the tab links and content divs from the page
+      var tabListItems = document.getElementById('tabs').childNodes;
+      for ( var i = 0; i < tabListItems.length; i++ ) {
+        if ( tabListItems[i].nodeName == "LI" ) {
+          var tabLink = getFirstChildWithTagName( tabListItems[i], 'A' );
+          var id = getHash( tabLink.getAttribute('href') );
+          tabLinks[id] = tabLink;
+          contentDivs[id] = document.getElementById( id );
+        }
+      }
+
+      // Assign onclick events to the tab links, and
+      // highlight the first tab
+      var i = 0;
+
+      for ( var id in tabLinks ) {
+        tabLinks[id].onclick = showTab;
+        tabLinks[id].onfocus = function() { this.blur() };
+        if ( i == 0 ) tabLinks[id].className = 'selected';
+        i++;
+      }
+
+      // Hide all content divs except the first
+      var i = 0;
+
+      for ( var id in contentDivs ) {
+        if ( i != 0 ) contentDivs[id].className = 'tabContent hide';
+        i++;
+      }
+    }
+
+    function showTab() {
+      var selectedId = getHash( this.getAttribute('href') );
+
+      // Highlight the selected tab, and dim all others.
+      // Also show the selected content div, and hide all others.
+      for ( var id in contentDivs ) {
+        if ( id == selectedId ) {
+          tabLinks[id].className = 'selected';
+          contentDivs[id].className = 'tabContent';
+        } else {
+          tabLinks[id].className = '';
+          contentDivs[id].className = 'tabContent hide';
+        }
+      }
+
+      // Stop the browser following the link
+      return false;
+    }
+
+    function getFirstChildWithTagName( element, tagName ) {
+      for ( var i = 0; i < element.childNodes.length; i++ ) {
+        if ( element.childNodes[i].nodeName == tagName ) return element.childNodes[i];
+      }
+    }
+
+    function getHash( url ) {
+      var hashPos = url.lastIndexOf ( '#' );
+      return url.substring( hashPos + 1 );
+    }
+
+    </script>
+  </head><body onload="init()">
+    <ul id="tabs">
+      <li><a class="selected" href="#oversigt">Oversigt</a></li>
+      <li><a href="#kort">Kort</a></li>
+      <li><a href="#plader">Plader</a></li>
+      <li><a href="#trådning">Trådning</a></li>
+      <li><a href="#stik">Stik</a></li>
+      <li><a href="#historie">Historie</a></li>
+      <li><a href="#debug">Debug</a></li>
+    </ul>
+
+    <div class="tabContent" id="oversigt">
+      <div id="oversigtdata">
+      </div>
+    </div>
+
+    <div class="tabContent" id="kort">
+      <div id="kortdata">
+      </div>
+    </div>
+
+    <div class="tabContent" id="plader">
+      <div id="pladedata">
+      </div>
+    </div>
+
+    <div class="tabContent hide" id="trådning">
+      <div>
+      </div>
+    </div>
+
+    <div class="tabContent hide" id="stik">
+      <div id="stikdata">
+      </div>
+    </div>
+
+    <div class="tabContent hide" id="historie">
+      <h2 align=center>Historie</h2>
+      <div id="historiedata">
+      </div>
+    </div>
+
+    <div class="tabContent hide" id="debug">
+      <div id="debugdata">
+      </div>
+    </div>
+
+  </body></html>

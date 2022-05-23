@@ -1,0 +1,345 @@
+stik KB1
+lbl	Skuffe		trykknap_nr	DM160_nr	1_el_0_stilling
+A	A6-6-1N		-		0		_
+C	A6-6-8N		0		-		0
+D	A6-6-15		0		-		1
+E	A6-7-1N		-		1		_
+H	A6-7-8N		1		-		0
+J	A6-7-15		1		-		1
+K	A6-8-1N		-		2		_
+M	A6-8-8N		2		-		0
+L	B1-27-4		registervalg	_		_
+N	A6-8-15		2		-		1
+P	A6-9-1N		-		3		_
+S	A6-9-8N		3		-		0
+R	A6-15-15	9		-		1
+T	A6-9-15		3		-		1
+U	A6-10-1N	-		4		_
+W	A6-10-8N	4		-		0
+V	A6-14-15	8		-		1
+X	A6-10-15	4		-		1
+Y	A6-11-1N	-		5		_
+AA	A6-11-8N	5		-		0
+Z	A6-15-1N	-		9		_
+BB	A6-11-15	5		-		1
+CC	A6-12-1N	-		6		_
+EE	A6-12-8N	6		-		0
+DD	A6-14-1N	-		8		_
+FF	A6-12-15	6		-		1
+HH	A6-13-1N	-		7		_
+KK	A6-13-8N	7		-		0
+JJ	A6-15-8N	9		-		0
+LL	A6-13-15	7		-		1
+MM	B1-30-5N	Normal_stop	_		_
+NN	A6-14-8N	8		-		0
+end
+stik KB2
+lbl	Skuffe		Trykknap_nr.	DM160_nr.	1_el_0_stilling
+A	A6-16-1N	_		10		_
+C	A6-16-8N	10		_		0
+B	B1-29-5		Reset		_		_
+D	A6-16-15	10		_		1
+E	A6-17-1N	_		11		_
+H	A6-17-8N	11		_		0
+F	B1-26-4N	Mikrotrin_start	_		_
+J	A6-17-15	11		_		1
+K	A6-18-1N	_		12		_
+M	A6-18-8N	12		_		0
+L	B1-26-6N	Normal_start	_		_
+N	A6-18-15	12		_		1
+P	A6-19-1N	_		13		_
+S	A6-19-8N	13		_		0
+R	A6-25-15	19		_		1
+T	A6-19-15	13		_		1
+U	A6-20-1N	_		14		_
+W	A6-20-8N	14		_		0
+V	A6-24-15	18		_		1
+X	A6-20-15	14		_		1
+Y	A6-21-1N	_		15		_
+AA	A6-21-8N	15		_		0
+Z	A6-25-1N	_		19		_
+BB	A6-21-15	15		_		1
+CC	A6-22-1N	_		16		_
+EE	A6-22-8N	16		_		0
+DD	A6-24-1N	_		18		_
+FF	A6-22-15	16		_		1
+HH	A6-23-1N	_		17		_
+KK	A6-23-8N	17		_		0
+JJ	A6-25-8N	19		_		0
+LL	A6-23-15	17		_		1
+NN	A6-24-8N	18		_		0
+end
+stik KB3
+lbl	Skuffe		Trykknap_nr.	DM160_nr.	1_el_0_stilling
+A	B5-29-1N	_		20		_
+C	B5-29-8N	20		_		0
+B	B5-49-15	40		_		1
+D	B5-29-15	20		_		1
+E	B5-30-1N	_		21		_
+H	B5-30-8N	21		_		0
+F	B5-49-1N	_		40		_
+J	B5-30-15	21		_		1
+K	B5-31-1N	_		22		_
+M	B5-31-8N	22		_		0
+L	B5-49-8N	40		_		0
+N	B5-31-15	22		_		1
+P	B5-32-1N	_		23		_
+S	B5-32-8N	23		_		0
+R	B5-38-15	29		_		1
+T	B5-32-15	23		_		1
+U	B5-33-1N	_		24		_
+W	B5-33-8N	24		_		0
+V	B5-37-15	28		_		1
+X	B5-33-15	24		_		1
+Y	B5-34-1N	_		25		_
+AA	B5-34-8N	25		_		0
+Z	B5-38-1N	_		29		_
+BB	B5-34-15	25		_		1
+CC	B5-35-1N	_		26		_
+EE	B5-35-8N	26		_		0
+DD	B5-37-1N	_		28		_
+FF	B5-35-15	26		_		1
+HH	B5-36-1N	_		27		_
+KK	B5-36-8N	27		_		0
+JJ	B5-38-8N	29		_		0
+LL	B5-36-15	27		_		1
+MM	A4-4-3		Forstærker	_		_
+NN	B5-37-8N	28		_		0
+end
+stik KB4
+lbl	Skuffe		Trykknap_nr.	DM160_nr.	1_el_0_stilling
+A	B5-39-1N	_		30		_
+C	B5-39-8N	30		_		0
+B	B5-50-15	41		_		1
+D	B5-39-15	30		_		1
+E	B5-40-1N	_		31		_
+H	B5-40-8N	31		_		0
+F	B5-50-1N	_		41		_
+J	B5-40-15	31		_		1
+K	B5-41-1N	_		31		_
+M	B5-41-8N	32		_		0
+L	B5-50-8N	41		_		0
+N	B5-41-15	32		_		1
+P	B5-42-1N	_		33		_
+S	B5-42-8N	33		_		0
+R	B5-48-15	39		_		1
+T	B5-42-15	33		_		1
+U	B5-43-1N	_		34		_
+W	B5-43-8N	34		_		0
+V	B5-47-15	38		_		1
+X	B5-43-15	34		_		1
+Y	B5-44-1N	_		35		_
+AA	B5-44-8N	35		_		0
+Z	B5-48-1N	_		39		_
+BB	B5-44-15	35		_		1
+CC	B5-45-1N	_		36		_
+EE	B5-45-8N	36		_		0
+DD	B5-47-1N	_		38		_
+FF	B5-45-15	36		_		1
+HH	B5-46-1N	_		37		_
+KK	B5-46-8N	37		_		0
+JJ	B5-48-8N	39		_		0
+LL	B5-46-15	37		_		1
+NN	B5-47-8N	38		_		0
+end
+stik KB5
+lbl	Skuffe		Trykknap_nr.	DM160_nr.	1_el_0-stilling
+E	C2-21-10N	KA*		KA*		1
+H	C2-21-12N	KB*		KB*		1
+F	C2-21-11N	KA		_		0
+J	C2-21-13N	KB		_		0
+K	A2-5-15		_		TO		_
+M	A1-24-10	_		L		_
+L	C6-23-5N	_		TR		_
+N	B1-29-13	_		Klar		_
+S	A5-5-10N	T		_		0
+W	A5-5-8N		T		_		1
+AA	A2-5-8		_		O		_
+BB	A5-5-15N	_		T		_
+CC	C1-6-6N		_		OA		_
+EE	C1-8-6N		_		TA		_
+DD	C1-7-6N		_		OB		_
+FF	C1-9-6N		_		TB		_
+HH	C1-10-6N	_		PA		_
+KK	C1-12-6N	_		QA		_
+JJ	C1-11-6N	_		PB		_
+LL	C1-13-6N	_		QB		_
+MM	C1-14-6N	_		RA		_
+NN	C1-15-6N	_		RB		_
+# * Forbindes til både trykknap og DM 160
+end
+stik KB6
+lbl	Skuffe		DM160/relækont	Registervalg	Teknisk_benævn.
+A	C1-1-1		r1/R5-8		r1		OT
+C	C1-1-5		R/R5-11		R		AC
+B	C1-1-3		F/R3-13		F*		OR*
+D	C1-1-7		M/R3-11		M		MQ
+E	C1-1-8N		O/R5-14		O		MD
+H	C1-1-12N	in/R5-16	in		IN
+F	C1-1-10N	H/R3-5		H		H
+J	C1-1-14N	r2/R5-13	r2		AD1
+K	C1-2-1		s2/R3-14	s2		AD2
+M	C1-2-5		L/R5-5		L		LI
+L	C1-2-3		s1/R3-7		s1		SR
+N	C1-2-7		ra/R3-8		ta		TAD
+P	C1-2-8N		tk/R5-7		tk		TK
+S	C1-2-12N	bs/R5-10	bs		BS
+R	C1-2-10N	bl/R3-16	bl		BL
+T	C1-2-14N	by/R3-10	by		BY
+U	C1-2-9		0_til_all	_		0_til_alle_bits
+W	C6-1-6N		Mode_1/		_		Mode_1
+V	C6-1-13		Mode_2/		_		Mode_2
+X	C6-2-6N		Mode_3/		_		Mode_3
+Y	C6-2-13		Mode_4/		_		Mode_4
+AA	C6-3-2		h/		_		h
+Z	C2-4-8		YE/		_		YE
+# *TD = OR10-19
+end
+stik KB7
+lbl	Ført_til	og_til		Funktion
+1	+16.0V		_		_
+2	+13.5V		_		_
+3	M-13_(SF)	_		Startnøgle
+4	M-1_(SF)	_		Startnøgle
+5	+1.5V		_		_
+6	STEL		_		_
+7	+1.5V		_		_
+8	+10.5V		_		_
+9	R9-1_(SF)			DM160: Fejl_i_SF
+10	A6-24-14	B5-50-14	Trykknap:_1_til_alle_bits
+11	K-3_(SF)	_		220V_(fase)
+12	K-1_(SF)	_		220V_(nul)
+end
+stik KB8	Stil til RC2000
+lbl	Skuffe		Stik_på_RC2000	Impulsbetegnelse
+B	B1-26-12	C7		1_hul_fremføring
+D	C2-17-3N	B8		RL7_(EL)
+J	C2-17-4N	B7		RL6_(X)
+M	C2-17-2		B9		J_(klar)
+N	C2-17-5N	B6		RL5_(0)
+S	C2-3-7N		A9		Z_(start)
+T	C2-17-6N	B5		RL4_(ch)
+X	C2-17-3		B4		RL3_(8)
+AA	STEL		_		_
+BB	C2-17-4		B3		RL3_(4)
+FF	C2-17-5		B2		RL1_(2)
+LL	C2-17-6		B1		RL0_(1)
+# A1-A8 Forbindes ikke
+# A0, B0, C0 samt C1-C6 er STEL
+end
+stik KB9
+lbl	Skuffe		Ført_til	Ledningsfarver	Funktion
+A	C2-4-14N	D1-4-13		blå-grå-rød	Z_skrivemask.
+#C					blå-rød-gul
+B	C2-7-11N	D1-19-12N	grøn-hvid	j_tastatur
+D	C2-8-11		D1-4-11N	blå-rød-brun	jS_ud
+E	C2-5-10N	D1-8-5		blå-grøn-brun	2_ud
+H	C2-5-15		D1-8-6		blå-grå		1_ud
+F	C3-9-10N	D1-19-11n	gul-hvid	EL_ind
+J	C2-5-11N	D1-8-4		grøn-gul	4_ud
+K	C2-5-13N	D1-8-2		grøn		0_ud
+M	C2-5-12N	D1-8-3		blå-hvid-rød	8_ud
+L	C3-10-10N	D1-19-10	grøn-brun	X_ind
+N	C2-5-14N	D1-8-1		gul-brun	X_ud
+P	C2-5-15N	D1-8-6N		gul		EL_ud
+#S					blå-brun
+R	C3-11-10N	D1-19-11	grå-grøn	0_ind
+W	C2-5-14		D1-2-6N		grå-rød		tastatur_lampe
+V	C3-12-10N	D1-19-12	brun-hvid	8_ind
+#AA					rød-brun
+Z	C3-13-10N	D1-19-13	grå-gul		4_ind
+#BB					blå
+#CC					grøn-blå
+#EE					rød-grøn
+DD	C3-14-10N	D1-19-14	brun		_
+FF	STEL		STEL		blå-hvid	_
+HH	C2-6-10N	D1-3-7N		blå-gul		Reset
+#KK					gul-rød
+JJ	C3-15-10N	D1-19-15	grå		1_ind
+LL	STEL		STEL		grå-hvid	_
+#MM					blå-rød
+#NN					grå-brun
+end
+stik KB10
+...
+end
+stik KB11
+...
+end
+stik KB12	KB12 fra GIER til KB13 i D skuffe
+lbl	Fra_KB12_til_KB13	til_KB13	Funktion
+A	STEL			_		_
+C	B1-29-5			_		reset
+B	STEL			_		_
+D	+10.5V			_		_
+E	STEL			_		_
+H	C2-21-5N		_		KA=1*
+F	C2-21-6N		_		KA=0
+J	STEL			_		_
+K	-13.5V			_		_
+M	STEL			_		_
+L	B1-26-14		_		HP
+N	_			D1-23-4N	_
+P	STEL			_		_
+S	A1-1-1N			_		1V~
+R	STEL			_		_
+T	A1-1-3N			_		1V~
+U	STEL			_		_
+W	C2-21-3N		_		KB=1*
+V	C2-21-4N		_		KB=0
+X	_			D1-4-10		_Zs
+Y	_			D1-4-8		_Zp
+AA	B1-28-14		_		i-løkke
+Z	A1-1-2N			_		+50V
+BB	STEL			_		_
+CC	A2-5-15			_		T0
+EE	C2-6-11N		_		HP-spærret
+DD	C2-9-15N		_		_BY3
+FF	C6-23-5N		_		Tromle_Fejl
+HH	A1-24-10		_		str.læs.par.fejl
+KK	B1-29-13		_		klar
+JJ	C2-10-15N		_		_BY4
+LL	C2-11-15N		_		_BY5
+MM	C2-4-8			_		YE
+NN	C2-12-15N		_		_BY6
+end
+stik KB13
+...
+end
+stik KB14	D-skuffe -- Anelex
+lbl	Skuffe		Funktion
+A	D1-23-10	1_kanal_1
+C	D1-23-11	2_kanal_2
+B	D1-23-12	4_kanal_3
+D	D1-23-13	8_kanal_4
+E	D1-23-14	0_kanal_6
+H	D1-23-15	X_kanal_7
+F	D1-23-10N	EL_kanal_8
+J	STEL		_
+K	D1-4-9N		_Zo_printer
+M	STEL		_
+L	D1-23-11N	Za
+N	STEL		_
+P	STEL		_
+S	STEL		_
+R	STEL		_
+T	STEL		_
+U	STEL		_
+W	STEL		_
+V	STEL		_
+X	STEL		_
+Y	STEL		_
+AA	STEL		_
+Z	STEL		_
+BB	STEL		_
+CC	STEL		_
+EE	STEL		_
+DD	STEL		_
+FF	STEL		_
+HH	STEL		_
+KK	STEL		_
+JJ	STEL		_
+LL	STEL		_
+MM	STEL		_
+NN	STEL		_
+end

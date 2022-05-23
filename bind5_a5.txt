@@ -1,0 +1,753 @@
+tværtråd	A5
+1	25-5	4-1
+2	25-5
+3	25-5
+4	25-5
+7	25-5
+8	25-16	15-6	4-1
+9	4-1
+10	25-16	15-6
+12	25-16	15-6	4-1
+13	5-1
+14	4-1
+15	25-16	15-5
+
+1N	25-16	15-5
+2N	4-1
+3N	25-6	4-1
+5N	25-16	15-6
+7N	25-5
+8N	25-16	15-6
+9N	25-16	15-7
+13N	25-5
+14N	25-5
+end
+kort	A5-1	0210	Gs generator
+1	A5-1-2N				x
+2	A5-6-8					# GsMD0-9
+3	A5-16-8					# GsMD10-19
+4	A5-6-5N					# GsMQ0-9
+5	A5-16-5N				# GsMq10-19
+6	A2-5-11N	A5-6-1N			# GsAC00-9
+7	A5-16-1N				# GsAC10-19
+8					x
+9	C2-19-11N			x
+12					x
+13					x
+14	A5-5-11N			x
+2N	A5-1-1				x
+3N	C2-19-2N			x
+4N	H9-C
+5N	H9-A
+6N	H8-NN
+7N	H8-MM
+8N	H6-D
+9N	H6-B
+10N	H6-C
+11N	H6-A
+12N	H11-J
+13N	H11-F
+14N	H13-X
+15N	H13-V
+end
+
+kort	A5-2	0210	Gs generator
+1					x
+2	A2-6-11					# GsAD1
+3	A2-6-10					# GsSR
+4	A2-6-12					# GsTA
+5	A1-24-8		C3-25-13		# Gs stopB m.m
+6	C3-9-11N				# Gs BT 3-9
+8	STEL				x
+9					x
+12					x
+13					x
+14					x
+2N					x
+3N					x
+6N	H11-H
+7N	H11-E
+8N	H11-D
+9N	H11-B
+10N	H6-N
+11N	H6-L
+12N	H6-M
+13N	H6-K
+14N	H9-KK
+15N	H9-HH
+end
+
+kort	A5-3	0210	Gs generator
+1					x
+2	A2-16-11N				# GsOT
+3	A2-16-15N				# GsAD2
+4	A2-16-14N				# GsAD2 skrå
+5	A2-16-13N				# Gs TD skrå
+6	A2-16-12N				# Gs TD
+7	A2-5-4N		A2-16-14		# Gs 39->TD
+8					x
+9					x
+12					x
+13					x
+14					x
+2N					x
+3N					x
+4N	H6-LL
+5N	H6-JJ
+6N	H6-FF
+7N	H6-DD
+8N	H6-W
+9N	H6-U
+10N	H6-X
+11N	H6-V
+12N	H6-EE
+13N	H6-CC
+14N	H6-S
+15N	H6-P
+end
+
+kort	A5-4	0210	Gs generator
+1	A5-5-2				x
+2	A2-5-9N		A4-5-14			# Gs Adder 00-19
+4	A3-6-2N					# GsLIo-9
+5	A3-16-2N				# GsLI10-19
+6	A2-5-10N	A3-5-12N		# GsHoo-9
+7	A3-16-12N				# GsH10-19
+8					x
+9	A5-5-13N			x
+12	A5-5-5N				x
+13					x
+14	A5-5-3				x
+2N					x
+3N	-4.5V				x
+4N	H5-KK
+5N	H5-HH
+6N	H5-FF
+7N	H5-DD
+8N	H8-FF
+9N	H8-DD
+10N	H8-EE
+11N	H8-CC
+14N	H6-AA
+15N	H6-Y
+end
+
+kort	A5-5	0202-21	AC-MD-MQ
+1					x
+2	A5-4-1				x
+3	A5-4-14				x
+4					x
+5	A4-5-14N
+7					x
+8	A5-7-8		A4-1-2N
+10	+4.5V
+11	A5-6-11
+12	A5-7-12
+13	A5-5-14N			x
+14	A4-5-8					# L-00
+15	A6-4-2				x
+1N	A4-1-11N			x
+5N	-3.0V		A5-4-12
+6N	A4-2-12N	A5-5-9N
+7N	A4-2-4N				x
+8N	KB5-W
+9N	A5-5-6N
+10N	KB5-S
+11N	A5-1-14
+13N	A5-4-9				x
+14N	A5-5-13				x
+15N			KB5-BB
+end
+
+kort	A5-6	0202-23 AC-MD-MQ
+1					x
+2					x
+3					x
+4					x
+5	A4-6-14N
+6	A4-3-13N
+7					x
+8	A5-1-2				x
+9	A4-4-9N
+10	A6-4-4				x
+11	B6-27-3		A5-5-11
+12	A6-5-5				x
+13	A6-6-3N		A4-6-11
+14	A6-6-5N		A4-6-8
+15					x
+1N	A5-1-6				x
+3N					x
+5N	A5-1-4				x
+6N	A4-2-15N
+7N					x
+8N	A6-4-6				x
+9N	A6-3-6
+10N	B4-48-11N	A4-4-4N
+11N	B3-50-4N	A5-7-10N
+12N	A5-7-11N
+13N					x
+14N					x
+15N	BF2-A1
+end
+
+kort	A5-7	0202-22	AC-MD-MQ
+1					x
+2					x
+3					x
+4					x
+5	A4-7-14N
+7	STEL				x
+8	A5-5-8				x
+10					x
+11	B6-27-5	
+12	A5-5-12				x
+13	-1.5V*1
+14	L-1
+15					x
+1N					x
+3N					x
+5N					x
+7N					x
+8N					x
+9N	A6-3-2				x
+10N	A5-6-11N
+11N	A5-8-10N	A5-6-12N
+12N	A5-8-11N
+13N					x
+14N					x
+15N	BF2-B1
+end
+
+kort	A5-8	0202-22	AC-MD-MQ
+1					x
+2					x
+3					x
+4					x
+5	A4-8-14N
+7					x
+8					x
+10					x
+11	B6-27-10N	
+12					x
+13	-1.5V*2
+14	L-2
+15					x
+1N					x
+3N					x
+5N					x
+7N					x
+8N					x
+9N					x
+10N	A5-7-11N
+11N	A5-9-10N	A5-7-12N
+12N	A5-9-11N
+13N					x
+14N					x
+15N	BF2-C1
+end
+
+kort	A5-9	0202-22	AC-MD-MQ
+1					x
+2					x
+3					x
+4					x
+5	A4-9-14N
+7					x
+8					x
+10					x
+11	B6-27-9N	
+12					x
+13	-1.5V*3
+14	L-3
+15					x
+1N					x
+3N					x
+5N					x
+7N					x
+8N					x
+9N					x
+10N	A5-8-11N
+11N	A5-10-10N	A5-8-12N
+12N	A5-10-11N
+13N					x
+14N					x
+15N	BF2-D1
+end
+
+kort	A5-10	0202-22	AC-MD-MQ
+1					x
+2					x
+3					x
+4					x
+5	A4-10-14N
+7					x
+8					x
+10					x
+11	B6-28-3	
+12					x
+13	-1.5V*4
+14	L-4
+15					x
+1N					x
+3N					x
+5N					x
+7N					x
+8N					x
+9N					x
+10N	A5-9-11N
+11N	A5-11-10N	A5-9-12N
+12N	A5-11-11N
+13N					x
+14N					x
+15N	BF2-E1
+end
+
+kort	A5-11	0202-22	AC-MD-MQ
+1					x
+2					x
+3					x
+4					x
+5	A4-11-14N
+7					x
+8					x
+10					x
+11	B6-28-5	
+12					x
+13	-1.5V*5
+14	L-5
+15					x
+1N					x
+3N					x
+5N					x
+7N					x
+8N					x
+9N					x
+10N	A5-10-11N
+11N	A5-12-10N	A5-10-12N
+12N	A5-12-11N
+13N					x
+14N					x
+15N	BF2-A2
+end
+
+kort	A5-12	0202-22	AC-MD-MQ
+1					x
+2					x
+3					x
+4					x
+5	A4-12-14N
+7					x
+8					x
+10					x
+11	B6-28-10N	
+12					x
+13	-1.5V*6
+14	L-6
+15					x
+1N					x
+3N					x
+5N					x
+7N					x
+8N					x
+9N					x
+10N	A5-11-11N
+11N	A5-13-10N	A5-11-12N
+12N	A5-13-11N
+13N					x
+14N					x
+15N	BF2-B2
+end
+
+kort	A5-13	0202-22	AC-MD-MQ
+1					x
+2					x
+3					x
+4					x
+5	A4-13-14N
+7	STEL				x
+8					x
+10					x
+11	B6-28-9N	
+12					x
+13	-1.5V*7
+14	L-7
+15					x
+1N					x
+3N					x
+5N					x
+7N					x
+8N					x
+9N					x
+10N	A5-12-11N
+11N	A5-14-10N	A5-12-12N
+12N	A5-14-11N
+13N					x
+14N					x
+15N	BF2-C2
+end
+
+kort	A5-14	0202-22	AC-MD-MQ
+1					x
+2					x
+3					x
+4					x
+5	A4-14-14N
+7	STEL				x
+8					x
+10					x
+11	B6-29-3	
+12					x
+13	-1.5V*8
+14	L-8
+15					x
+1N					x
+3N					x
+5N					x
+7N					x
+8N					x
+9N					x
+10N	A5-13-11N
+11N	A5-15-10N	A5-13-12N
+12N	A5-15-11N
+13N					x
+14N					x
+15N	BF2-D2
+end
+
+kort	A5-15	0202-24	AC-MD-MQ
+1					x
+2					x
+3					x
+4					x
+5	A4-15-14N
+7					x
+8					x
+10					x
+11	B6-29-5	
+12	B3-28-3N			x
+13	-1.5V*9
+14	L-9
+15					x
+1N					x
+2N	A2-4-4N		C5-12-8
+3N					x
+4N	C5-20-5
+5N					x
+7N					x
+8N					x
+9N					x
+10N	A5-14-11N
+11N	A5-16-10N	A5-14-12N
+12N	A5-16-11N
+13N					x
+14N					x
+15N	BF2-E2
+end
+
+kort	A5-16	0202-24	AC-MD-MQ
+1					x
+2					x
+3					x
+4					x
+5	A4-16-14N
+6	A2-4-1
+7					x
+8	A5-1-3				x
+10	A6-4-5				x
+11	B6-29-10N	
+12	A6-5-6				x
+13	-1.5V*10
+14	L-10
+15	A6-4-3				x
+1N	A5-1-7				x
+2N	A2-4-3
+3N					x
+5N	A5-1-5				x
+6N	A2-4-2
+7N					x
+8N	A6-4-7				x
+9N	A6-3-3				x
+10N	A5-15-11N
+11N	A5-17-10N	A5-15-12N
+12N	A5-17-11N
+13N					x
+14N					x
+15N	BF2-A3
+end
+
+kort	A5-17	0202-24	AC-MD-MQ
+1					x
+2					x
+3					x
+4					x
+5	A4-17-14N
+6	
+7					x
+8					x
+10					x
+11	B6-29-9N	
+12					x
+13	-1.5V*11
+14	L-11
+15					x
+1N					x
+2N	A2-4-3N
+3N					x
+5N					x
+6N	
+7N					x
+8N					x
+9N					x
+10N	A5-16-11N
+11N	A5-18-10N	A5-16-12N
+12N	A5-18-11N
+13N					x
+14N					x
+15N	BF2-B3
+end
+
+kort	A5-18	0202-22	AC-MD-MQ
+1					x
+2					x
+3					x
+4					x
+5	A4-18-14N
+6	
+7					x
+8					x
+10					x
+11	B6-30-3	
+12					x
+13	-1.5V*12
+14	L-12
+15					x
+1N					x
+2N	
+3N					x
+5N					x
+6N	
+7N					x
+8N					x
+9N					x
+10N	A5-17-11N
+11N	A5-19-10N	A5-17-12N
+12N	A5-19-11N
+13N					x
+14N					x
+15N	BF2-C3
+end
+
+kort	A5-19	0202-22	AC-MD-MQ
+1					x
+2					x
+3					x
+4					x
+5	A4-19-14N
+6	
+7					x
+8					x
+10					x
+11	B6-30-5	
+12					x
+13	-1.5V*13
+14	L-13
+15					x
+1N					x
+2N	
+3N					x
+5N					x
+6N	
+7N					x
+8N					x
+9N					x
+10N	A5-18-11N
+11N	A5-20-10N	A5-18-12N
+12N	A5-20-11N
+13N					x
+14N					x
+15N	BF2-D3
+end
+
+kort	A5-20	0202-22	AC-MD-MQ
+1					x
+2					x
+3					x
+4					x
+5	A4-20-14N
+6	
+7					x
+8					x
+10					x
+11	B6-30-10N	
+12					x
+13	-1.5V*14
+14	L-14
+15					x
+1N					x
+2N	
+3N					x
+5N					x
+6N	
+7N					x
+8N					x
+9N					x
+10N	A5-19-11N
+11N	A5-21-10N	A5-19-12N
+12N	A5-21-11N
+13N					x
+14N					x
+15N	BF2-E3
+end
+
+kort	A5-21	0202-22	AC-MD-MQ
+1					x
+2					x
+3					x
+4					x
+5	A4-21-14N
+6	
+7					x
+8					x
+10					x
+11	B6-30-9N	
+12					x
+13	-1.5V*15
+14	L-15
+15					x
+1N					x
+2N	
+3N					x
+5N					x
+6N	
+7N					x
+8N					x
+9N					x
+10N	A5-20-11N
+11N	A5-22-10N	A5-20-12N
+12N	A5-22-11N
+13N					x
+14N					x
+15N	BF2-A4
+end
+
+kort	A5-22	0202-22	AC-MD-MQ
+1					x
+2					x
+3					x
+4					x
+5	A4-22-14N
+6	
+7					x
+8					x
+10					x
+11	B6-31-3	
+12					x
+13	-1.5V*16
+14	L-16
+15					x
+1N					x
+2N	
+3N					x
+5N					x
+6N	
+7N					x
+8N					x
+9N					x
+10N	A5-21-11N
+11N	A5-23-10N	A5-21-12N
+12N	A5-23-11N
+13N					x
+14N					x
+15N	BF2-B4
+end
+
+kort	A5-23	0202-22	AC-MD-MQ
+1					x
+2					x
+3					x
+4					x
+5	A4-23-14N
+6	
+7	STEL				x
+8					x
+10					x
+11	B6-31-5	
+12					x
+13	-1.5V*17
+14	L-17
+15					x
+1N					x
+2N	
+3N					x
+5N					x
+6N	
+7N					x
+8N					x
+9N					x
+10N	A5-22-11N
+11N	A5-24-10N	A5-22-12N
+12N	A5-24-11N
+13N					x
+14N					x
+15N	BF2-C4
+end
+
+kort	A5-24	0202-22	AC-MD-MQ
+1					x
+2					x
+3					x
+4					x
+5	A4-24-14N
+6	
+7					x
+8					x
+10					x
+11	B6-31-10N	
+12					x
+13	-1.5V*18
+14	L-18
+15					x
+1N					x
+2N	
+3N					x
+5N					x
+6N	
+7N					x
+8N					x
+9N					x
+10N	A5-23-11N
+11N	A5-25-10N	A5-23-12N
+12N	A5-25-11N
+13N					x
+14N					x
+15N	BF2-D4
+end
+
+kort	A5-25	0202-22	AC-MD-MQ
+1	-31.5V				x
+# XXX: +10.5V or -10.5V ?
+2	+10.5V				x
+3	-13.5V				x
+4	-7.5V				x
+5	A4-25-14N
+7					x
+8					x
+10					x
+11	B6-31-9N
+12					x
+13	-1.5V*19
+14	L-19
+15					x
+1N					x
+3N	B3-27-7				x
+5N					x
+7N	B4-29-7N			x
+8N					x
+9N					x
+10N	A5-24-11N
+11N	B4-29-10N	A5-24-12N
+12N	B4-29-11N
+13N	+1.5V				x
+14N	-1.5V				x
+15N	BF2-E4
+end

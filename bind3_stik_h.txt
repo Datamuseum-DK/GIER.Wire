@@ -1,0 +1,755 @@
+stik	H1
+lbl	skuffe	diodegruppe	Mikroaddresse
+A	A1-2-4	1-76		1
+C	A1-3-4	123-144		3
+B	A1-2-6	77-84+101-122	2
+D	A1-3-6	145-166		4
+E	A1-4-4	167-188		5
+H	A1-5-4	223-244		7
+F	A1-4-6	201-222		6
+J	A1-5-6	245-266		8
+K	A1-6-4	267-288		9
+M	A1-7-4	323-344		11
+L	A1-6-6	301-322		10
+N	A1-7-6	345-366		12
+P	A1-8-4	367-388		13
+S	A1-9-4	423-444		15
+R	A1-8-6	401-422		14
+T	A1-9-6	445-466		16
+U	A1-10-4	467-488		17
+W	A1-11-4	523-544		19
+V	A1-10-6	501-522		18
+X	A1-11-6	545-566		20
+Y	A1-12-4	567-588		21
+AA	A1-13-4	623-644		23
+Z	A1-12-6	601-622		22
+BB	A1-13-6	645-664		24
+CC	A1-18-7	86-94+665-671	-	# Display
+EE	A1-19-4	672-681		1B
+DD	A1-18-6	95		-	# 0 til alle bit
+FF	A1-19-6	289-295		2B
+HH	A1-20-4	389-395		3B
+KK	A1-21-4	589-595		5B
+JJ	A1-20-6	489-495		4B
+LL	A1-21-6	689-695		6B
+MM	A1-22-4	682-688		7B
+NN	A1-22-6	189-195		8B
+end
+
+stik	H2	
+lbl	skuffe		kerne_nr	Funktion
+A	A1-2-3N
+C	A1-2-4N		1		MA1
+B	A1-2-15
+D	A1-2-14		2		MA2
+E	A1-3-3N
+H	A1-3-4N		3		MA3
+F	A1-3-15
+J	A1-3-14		4		MA4
+K	A1-4-3N
+M	A1-4-4N		5		MA5
+L	A1-4-15
+N	A1-4-14		6		MA6
+P	A1-5-3N
+S	A1-5-4N		7		MA7
+R	A1-5-15
+T	A1-5-14		8		MA8
+U	A1-6-3N
+W	A1-6-4N		9		MA9
+V	A1-6-15
+X	A1-6-14		10		MA10
+Y	A1-7-3N	
+AA	A1-7-4N		11		MA11
+Z	A1-7-15
+BB	A1-7-14		12		MA12
+CC	A1-8-3N	
+EE	A1-8-4N		13		MA13
+DD	A1-8-15
+FF	A1-8-14		14		MA14
+HH	A1-9-3N	
+KK	A1-9-4N		15		MA15
+lbl	skuffe		omskifter_still	loddetårn_nr	testprogram_nr
+JJ	-		1		1		1
+LL	-		2		2		2
+MM	-		3		3		3
+NN	-		4		4		4
+end
+
+stik H3
+lbl	Skuffe		kerne_nr	Funktion
+A	A1-9-15
+C	A1-9-14		16		MA16
+B	A1-10-3N
+D	A1-10-4N	17		MA17
+E	A1-10-15
+H	A1-10-14	18		MA18
+F	A1-11-3N
+J	A1-11-4N	19		MA19
+K	A1-11-15
+M	A1-11-14	20		MA20
+L	A1-12-3N
+N	A1-12-4N	21		MA21
+P	A1-12-15
+S	A1-12-14	22		MA22
+R	A1-13-3N
+T	A1-13-4N	23		MA23
+U	A1-13-15
+W	A1-13-14	24		MA24
+#V
+#X			25
+Y	A3-4-11N
+AA	A3-4-10N	26		Gm:_H00-9
+Z	A3-4-9N
+BB	A3-4-8N		27		Gm:_H10-19
+CC	B2-28-7N
+EE	B2-28-6N	28		Gm:_H20-29
+DD	B2-28-5N
+FF	B2-28-4N	29		Gm:_H30-39
+HH	B2-26-13N
+KK	B2-26-12N	30		Gm:_H40-41
+#	omskifter still	Loddetårn_nr	Testprogram_nr
+#JJ	5		5		5
+#LL
+#MM
+#			Loddetårn_nr
+#NN			8
+end
+stik H4
+lbl	Skuffe		kerne_nr	Funktion
+A	A3-3-5N
+C	A3-3-4N		31		Gm:_oH00
+B	A3-1-9N
+D	A3-1-8N		32		Gm:_lin0_H00
+E	A3-3-15N
+H	A3-3-14N	33		Gm:_H1-9_h.s.
+F	A3-3-13N
+J	A3-3-12N	34		Gm:_H10-19_h.s.
+K	B2-27-7N
+M	B2-27-6N	35		Gm:_H20-29_h.s.
+L	B2-27-5N
+N	B2-27-4N	36		Gm:_H30-39_h.s.
+P	A3-3-7N
+S	A3-3-6N		37		Gm:_lin00_H00+H0
+R	A3-3-9N
+T	A3-3-8N		38		Gm:_MQ39H0
+U	A3-3-11N
+W	A3-3-10N	39		Gm:_lin39_Ho
+V	A3-4-7N
+X	A3-4-6N		40		Gm:_H0-9_v.s.
+Y	A3-4-5N
+AA	A3-4-4N		41		Gm:_H10-19_v.s.
+Z	B2-27-15N
+BB	B2-27-14N	42		Gm:_H20-29_v.s.
+CC	B2-27-13N
+EE	B2-27-12N	43		Gm:_H30-38_v.s.
+DD	B2-27-9N
+FF	B2-27-8N	44		Gm:_MQOH39
+HH	B2-26-11N
+KK	B2-26-10N	45		Gm:_oH39
+JJ	B2-27-11N
+LL	B2-27-10N	46		Gm:_lin0_H39
+MM	A3-4-15N
+NN	A3-4-14N	47		Gm:_LI0-9
+end
+stik H5
+lbl	Skuffe		kerne_nr	Funktion
+A	A3-4-13N
+C	A3-4-12N	48		Gm:_LI10-19
+B	B2-28-15N
+D	B2-28-14N	49		Gm:_LI20-29
+E	B2-28-13N
+H	B2-28-12N	50		Gm:_LI30-39
+F	B2-28-11N
+J	B2-28-10N	51		Gm:_LI40-41
+K	B2-28-9N
+M	B2-28-8N	52		Gm:_IO
+L	A3-1-13N
+N	A3-1-12N	53		Gm:_SR
+P	A6-4-15N
+S	A6-4-14N	54		Gm:_AC00-9
+R	A6-4-13N
+T	A6-4-12N	55		Gm:_AC10-19
+U	B5-27-11N
+W	B5-27-10N	56		Gm:_AC20-29
+V	B5-27-9N
+X	B5-27-8N	57		Gm:_AC30-39
+Y	A3-1-11N
+AA	A3-1-10N	58		Gm:_TA
+Z	A3-2-15N
+BB	A3-2-14N	59		Gm:_OT
+CC	A3-1-5N
+EE	A3-1-4N		60		Gm:
+DD	A5-4-7N
+FF	A5-4-6N		61		Gs:_H00-9
+HH	A5-4-5N
+KK	A5-4-4N		62		Gs:_H10-19
+JJ	B4-27-11N
+LL	B4-27-10N	63		Gs:_H20-29
+MM	B4-27-9N
+NN	B4-27-8N	64		Gs:_H30-39
+end
+stik H6
+lbl	Skuffe		kerne_nr	Funktion
+A	A5-1-11N
+C	A5-1-10N	65		Gs:_MQ0-9
+B	A5-1-9N
+D	A5-1-8N		66		Gs:_MQ10-19
+E	B4-28-11N
+H	B4-28-10N	67		Gs:_MQ20-29
+F	B4-28-9N
+J	B4-28-8N	68		Gs:_MQ30-39
+K	A5-2-13N
+M	A5-2-12N	69		Gs:_SR
+L	A5-2-11N
+N	A5-2-10N	70		Gs:_TA
+P	A5-3-15N
+S	A5-3-14N	71		Gs:_OT
+R	C1-5-15N
+T	C1-5-14N	72		Gs:_TK
+U	A5-3-9N
+W	A5-3-8N		73		Gs:_TD_skrå
+V	A5-3-11N
+X	A5-3-10N	74		Gs:_AD2_skrå
+Y	A5-4-15N
+AA	A5-4-14N	75		Gs:_Add00-19
+Z	B4-27-7N
+BB	B4-27-6N	76		Gs:_Add20-39
+CC	A5-3-13N
+EE	A5-3-12N	77		Gs:_AD2
+DD	A5-3-7N
+FF	A5-3-6N		78		Gs:_TD
+HH	B6-40-10
+KK	B6-40-11	79		lin30-39_20-29
+JJ	A5-3-5N
+LL	A5-3-4N		80		Gs:_39TD
+MM	A6-2-5N
+NN	A6-2-4N		81		Gm:
+end
+stik H7
+lbl	Skuffe		kerne_nr	Funktion
+A	A6-4-11N
+C	A6-4-10N	82		Gm:_MQ0-9
+B	A6-4-9N
+D	A6-4-8N		83		Gm:_MQ10-19
+E	B5-27-7N
+H	B5-27-6N	84		Gm:_MQ20-29
+F	B5-27-5N
+J	B5-27-4N	85		Gm:_MQ30-39
+K	B1-30-11N
+M	B1-30-12N	86		Stop
+L	A6-3-15N
+N	A6-3-14N	87		Gm:_MQ1-9_h.s.
+P	A6-3-13N
+S	A6-3-12N	88		Gm:_MQ10-19_h.s.
+R	B5-26-7N
+T	B5-26-6N	89		Gm:_MQ20-29_h.s.
+U	B5-26-5N
+W	B5-26-4N	90		Gm:_MQ30-39_h.s.
+V	A6-3-9N
+X	A6-3-8N		91		Gm:_lin39_MQ0
+Y	A6-3-7N
+AA	A6-3-6N		92		Gm:_MQ39MQ0
+Z	A6-4-7N
+BB	A6-4-6N		93		Gm:_MQ0-9_v.s.
+CC	A6-4-5N
+EE	A6-4-4N		94		Gm:_MQ10-19_v.s.
+DD	B5-26-15N
+FF	B5-26-14N	95		Gm:_MQ20-29_v.s.
+HH	B5-26-13N
+KK	B5-26-12N	96		Gm:_MQ30-38_v.s.
+JJ	B5-26-9N
+LL	B5-26-8N	97		Gm:_oMQ39
+MM	B2-26-9N
+NN	B2-26-8N	98		Gm:_1MQ39
+end
+stik H8
+lbl	Skuffe		kerne_nr	Funktion
+A	A6-5-15N
+C	A6-5-14N	99		Gm:_AD0
+B	A3-2-9N
+D	A3-2-8N		100		Gm:_TD
+E	B5-28-15N
+H	B5-28-14N	101		Gm:_OR20-26+40-41
+F	B5-28-13N
+J	B5-28-12N	102		Gm:_OR27-29
+K	B5-28-11N
+M	B5-28-10N	103		Gm:_OR30-39
+L	A3-2-11N
+N	A3-2-10N	104		Gm:_AD2
+P	A6-5-13N
+S	A6-5-12N	105		Gm:_TI0-9
+R	A6-5-11N
+T	A6-5-10N	106		Gm:_TI10-19
+U	B5-28-9N
+W	B5-28-8N	107		Gm:_TI20-29
+V	B5-28-7N
+X	B5-28-6N	108		Gm:_TI30-41
+Y	A6-1-11N
+AA	A6-1-10N	109		Gm:_BS3-9
+Z	A6-1-9N
+BB	A6-1-8N		110		Gm:_step
+CC	A5-4-11N
+EE	A5-4-10N	111		Gs:_LI0-9
+DD	A5-4-9N
+FF	A5-4-8N		112		Gs:_LI10-19
+HH	B4-27-15N
+KK	B4-27-14N	113		Gs:_LI20-29
+JJ	B4-27-13N
+LL	B4-27-12N	114		Gs:_LI30-39
+MM	A5-1-7N
+NN	A5-1-6N		115		Gs:_AC00-9
+end
+stik H9
+lbl	Skuffe		kerne_nr	Funktion
+A	A5-1-5N
+C	A5-1-4N		116		Gs:_AC10-19
+B	B4-28-7N
+D	B4-28-6N	117		Gs:_AC20-29
+E	B4-28-5N
+H	B4-28-4N	118		Gs:_AC30-39+H40-41
+F	C6-1-3N
+J	C6-1-4N		119		Mode_1
+K	C6-1-15
+M	C6-1-14		120		Mode_2
+L	C6-2-3N
+N	C6-2-4N		121		Mode_3
+P	C6-2-15
+S	C6-2-14		122		Mode_4
+R	C1-4-15N
+T	C1-4-14N	123		Gs:_TI0-9
+U	C1-4-13N
+W	C1-4-12N	124		Gs:_TI10-19
+V	B4-26-11N
+X	B4-26-10N	125		Gs:_TI20-29
+Y	B4-26-9N
+AA	B4-26-8N	126		Gs:_TI30-41
+Z	C1-3-15N
+BB	C1-3-14N	127		Gs:_AD0
+CC	B4-26-15N
+EE	B4-26-14N	128		Gs:_OR20-29
+DD	B4-26-13N
+FF	B4-26-12N	129		Gs:_OR30-41
+HH	A5-2-15N
+KK	A5-2-14N	130		Gs:_AD1
+JJ	A6-5-9N
+LL	A6-5-8N		131		Gm:_MD0-9
+MM	A6-5-7N	
+NN	A6-5-6N		132		Gm:_MD10-19
+end
+stik H10
+lbl	Skuffe		kerne_nr	Funktion
+A	B5-27-15N
+C	B5-27-14N	133		Gm:_MD20-29
+B	B5-27-13N
+D	B5-27-12N	134		Gm:_MD30-39
+E	A6-3-5N
+H	A6-3-4N		135		Gm:_oMQ0
+F	A6-2-9N
+J	A6-2-8N		136		Gm:_GmJ
+K	A4-3-9N
+# XXX: Forkert, A4-1-11 er -1.5V
+# M	A4-1-11		137		tæl_i_TD
+L	A3-2-13N
+N	A3-2-12N	138		Gm:_tæl_i_OT
+P	B5-26-11N
+S	B5-26-10N	139		Gm:_linOMQ39
+R	A3-1-15N
+T	A3-1-14N	140		Gm:_AD1
+U	A6-2-15N
+W	A6-2-14N	141		Gm:_TK
+#V
+#X			142
+Y	A6-1-15N
+AA	A6-1-14N	143		Gm:_BL2-9
+Z	A6-1-13N
+BB	A6-1-12N	144		Gm:_1ZL
+CC	A6-1-7N
+EE	A6-1-6N		145		Gm:_BY2-9
+DD	A6-1-5N
+FF	A6-1-4N		146		Gm:_1ZS
+HH	A3-1-7N
+KK	A3-1-6N		147		Gm:_sæt_spild_f.f.
+JJ	A6-2-13N
+LL	A6-2-12N	148		Gm:_IN
+MM	A6-2-11N
+NN	A6-2-10N	149		Gm:_ob+oc+sæt_TI
+end
+stik H11
+lbl	Skuffe		kerne_nr	Funktion
+A	A6-2-7N
+C	A6-2-6N		150		Gm:_TBA+start_tr.
+B	A5-2-9N		_		Gs:_stopB+B-A+
+D	A5-2-8N		151		    FL_fra_TAD->AD1
+E	A5-2-7N
+H	A5-2-6N		152		Gs:_BT3-9
+F	A5-1-13N
+J	A5-1-12N	153		Gs:_MD10-19
+K	B4-28-15N
+M	B4-28-14N	154		Gs:_MD20-29
+L	B4-28-13N
+N	B4-28-12N	155		Gs:_MD30-39
+P	C1-4-9N
+S	C1-4-8N		156		Gs:_oO+2-9
+R	C1-4-11N
+T	C1-4-10N	157		Gs:_o1
+U	C1-4-7N
+W	C1-4-6N		158		Gs:_o10-14+19
+V	C1-4-5N
+X	C1-4-4N		159		Gs:_o15-18
+Y	B4-26-5N
+AA	B4-26-4N	160		Gs:_sub
+Z	B1-35-5N
+BB	B1-35-12N	161		læs_i_FL0-9
+CC	B1-35-6N
+EE	B1-35-14N	162		læs_i_FL10-19
+DD	B1-36-5N
+FF	B1-36-12N	163		læs_i_FL20-29
+HH	B1-36-6N
+KK	B1-36-14N	164		læs_i_FL30-39
+JJ	B1-36-7N
+LL	B1-36-15N	165		læs_i_FL40-41
+MM	B1-35-7N
+NN	B1-35-15N	166		skriv_i_FL
+end
+
+#XXX H12 ??
+
+stik H13
+lbl	Skuffe		kerne_nr	Funktion
+A	C1-5-13N
+C	C1-5-12N	167		Gs:_IN
+B	C1-5-7N
+D	C1-5-6N		168		Gs:_BS2-9
+E	C1-5-9N
+H	C1-5-8N		169		Gs:_BL2-9
+F	B4-26-7N
+J	B4-26-6N	170		Gs:_add
+K	C1-3-13N
+M	C1-3-12N	171		Gs:_1h
+L	C1-3-11N
+N	C1-3-10N	172		Gs:_oh
+P	B3-26-15N
+S	B3-26-14N	173		Gs:_LI40-41
+R	C1-5-5N
+T	C1-5-4N		174		Gsw:_BY2-9
+K	C1-3-13N
+M	C1-3-12N	171		Gs:_1h
+L	C1-3-11N
+N	C1-3-10N	172		Gs:_oh
+P	B3-26-15N
+S	B3-26-14N	173		Gs:_LI40-41
+R	C1-5-5N
+T	C1-5-4N		174		Gs:_BY2-9
+U	C1-3-9N		_		Gs:_FL_fra_AD1-TAD
+W	C1-3-8N		175		+_TR_adder
+V	A5-1-15N
+X	A5-1-14N	176		Gs:_MD0-9
+Y	B4-27-5N
+AA	B4-27-4N	177		Gs:_o20-41
+Z	B3-26-13N
+BB	B3-26-12N	178		Gs:_TBA
+CC	B3-26-11N
+EE	B3-26-10N	179		Gs:_1Co
+DD	B3-26-9N
+FF	B3-26-8N	180		Gs:_1AOK
+HH	B3-26-7N
+KK	B3-26-6N	181		Gs:
+JJ	C6-5-4N
+LL	C6-5-3N		182		1b
+MM	C6-5-14	
+NN	C6-5-15		183		1c
+end
+stik H14
+#lbl	Skuffe		kerne_nr	Funktion
+#C			184
+#D			185
+lbl	Skuffe		Loddetårn_nr	Funktion
+P	C1-1-2		9		display_OT
+S	C1-1-6		11		display_AC
+R	C1-1-4		10		display_OR
+T	C1-1-8		12		display_MQ
+U	C1-1-9N		13		display_MD
+W	C1-1-13N	15		display_IN
+V	C1-1-11N	14		display_H
+X	C1-1-15N	16		display_AD1
+Y	C1-2-2		17		display_AD2
+AA	C1-2-6		19		display_LI
+Z	C1-2-4		18		display_SR
+BB	C1-2-8		20		display_TA
+CC	C1-2-9N		21		display_TK
+EE	C1-2-13N	287		display_BS
+DD	C1-2-11N	22		display_BL
+FF	C1-2-15N	288		display_BY
+HH	C1-2-10		290		0_til_alle_bits
+KK	C6-4-1		291		fra_tromle_Beting:_læs_op:læs
+JJ	C6-4-4		292		til_tromle_Beinng:_skr_op:skr
+LL	C6-4-7		294		_
+MM	C6-4-10		295		_
+NN	C6-4-13		196		_
+end
+stik H15
+lbl	Skuffe		Loddetårn_nr	operation_nr
+A	C6-2-7		41-42		Mode_4
+C	C4-13-11	51-52		14
+B	C4-13-12	46-47		13
+D	C4-14-13	56-57		8
+E	C4-14-12	61-62		9
+H	C4-13-10	71-72		15
+F	C4-13-13	66-67		12
+J	C4-7-11		76-77		38
+K	C6-1-5		117-118-119	Mode_1
+M	C4-10-13	129-130-131	24
+L	C4-14-10	123-124-125	11
+N	C6-2-5		133-136-137	Mode_3
+P	C4-1-11		141-142-143-286	62
+S	C4-4-12		153-154-155	49
+R	C4-1-12		147-148-149	61
+T	C4-6-13		159-160-161	40
+U	C4-14-11	201-202		10
+W	C4-6-12		211-212		41
+V	C4-12-13	206-207		16
+X	C4-6-11		216-217		42
+Y	C4-10-12	221-222		25
+AA	C6-7-5		231-232		Mode_5
+Z	C4-4-10		226-227		51
+BB	C4-4-13		236-237		48
+CC	C4-10-11	23		26
+EE	C4-9-13		25		28
+DD	C4-10-10	24		27
+FF	C4-8-13		26		32
+HH	C4-8-12		27		33
+KK	C4-1-10		35		63
+JJ	C4-8-10		31		35
+LL	C4-9-12		37		29
+MM	C4-9-11		83		30
+NN	C4-9-10		87		31
+end
+stik H16
+lbl	Skuffe		Loddetårn_nr	operation_nr
+A	C4-15-11	91		6
+C	C4-11-12	99		21
+B	C4-15-10	95		7
+D	C4-11-11	103		22
+E	C4-12-11	107		18
+H	C4-11-13	113		20
+F	C4-12-10	111		19
+J	C4-11-10	167		23
+K	C4-3-10		171		55
+M	C4-7-12		179		37
+L	C4-7-13		175-284		36
+N	C4-3-13		183		52
+P	C4-3-12		187		53
+S	C4-2-12		195		57
+R	C4-3-11		191		54
+T	C4-2-11		197		58
+U	C4-2-10		243		59
+W	C4-16-13	251		0
+V	C4-7-10		247		39
+X	C4-16-12	255		1
+Y	C4-6-10		259		43
+AA	C4-8-11		267		34
+Z	C4-5-13		263		44
+BB	C4-12-12	271		17
+CC	C4-4-11		273		50
+EE	C4-1-13		281		60
+DD	C4-2-13		277		56
+FF	C4-5-12		285		45
+HH	C4-5-11		289		46
+KK	C4-16-11	297		2
+JJ	C4-5-10		293		47
+LL	C4-16-10	298		3
+MM	C4-15-13	299		4
+NN	C4-15-12	300		5
+end
+stik H17
+lbl	Skuffe		Loddetårn_nr	betingelse	i_operation_nr
+A	C5-1-4N		28		11b		Mode_1
+C	C5-1-13		30		43b		17
+B	C5-1-1N		29		25b		Mode_4
+D	C5-1-10		32		1b		44,45
+E	C5-1-7		33		51a		59
+H	C5-1-1		36		10b		63
+F	C5-1-4		34		8b		61
+J	C5-2-4N		38		11c		Mode_1
+K	C5-2-1N		39		25c		Mode_4
+M	C5-2-10		43		16b		44,45
+L	C5-2-13		40		42a		17
+N	C5-2-7		44		52b		59
+P	C5-2-4		45		55a		58
+S	C5-3-4N		49		123(B)		Mode_1
+R	C5-2-1		48		9b		53
+T	C5-3-1N		50		25d		Mode_4
+U	C5-3-13		53		43c		17
+W	C5-3-7		55		52c		59
+V	C5-3-10		54		8b		54
+X	C5-3-4		58		60a		44,45
+Y	C5-3-1		59		9b		52
+AA	C5-4-1N		63		25e		Mode_4
+Z	C5-4-4N		60		20b		Mode_1
+BB	C5-4-13		64		46a		17
+CC	C5-4-10		65		59a		44,45
+EE	C5-4-4		69		58a		44,45
+DD	C5-4-7		68		_		59
+FF	C5-4-1		70		53a		35
+HH	C5-5-4N		73		20c		Mode_1
+KK	C5-5-13		75		7b		17
+JJ	C5-5-1N		74		25f		Mode_4
+LL	C5-5-10		78		_		_
+MM	C5-5-7		79		_		_
+NN	C5-5-4		80		_		_
+end
+stik H18
+lbl	Skuffe		Loddetårn_nr	betingelse	i_operation_nr
+A	C5-5-1		81		_		_
+C	C5-6-1N		84		26b		Mode_4
+B	C5-6-4N		82		20d		Mode_1
+D	C5-6-13		85		44b		17
+E	C5-6-10		86		2a		38
+H	C5-6-4		89		8b		42
+F	C5-6-7		88		10b		36
+J	C5-6-1		90		_		_
+K	C5-7-4N		92		20e		Mode_1
+M	C5-7-13		94		47b		17
+L	C5-7-1N		93		4b		11
+N	C5-7-10		96		3b		38
+P	C5-7-7		97		16b		36
+S	C5-7-1		100		43b		25
+R	C5-7-4		98		15b		39
+T	C5-8-4N		101		21b		Mode_1
+U	C5-8-1N		102		5b		11
+W	C5-8-10		105		8b		23
+V	C5-8-13		104		17a		21
+X	C5-8-7		106		50b		36
+Y	C5-8-4		108		8b		29
+AA	C5-9-4N		110		21d		Mode_1
+Z	C5-8-1		109		8b		22
+BB	C5-9-1N		112		6a		11
+CC	C5-9-13		114		17b		21
+EE	C5-9-7		116		47b		36
+DD	C5-9-10		115		9b		Mode_5
+FF	C5-9-4		120		4b		24
+HH	C5-9-1		121		2a		27
+KK	C5-10-1N	126		6b		11
+JJ	C5-10-4N	122		21c		Mode_1
+LL	C5-10-13	127		27b		21
+MM	C5-10-10	128		1b		Mode_5
+NN	C5-10-7		132		3b		25
+end
+stik H19
+lbl	Skuffe		Loddetårn_nr	betingelse	i_operation_nr
+A	C5-10-4		133		18b		24
+C	C5-11-4N	138		22a		Mode_1
+B	C5-10-1		134		19b		16
+D	C5-11-1N	139		48a		11
+E	C5-11-13	140		27c		21
+H	C5-11-7		145		8b		16
+F	C5-11-10	144		_		Mode_5
+J	C5-11-4		146		1b		24
+K	C5-11-1		150		49a		16
+M	C5-12-1N	152		12b		11
+L	C5-12-4N	151		22c		Mode_1
+N	C5-12-13	156		17a		26
+P	C5-12-10	157		24b		2
+S	C5-12-4		162		2a		10
+R	C5-12-7		158		57a_(b-fors)	13
+T	C5-12-1		163		3b		16
+U	C5-13-4N	164		22d		Mode_1
+W	C5-13-13	166		17b		26
+V	C5-13-1N	165		(b-fors)	11
+X	C5-13-10	168		betingelse(+)	2
+Y	C5-13-7		169		16b		13
+AA	C5-13-1		172		2a		8
+Z	C5-13-4		170		18b		10
+BB	C5-14-4N	173		2a		Mode_1
+CC	C5-14-1N	174		_		11
+EE	C5-14-10	177		1b		2
+DD	C5-14-13	176		3b		Mode_3
+FF	C5-14-7		178		4b		13
+HH	C5-14-4		180		3b		15
+KK	C5-15-4N	182		23a		Mode_1
+JJ	C5-14-1		181		33b		8
+LL	C5-15-1N	184		_		11
+MM	C5-15-13	185		12b		Mode_3
+NN	C5-15-10	186		(b-fors)	2
+end
+stik H20
+lbl	Skuffe		Loddetårn_nr	betingelse	i_operation_nr
+A	C5-15-7		188		14a		13
+C	C5-15-1		190		16b		8
+B	C5-15-4		189		49a		15
+D	C5-16-4N	192		22e		Mode_1
+E	C5-16-1N	193		1b_(c-fors)	18
+H	C5-16-10	196		15b		2
+F	C5-16-13	194		13b		Mode_3
+J	C5-16-7		198		3b		13
+K	C5-16-4		199		4b		15
+M	C5-17-4N	203		1b		12
+L	C5-16-1		200		16b		6
+N	C5-17-1N	204		5b		18
+P	C5-17-13	205		49a		Mode_3
+S	C5-17-7		209		1b		13
+R	C5-17-10	208		14a		2
+T	C5-17-4		210		19b		15
+U	C5-17-1		213		2a		6
+W	C5-18-1N	215		47b		18
+V	C5-18-4N	214	 	_		12
+X	C5-18-13	218		15b		Mode_3
+Y	C5-18-10	219		54b		2
+AA	C5-18-4		223		40a		15
+Z	C5-18-7		220		37a		13
+BB	C5-18-1		224		8b		6
+CC	C5-19-4N	225		48a		12
+EE	C5-19-13	229		2a		Mode_3
+DD	C5-19-1N	228		16b		18
+FF	C5-19-10	230		(c-fors)	2
+HH	C5-19-7		233		12b		13
+KK	C5-19-1		235		_		-
+JJ	C5-19-4		234		8b		15
+LL	C5-20-4N	238		_		12
+MM	C5-20-1N	239		1b_(b-fors)	18
+NN	C5-20-13	240		(b-fors)	Mode_3
+end
+stik H21
+lbl	Skuffe		Loddetårn_nr	betingelse	i_operation_nr
+A	C5-20-10	241		4b		2
+C	C5-20-4		244		56a_(b-fors)	13
+B	C5-20-7		242		b=1_(b-fors)	13
+D	C5-20-1		245		9b		55
+S	C4-2-10		260		op59		_
+end
+stik H22
+lbl	Skuffe		betingelse_nr	bet_navn	repræsentation
+A	B3-27-4		104		OR41		L
+C	C2-22-5		101		(TD)=0		H
+B	B3-27-5		102		OR32		H
+D	C2-22-3		109		M(B1)		L
+E	C2-22-2		119		OR25		L
+H	C2-22-4		103		(AC)=0		H
+F	B3-27-3		108		MD39		L
+J	B6-36-15N	130		OR27		H
+K	B6-36-14N	131		OR26		L
+M	B6-36-12	147		OR40		L
+L	B6-36-11N	148		OR23		L
+N	B6-37-15	150		MQ39		H
+P	B6-38-4		126		OR28,29=1,0	L
+S	B6-38-5		127		OR28,29=0,1	L
+R	B6-38-3		128		OR28,29=1,1	L
+T	B6-39-6		134		OR30,31=0,0	L
+U	B6-39-5		135		OR30,31=0,1	L
+W	C6-3-13		112		h		L
+V	A4-3-4		120		MD0		L
+X	A2-4-12		118		H00		L
+Y	C2-20-14	122		B		L
+AA	C2-20-13	123		B		H
+Z	C2-20-15	124		q		L
+BB	C2-20-15N	125		q		H
+CC	C2-20-11N	136		I*K		L
+EE	C2-20-10N	137		I*K		H
+DD	C3-25-1		111		TI		H
+FF	A2-2-9N		115		MQ9+MQ10	L
+HH	A2-2-8N		116		MQ9+MQ11	L
+KK	A2-3-8N		121		H0+H1		L
+JJ	A2-3-10N	142		H00+MD0		H
+LL	A2-3-9N		143		H0+H10		L
+MM	A2-2-10N	149		H00+H0		H
+end
