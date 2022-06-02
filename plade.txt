@@ -14,7 +14,7 @@ image	0200-1.png	0200-1a.jpg	 0200-1b.jpg
 8	+10.5V
 end
 
-plade	0200-2		0&1-stillingsforstÃ¦rker til strimmellÃ¦ser
+plade	0200-2		0&1-stillingsforstærker til strimmellæser
 image	0200-2.png	0200-2a.jpg	 0200-2b.jpg
 8N	-13.5V
 8	STEL
@@ -142,7 +142,7 @@ image	0200-7.png	0200-7a.jpg	 0200-7b.jpg
 8N	STEL
 8	+10.5V
 7N	+10.5V
-4	in	sÃ¦t h=1
+4	in	sæt h=1
 10	out	h
 5	out	h
 12	out	^h
@@ -234,7 +234,7 @@ image	0200-9a.png	0200-9b.png	0200-9a.jpg	 0200-9b.jpg
 14	out	B
 end
 
-plade	0200-10	ForstÃ¦rker for BS
+plade	0200-10	Forstærker for BS
 image	0200-10.png	0200-10a.jpg	 0200-10b.jpg
 9	-7.5V
 9N	-7.5V
@@ -243,9 +243,9 @@ image	0200-10.png	0200-10a.jpg	 0200-10b.jpg
 1	in	BSg
 2	in	Tastaturlampe ind''
 3	in
-4	in	^Z lÃ¦ser
-5	in	^Z' lÃ¦ser
-6	in	^Z lÃ¦ser
+4	in	^Z læser
+5	in	^Z' læser
+6	in	^Z læser
 1N	in	BS3
 2N	in	BS4
 3N	in	BS5
@@ -255,7 +255,7 @@ image	0200-10.png	0200-10a.jpg	 0200-10b.jpg
 15	out	1
 14	out	Tasturlampe ud'
 13	out
-12	out	Start (kun pÃ¥ GIER 0)
+12	out	Start (kun på GIER 0)
 11	out	Startsignal
 10	out	blok display
 15N	out	EL
@@ -266,15 +266,15 @@ image	0200-10.png	0200-10a.jpg	 0200-10b.jpg
 10N	out	2
 end
 
-plade	0200-11		ForstÃ¦rker for perforrator
+plade	0200-11		Forstærker for perforrator
 image	0200-11.png
 end
 
-plade	0200-12		ForstÃ¦rker for skrivemask.afkodn.
+plade	0200-12		Forstærker for skrivemask.afkodn.
 image	0200-12.png
 end
 
-plade	0200-13		Stop spole&klar spole forstÃ¦rker for perforrator
+plade	0200-13		Stop spole&klar spole forstærker for perforrator
 image	0200-13.png
 end
 
@@ -328,11 +328,11 @@ image	0200-16.png	0200-16a.jpg	 0200-16b.jpg
 15N	-31.5V
 end
 
-plade	0200-25	ForstÃ¦rkere og Za til printer
+plade	0200-25	Forstærkere og Za til printer
 image	0200-25.png
 end
 
-plade	0200-37	Z forstÃ¦rker til perforrator & skrivem. stop-betingelse
+plade	0200-37	Z forstærker til perforrator & skrivem. stop-betingelse
 image	0200-37.png	0200-39a.jpg	 0200-39b.jpg
 end
 
@@ -562,7 +562,7 @@ image	0202-22a.png	0202-22b.png	0202-22a.jpg	0202-22b.jpg
 14N	-1.5V
 end
 
-plade	0202-25	Z forstÃ¦rker til SL
+plade	0202-25	Z forstærker til SL
 image	0202-25a.png	0202-25b.png	0202-25a.jpg	 0202-25b.jpg
 end
 
@@ -595,9 +595,9 @@ end
 
 plade	0205 LI & H register
 image	0205a.png	0205b.png	0205a.jpg	 0205b.jpg
-1	in	CiffertrÃ¥d
+1	in	Ciffertråd
 1N	in	Gm Li
-2	in	CiffertrÃ¥d
+2	in	Ciffertråd
 2N	in	_Gs Li
 3	-31.5V
 3N	-1.5V
@@ -612,7 +612,7 @@ image	0205a.png	0205b.png	0205a.jpg	 0205b.jpg
 8	-13.5V
 8N	in	Gm venstre sk
 9	-1.5V
-9N	in	Gm HÃ¸jre Sk
+9N	in	Gm Højre Sk
 10	STEL
 10N	in	_Sp
 11	in	Nulstilling
@@ -621,17 +621,17 @@ image	0205a.png	0205b.png	0205a.jpg	 0205b.jpg
 12N	in	_GsH
 13	in	Strobe
 13N	out	_H til adder
-14	in	LÃ¦setrÃ¥d
+14	in	Læsetråd
 14N	out	H
-15	in	LÃ¦setrÃ¥d
+15	in	Læsetråd
 15N	out	_H
 end
 
 plade	0205-1	LI40-41, H40-41 (AC40-41)
 image	0205-1a.png	0205-1b.png	0205-1a.jpg	 0205-1b.jpg
-1	in	CiffertrÃ¥d
+1	in	Ciffertråd
 1N	in	Gm Li
-2	in	CiffertrÃ¥d
+2	in	Ciffertråd
 2N	in	_Gs Li
 3	-31.5V
 3N	-1.5V
@@ -646,7 +646,7 @@ image	0205-1a.png	0205-1b.png	0205-1a.jpg	 0205-1b.jpg
 8	-13.5V
 8N	in	Gm venstre sk
 9	-1.5V
-9N	in	Gm HÃ¸jre Sk
+9N	in	Gm Højre Sk
 10	STEL
 10N	in	_Sp
 11	in	Nulstilling
@@ -655,17 +655,17 @@ image	0205-1a.png	0205-1b.png	0205-1a.jpg	 0205-1b.jpg
 12N	in	_GsH
 13	in	Strobe
 13N	out	_H til adder
-14	in	LÃ¦setrÃ¥d
+14	in	Læsetråd
 14N	out	H
-15	in	LÃ¦setrÃ¥d
+15	in	Læsetråd
 15N	out	_H
 end
 
 plade	0205-2 LI & H register (XXX: not "som 205" 1N, 2N ?)
 image	0205a.png	0205b.png	0205a.jpg	0205b.jpg
-1	in	CiffertrÃ¥d
+1	in	Ciffertråd
 1N	in	Gm Li
-2	in	CiffertrÃ¥d
+2	in	Ciffertråd
 2N	in	_Gs Li
 3	-31.5V
 3N	-1.5V
@@ -680,7 +680,7 @@ image	0205a.png	0205b.png	0205a.jpg	0205b.jpg
 8	-13.5V
 8N	in	Gm venstre sk
 9	-1.5V
-9N	in	Gm HÃ¸jre Sk
+9N	in	Gm Højre Sk
 10	STEL
 10N	in	_Sp
 11	in	Nulstilling
@@ -689,9 +689,9 @@ image	0205a.png	0205b.png	0205a.jpg	0205b.jpg
 12N	in	_GsH
 13	in	Strobe
 13N	out	_H til adder
-14	in	LÃ¦setrÃ¥d
+14	in	Læsetråd
 14N	out	H
-15	in	LÃ¦setrÃ¥d
+15	in	Læsetråd
 15N	out	_H
 end
 
@@ -748,7 +748,7 @@ image	0207.png	0207a.jpg	 0207b.jpg
 15	in	Sp.
 1N	in	Konst str.skr.
 6N	in	Lp.
-10	in	Konst str.lÃ¦s.
+10	in	Konst str.læs.
 13	out	afkodning[0]
 3N	out	afkodning[1]
 1	out	matix1[0]
@@ -1033,7 +1033,7 @@ image	0212a.png	0212b.png	0212a.jpg	 0212b.jpg
 3	out	AD2
 4	-31.5V
 5	-13.5V
-6	inout	OT blok tÃ¦ll
+6	inout	OT blok tæll
 7	+10.5V
 8	in	Sym trign
 11	STEL
@@ -1045,7 +1045,7 @@ image	0212a.png	0212b.png	0212a.jpg	 0212b.jpg
 9N	in	GmAD2
 10N	in	Gm OT
 11N	in	Gs OT
-14N	in	_GsAD2 skrÃ¥
+14N	in	_GsAD2 skrå
 15N	in	GsAD2
 end
 
@@ -1055,7 +1055,7 @@ image	0212a.png	0212b.png	0212a.jpg	0212b.jpg
 3	out	AD2
 4	-31.5V
 5	-13.5V
-6	inout	OT blok tÃ¦ll
+6	inout	OT blok tæll
 7	+10.5V
 8	in	Sym trign
 11	STEL
@@ -1067,7 +1067,7 @@ image	0212a.png	0212b.png	0212a.jpg	0212b.jpg
 9N	in	GmAD2
 10N	in	Gm OT
 11N	in	Gs OT
-14N	in	_GsAD2 skrÃ¥
+14N	in	_GsAD2 skrå
 15N	in	GsAD2
 end
 
@@ -1127,7 +1127,7 @@ image	0213.png	0213a.jpg	 0213b.jpg
 3	out	linie[9]
 end
 
-plade	0214	ForstÃ¦rkere
+plade	0214	Forstærkere
 image	0214.png	0214a.jpg	 0214b.jpg
 6N	+10.5V
 10	+1.5V
@@ -1156,7 +1156,7 @@ image	0214.png	0214a.jpg	 0214b.jpg
 5N	out	ud[8]
 end
 
-plade	0214-1	SP -H og -MQ forstÃ¦rker
+plade	0214-1	SP -H og -MQ forstærker
 image	0214-1.png	0214-1a.jpg	 0214-1b.jpg
 6N	+10.5V
 5N	STEL
@@ -1184,7 +1184,7 @@ image	0214-1.png	0214-1a.jpg	 0214-1b.jpg
 3	out	ud[7]
 end
 
-plade	0214-3	klockpulsforstÃ¦rkere
+plade	0214-3	klockpulsforstærkere
 image	0214-3.png	0214-3a.jpg	 0214-3b.jpg
 6N	+10.5V
 10	STEL
@@ -1213,7 +1213,7 @@ image	0214-3.png	0214-3a.jpg	 0214-3b.jpg
 11	out	ud[KP A]
 end
 
-plade	0214-4	ForstÃ¦rkere og tÃ¦lling i OT&TD
+plade	0214-4	Forstærkere og tælling i OT&TD
 image	0214-4.png	0214-4a.jpg	 0214-4b.jpg
 end
 
@@ -1232,7 +1232,7 @@ plade	0214-6	Magnetspole forst.
 image	0214-6.png
 end
 
-plade	0214-7	ForstÃ¦rkere
+plade	0214-7	Forstærkere
 image	0214-7.png	0214-7a.jpg	 0214-7b.jpg
 14	NC
 1	-31.5V
@@ -1262,7 +1262,7 @@ image	0214-7.png	0214-7a.jpg	 0214-7b.jpg
 15N	in	indg[8]
 end
 
-plade	0214-8	ForstÃ¦rkere
+plade	0214-8	Forstærkere
 image	0214-8.png	0214-8a.jpg	 0214-8b.jpg
 1	-31.5V
 7N	-13.5V
@@ -1348,7 +1348,7 @@ image	0216-1.png	0216-1a.jpg	 0216-1b.jpg
 8	in	Linie
 end
 
-plade	0216A-1	z lÃ¦ser, z HK, sum jLY 
+plade	0216A-1	z læser, z HK, sum jLY 
 image	0216A-1.png	0216A-1a.jpg	 0216A-1b.jpg
 11N	in	j tastatur
 12	in	BY afk.af T
@@ -1480,7 +1480,7 @@ image	0221.png	0221a.jpg	 0221b.jpg
 6	-31.5V
 end
 
-plade	0221-1	TemperaturovervÃ¥gning
+plade	0221-1	Temperaturovervågning
 image	0221-1.png
 end
 
@@ -1581,7 +1581,7 @@ image	0222-5.png
 13N	in	fra optrans[op36-37]
 end
 
-plade	0222-6	Sp, H, MQ primÃ¦r
+plade	0222-6	Sp, H, MQ primær
 image	0222-6.png
 1N	+10.5V
 8N	+1.5V
@@ -1595,7 +1595,7 @@ image	0222-6.png
 11	+4.5V
 end
 
-plade 0222-7	Afkodning af indlÃ¦sning BY8-9 
+plade 0222-7	Afkodning af indlæsning BY8-9 
 image	0222-7.png
 1	-13.5V
 3N	-4.5V
@@ -1606,10 +1606,10 @@ image	0222-7.png
 11N	in	^BY9
 8N	in	BY8
 9N	in	^BY8
-6	out	ZlÃ¦ser
+6	out	Zlæser
 5	out	Zby1,0
 4	out	Ztastatur
-13	out	^lÃ¦ser
+13	out	^læser
 12	out	^by1,0
 11	out	^tatatur
 3	out
@@ -1657,11 +1657,11 @@ image	0223-1.png
 6N	in	Mode 5
 4N	out	_Mode 5
 6	in	Fra op. skr'
-3	in	Fra op. lÃ¦s'
+3	in	Fra op. læs'
 5	in	bet. skr'
-2	in	bet. lÃ¦s'
+2	in	bet. læs'
 4	out	ud skr'
-1	out	ud lÃ¦s'
+1	out	ud læs'
 end
 
 plade	0224	OR-TI-O og liniekreds
@@ -1763,20 +1763,20 @@ image	0224a.png	0224b.png
 8N	in	0-stille
 end
 
-plade	0225	KonstantstrÃ¸mgen.
+plade	0225	Konstantstrømgen.
 image	0225.png
 5	+24.0V
 1	-1.5V
 2	-1.5V
 3	-1.5V
 4	-31.5V
-14N	out	lÃ¦sestrÃ¸m
-12N	out	LP sekundÃ¦r 
-13N	out	LP sekundÃ¦r
-15N	out	skrivestrÃ¸m
+14N	out	læsestrøm
+12N	out	LP sekundær 
+13N	out	LP sekundær
+15N	out	skrivestrøm
 end
 
-plade	0229	Linie 00, blok tÃ¦lling, fejlind i MA, spild fl.fl
+plade	0229	Linie 00, blok tælling, fejlind i MA, spild fl.fl
 image	0229a.png	0229b.png
 5N	+10.5V
 7N	+1.5V
@@ -1797,7 +1797,7 @@ image	0229a.png	0229b.png
 12	in	Ho + Hoo
 3N	in	GmTD
 4N	in	Gs39->TD
-8N	out	Blok TÃ¦ll TD
+8N	out	Blok Tæll TD
 10	in	GsMD00-9
 1N	in	SigmaGs
 12N	in	Linie0
@@ -1806,7 +1806,7 @@ image	0229a.png	0229b.png
 9N	in	Gs Adder 00-19
 13N	out	Linie00
 2N	in	Gm 0T
-15N	out	Blok TÃ¦ll OT
+15N	out	Blok Tæll OT
 end
 
 plade	0231	Styring af indikator
@@ -1900,7 +1900,7 @@ image	0234a.png	0234b.png
 6	out	LPY
 end
 
-plade	0239	Skriv fl.fl. og skriv forstÃ¦rker
+plade	0239	Skriv fl.fl. og skriv forstærker
 image	0239a.png	0239b.png
 1N	in
 14N	out	Skr.str.b
@@ -1917,8 +1917,8 @@ image	0239a.png	0239b.png
 6	+10.5V
 9N	-31.5V
 12N	out	-19.5V ud
-6N	in	lÃ¦s
-8N	out	LF Ã¥bning
+6N	in	læs
+8N	out	LF åbning
 5	-13.5V
 7	out	-13.5 til plade 240 og 257-1
 end
@@ -1967,16 +1967,16 @@ end
 
 plade	0241	Kanalvalg tromle
 image	0241.png
-9N	out	LÃ¦s str.a
-15N	out	LÃ¦s str.b
-2	in	_YLÃ¦s
-14N	in	_YlÃ¦s
+9N	out	Læs str.a
+15N	out	Læs str.b
+2	in	_YLæs
+14N	in	_Ylæs
 3	inout	TRY (0-15)
 12N	inout	TRY (0-15)
 4	inout	TRY (0-15)
 13N	inout	TRY (0-15)
-1	STEL	TRY (0-15) skÃ¦rm
-7N	STEL	TRY (0-15) skÃ¦rm
+1	STEL	TRY (0-15) skærm
+7N	STEL	TRY (0-15) skærm
 5	in	skr.str a
 6	in	Y skriv
 10N	in	Y skriv
@@ -2050,7 +2050,7 @@ image	0249a.png	0249b.png
 10	in	Step
 5	in	stop
 6	in	stop
-4	in	registervÃ¦lger
+4	in	registervælger
 2	out	klipper
 4N	out	Sp adder prim
 7N	out	Klokpuls A
@@ -2064,7 +2064,7 @@ image	0249a.png	0249b.png
 15N	in	gate 8
 end
 
-plade	0251	Paritetscheck for indlÃ¦sning
+plade	0251	Paritetscheck for indlæsning
 image	0251.png
 9N	out	Paritet ud
 13	in	_BL6
@@ -2113,7 +2113,7 @@ image	0252a.png	0252b.png
 13	in	^start2
 12	in	^start1
 10N	out	^VAC
-14	inout	fra Mode 2 | Til i-lÃ¸kke lampe
+14	inout	fra Mode 2 | Til i-løkke lampe
 end
 
 plade	0253	Microtemp, reset & SP-halvadder
@@ -2139,11 +2139,11 @@ image	0253a.png	0253b.png
 13	out	ud til klarlampe
 end
 
-plade	0254	HÃ¸jttalerforstÃ¦rker i KB
+plade	0254	Højttalerforstærker i KB
 image	0254.png
 end
 
-plade	0257	TromleklokpulsforstÃ¦rker
+plade	0257	Tromleklokpulsforstærker
 image	0257.png
 15N	-13.5V
 14N	-1.5V
@@ -2151,7 +2151,7 @@ image	0257.png
 6	STEL
 7	STEL
 3	in	TRb
-5	STEL	TRskÃ¦rm
+5	STEL	TRskærm
 1	in	TRa
 6N	out	KPxa
 7N	out	KPxa
@@ -2161,7 +2161,7 @@ image	0257.png
 13N	out	KPxb
 end
 
-plade	0257-1	TromlesignalforstÃ¦rker
+plade	0257-1	Tromlesignalforstærker
 image	0257-1.png
 2N	in	PL0239--13.5V
 11N	out	SPb[0]
@@ -2170,9 +2170,9 @@ image	0257-1.png
 6N	out	SPa[0]
 7N	out	SPa[1]
 8N	out	SPb[2]
-3	in	LÃ¦s.str.b
-8	in	LF Ã¥bning
-1	in	LÃ¦s.str.a
+3	in	Læs.str.b
+8	in	LF åbning
+1	in	Læs.str.a
 15N	-13.5V
 15	+10.5V
 5	STEL
@@ -2314,23 +2314,23 @@ image	0263a.png	0263b.png
 15	in	KPIIa
 12	in	_PFT
 14	out	PF
-1N	in	_LÃ¦s
+1N	in	_Læs
 2N	in	_SL
 end
 
-plade 0264	LÃ¦s-skriv.
+plade 0264	Læs-skriv.
 image	0264a.png	0264b.png
 1	-31.5V
 14N	-13.5V
 13N	-1.5V
 12N	STEL
 15N	+10.5V
-4	out	LÃ¦s Y
+4	out	Læs Y
 4N	in	^TKT->41
 12	in	^reset
-7N	out	^LÃ¦s
-5N	out	LÃ¦s'
-6N	out	LÃ¦s'
+7N	out	^Læs
+5N	out	Læs'
+6N	out	Læs'
 2N	in	b*Mode5
 3N	in	op.afk.skr
 1N	in	Gm Start TR
@@ -2345,7 +2345,7 @@ image	0264a.png	0264b.png
 15	out	^skr
 13	out	skr
 8	out	skr'
-11	in	OP afk.lÃ¦s
+11	in	OP afk.læs
 10	in	^b*mode5
 9	in	blok skriv
 3	out	skr.Y
@@ -2370,11 +2370,11 @@ image	0265.png
 8N	in	^8
 10N	in	9
 11N	in	^9
-14	in	LÃ¦s y
-15N	out	^ylÃ¦s[0]
-14N	out	^ylÃ¦s[1]
-13N	out	^ylÃ¦s[2]
-12N	out	^ylÃ¦s[3]
+14	in	Læs y
+15N	out	^ylæs[0]
+14N	out	^ylæs[1]
+13N	out	^ylæs[2]
+12N	out	^ylæs[3]
 15	in	skrivy
 5	out	yskriv[0]
 7	out	yskriv[1]
@@ -2409,7 +2409,7 @@ image	0266a.png	0266b.png
 11N	out	Skift TI20-29
 12N	out	Skift TI30-41
 2	in	TR
-3	in	Gm sÃ¦t TR-bet.
+3	in	Gm sæt TR-bet.
 5	out	TR lampe spdg.
 1	out	TL
 end
@@ -2422,7 +2422,7 @@ plade	0269	Styrekredse for perforrator
 image	0269a.png	0269b.png
 end
 
-plade	0270	FB forstÃ¦rker
+plade	0270	FB forstærker
 image	0270.png
 end
 
@@ -2495,7 +2495,7 @@ image	0276.png
 end
 
 plade	1000-10	CO, CO' & Opt fl.fl AOK Gm* MD Adr 00
-image	1000-10a.png	1000-10b.png
+image	1000-10a.png	1000-10b.png	1000-10a.jpg	1000-10b.jpg
 14	+10.5V
 12N	+1.5V
 1	STEL
