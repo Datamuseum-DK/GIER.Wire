@@ -29,7 +29,7 @@
     var inputFiles = new Array( "bind3_krydsfelt.txt", "bind3_stik_bf.txt", "bind3_stik_hk.txt", "bind3_stik_h.txt", "bind3_stik_kb.txt",
 				"bind3_stik_s.txt", "bind5_a1.txt", "bind5_a2.txt", "bind5_a3.txt", "bind5_a4.txt", "bind5_a5.txt", "bind5_a6.txt",
 				"bind6_b1.txt", "bind6_b2.txt", "bind6_b3.txt", "bind6_b4.txt", "bind6_b5.txt", "bind6_b6.txt",
-				"bind7_c1.txt", "bind7_c2.txt", "bind7_c3.txt", "bind7_c4.txt", "bind7_c5.txt", "bind7_c6.txt",
+				"bind7_c1.txt", "bind7_c2.txt", "bind7_c3.txt", "bind7_c4.txt", "bind7_c5.txt", "bind7_c6.txt", "bind7_d1.txt",
 				"nets.txt", "plader.txt", "plade.txt");
     var tabLinks = new Array();
     var contentDivs = new Array();
@@ -56,6 +56,7 @@
     {
       initTabs();
       initData();
+      checkData();
       initOversigt();
     }
 
@@ -141,13 +142,60 @@
 
     function getgier()
     {
+      var col="";
+      var s1,s2;
       iline++;
       getfields();
       while(fields[0]!='end')
       {
+	if(fields[0]=="COL")
+	{
+	  col = fields[1]+fields[2];
+//	  console.log("COL: "+col);
+	}
+	else if(fields[0]=="SLOT")
+	{
+	  if(fields[1].includes("-"))
+	  {
+	    var cs=fields[1].split('-');
+	    c1=cs[0];
+	    c2=cs[1];
+	  }
+	  else
+	  {
+	    c1=fields[1];
+	    c2=c1;
+	  }
+	  for(c=c1;c<=c2;c++)
+	  {
+	    var kort=col+"-"+c;
+	    if(kortpladelist[kort])
+	    {
+	      console.log("kort "+kort+" findes allerede "+kortpladelist[kort]);
+	    }
+	    else
+	    {
+	      kortlist.push(kort);
+	      kortpladelist[kort] = fields[2];
+	      korttekstlist[kort] = fields.slice(3).join(' ');
+	    }
+	  }
+	}
 	iline++;
 	getfields();
       }
+    }
+
+    function checkimage(file)
+    {
+      var http = new XMLHttpRequest();
+
+      http.open('HEAD', file, false);
+      http.send();
+
+//    console.log("File: "+file+" status: "+http.status);
+
+      return http.status != 404;
     }
 
     function getplade()
@@ -164,6 +212,11 @@
 	  pladeimagelist[plade] = new Array();
 	  for(i=1; i<fields.length; i++)
 	  {
+//	    console.log("plade: "+plade+" image: "+fields[i]);
+//	    if(!checkimage(fields[i]))
+//	    {
+//	      console.log("Image file: "+fields[i]+" does not exist");
+//	    }
 	    pladeimagelist[plade].push(fields[i]);
 	  }
 	}
@@ -210,7 +263,7 @@
 	xmlhttp.open("GET",inputFiles[fileno],false);
 	if(xmlhttp.overrideMimeType)
 	{
-	  xmlhttp.overrideMimeType("text/html; charset=UTF-8");
+	  xmlhttp.overrideMimeType("text/html; charset=utf8");
 	}
 	xmlhttp.send();
 	str=xmlhttp.responseText; 
@@ -278,6 +331,37 @@
       document.getElementById("debugdata").innerHTML = debuglines;
     }
 
+    function checkkort(txt, hidden)
+    {
+      if(hidden)
+      {
+	return;
+      }
+      else
+      {
+	var plade=kortpladelist[txt];
+        if(!plade) console.log(txt+" undefined");
+	var pngfound=0;
+	var jpgfound=0;
+	for (var id in pladeimagelist[plade])
+	{
+	  if(pladeimagelist[plade][id] != '')
+	  {
+	    var imagefile=pladeimagelist[plade][id];
+	    if(imagefile.slice(-3)=='jpg') jpgfound++;
+	    if(imagefile.slice(-3)=='png') pngfound++;
+	  }
+	}
+	if(pngfound==0)
+	{
+	  console.log(txt+": "+plade+" No PNG files");
+	}
+	if(jpgfound==0)
+	{
+	  console.log(txt+": "+plade+" No JPG files");
+	}
+      }
+    }
     function skuffekort(txt, hidden)
     {
       if(hidden)
@@ -286,6 +370,7 @@
       }
       else
       {
+        if(!kortpladelist[txt]) console.log(txt+" undefined");
 	return '<td><a id="skuffe_'+txt+'" title="'+kortpladelist[txt]+': '+korttekstlist[txt]+'" href="#kort_'+txt+'" onclick="selectkort(\''+txt+'\',\'\');">'+txt+'</a>';
       }
     }
@@ -316,6 +401,59 @@
       return html;
     }
 
+    function checkData()
+    {
+      var row,col;
+
+      // A
+
+      for(row=1;row<=6;row++)
+      {
+	for(col=1;col<=25;col++)
+	{
+//	  oversigtdata += skuffekort("A"+row+"-"+col,0);
+	  checkkort("A"+row+"-"+col,0);
+	}
+      }
+
+      // B
+
+      for(row=1;row<=6;row++)
+      {
+	for(col=26;col<=50;col++)
+	{
+	  checkkort("B"+row+"-"+col,
+	     (row==1&&(col==37||col==38||col==40||col==41||col==49||col==50))||
+	     (row==6&&((col>=32&&col<=35)||col==41||col>=48)));
+	}
+      }
+
+      // C
+
+      for(row=1;row<=6;row++)
+      {
+	for(col=1;col<=25;col++)
+	{
+	  checkkort("C"+row+"-"+col,
+	     (row==2&&col==19)||
+	     (row==6&&col>=8&&col<=20));
+	}
+      }
+
+      // D1
+
+      for(col=1;col<=24;col++)
+      {
+	checkkort("D1-"+col,col==24);
+      }
+
+      // D2
+
+      for(col=44;col<=52;col++)
+      {
+	checkkort("D2-"+col,col==52);
+      }
+    }
     function initOversigt()
     {
       var row,col;
@@ -646,10 +784,12 @@
     {
       var plade=kortpladelist[kort];
       var pladehtml='<h2>Plade '+plade+'</h2>';
+//      console.log("kort: "+kort+" plade "+plade);
       for (var id in pladeimagelist[plade])
       {
         if(pladeimagelist[plade][id] != '')
 	{
+//	  console.log("image: "+pladeimagelist[plade][id]);
 	  pladehtml += '<p><img src="'+pladeimagelist[plade][id]+'"></p>';
 	}
       }
