@@ -15555,7 +15555,7 @@ image	0269a.png	0269b.png
 end
 
 plade	0270	FB forstærker
-image	0270.png
+image	0270.png	0270a.jpg	0270b.jpg
 end
 
 plade	0271	Drivtrin for skrivemask.
