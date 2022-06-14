@@ -70,7 +70,7 @@ kort	A4-2	0214-7	Standard forstærkere
 15N	A5-6-6N
 end
 
-kort	A4-3	0214-7	Standard forstærkere
+kort	A4-3	0214-4	Standard forstærkere
 1	A4-5-5		A4-2-1
 2	C1-21-10N	A4-4-8		# ACoo
 3	C5-13-11			# plus (beting)
@@ -289,7 +289,7 @@ kort	A4-10	0201	Adder
 15N				x
 end
 
-kort	A4-11	0201	Adder
+kort	A4-11	0201-1	Adder
 1	A3-11-13N
 2				x
 3	A4-12-13N
@@ -424,7 +424,7 @@ kort	A4-15	0201	Adder
 15N	B3-28-2			x
 end
 
-kort	A4-16	0201	Adder
+kort	A4-16	0201-1	Adder
 1	A3-16-13N
 2				x
 3	A4-17-13N
@@ -559,7 +559,7 @@ kort	A4-20	0201	Adder
 15N				x
 end
 
-kort	A4-21	0201	Adder
+kort	A4-21	0201-1	Adder
 1	A3-21-13N
 2				x
 3	A4-22-13N

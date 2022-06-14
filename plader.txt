@@ -10,7 +10,7 @@ SLOT	23	DM160	Lampeplade
 SLOT	24	0261-1	Klipper, SL" og Gs stop B bagkant
 SLOT	25	0258	VAB, SLB fl-fl FLF
 COL	A 2
-SLOT	1	0209-1	Step
+SLOT	1	0209-5	Step
 SLOT	2-3	0274	Halvadder med husker
 SLOT	4	0200-16	Standardinvertere
 SLOT	5	0229	Linie 00, blok tælling, fejlind i MA, spild fl.fl.
@@ -52,8 +52,8 @@ SLOT	29	0253	Mikrotem, kPo->SpH
 SLOT	30	0259	Prim.Sp test fl-fl stop
 SLOT	31-32	0203-1	Afkodning af FL
 SLOT	33	0214-5	FL.startkredse
-SLOT	34	0234  	Tidsgenerator for FL
-SLOT	35-36	0221  	Styrekredse til FL
+SLOT	34	0234	Tidsgenerator for FL
+SLOT	35-36	0221	Styrekredse til FL
 SLOT	39	0225	FL konstantstrømsgenerator
 SLOT	42	0225	FL konstantstrømsgenerator
 SLOT	43	0203	Afkodning af FL
@@ -70,11 +70,11 @@ SLOT	27	0214-1	Sp.H og MQ
 SLOT	28	0208	Ad-Sub.SA
 SLOT	29	0201-2	Adder
 SLOT	30-33	0201	Adder
-SLOT	34   	0201-1	Adder
+SLOT	34	0201-1	Adder
 SLOT	35-38	0201	Adder
-SLOT	39   	0201-1	Adder
+SLOT	39	0201-1	Adder
 SLOT	40-43	0201	Adder
-SLOT	44   	0201-1	Adder
+SLOT	44	0201-1	Adder
 SLOT	45-48	0201	Adder
 SLOT	49	0219	Sp add og Mente til 39
 SLOT	50	0213	Ind- og udg.
@@ -106,16 +106,16 @@ SLOT	18-20	0231	Styring af Indikator
 SLOT	21-25	0233	Indikator operationer
 COL	C 2
 SLOT	1	0200-1	Til og Fra HK, inv. for BY8-9, Gatekreds for HK
-SLOT	2	0216-8	BY0 og BY1 YE registre
-SLOT	3	0202-20	Z forstærker til strimmellæser
-SLOT	4	0200-268 Z forstærker til perforator og skrivemaskine
+SLOT	2	0222-7	Afkodning af indlæsning
+SLOT	3	0202-25	Z forstærker til strimmellæser
+SLOT	4	0200-37	Z forstærker til perforator og skrivemaskine
 SLOT	5	0200-10	Forstærker til BS
-SLOT	6	0222-78	Afkodning af indlæsning
+SLOT	6	0216-8	BY0 og BY1 YE registre
 SLOT	7	0216A-1	Zlæser, Zhk, Sigma jLY
 SLOT	8	0216-4	BL - jSY - BY
 SLOT	9-15	0216-7	BL-BS-BY
 SLOT	16	0272-1	Klarsignal fra strimmellæser
-SLOT	17	0200-1	Ostill og Istillingsforst. til strimmellæser
+SLOT	17	0200-2	Ostill og Istillingsforst. til strimmellæser
 SLOT	18	0251	Paritetscheck for indlæsning
 SLOT	19	0216-00	BS YE register og forstærker for BS samt F-FL med gates
 SLOT	20	0200-9	KE logik

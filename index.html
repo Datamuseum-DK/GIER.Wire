@@ -43,6 +43,7 @@
     var tværtrådbenlist = new Array();
     var kortlist = new Array();
     var kortpladelist = new Array();
+    var kortpladelistfilnavn = new Array();
     var korttekstlist = new Array();
     var kortbenlist = new Array();
     var pladelist = new Array();
@@ -127,7 +128,20 @@
       var kort=fields[1];
       kortlist.push(kort);
       debuglines += 'Kort: '+kort+' '+fields[2]+'\n';
-      kortpladelist[kort] = fields[2];
+      if(kortpladelist[kort])
+      {
+	console.log("kort "+kort+" findes allerede I "+kortpladelist[kort]);
+	if(kortpladelist[kort] != fields[2])
+	{
+	  console.log(" - mismatch: "+kortpladelist[kort]+"("+kortpladelistfilnavn[kort]+") "+fields[2]+"("+currentfilename+")");
+	}
+      }
+      else
+      {
+	kortpladelist[kort] = fields[2];
+	kortpladelistfilnavn[kort] = currentfilename;
+	console.log("kort "+kort+" oprettes: "+kortpladelist[kort]);
+      }
       korttekstlist[kort] = fields.slice(3).join(' ');
       kortbenlist[kort] = new Array();
       iline++;
@@ -155,6 +169,7 @@
 	}
 	else if(fields[0]=="SLOT")
 	{
+	  console.log("SLOT '"+fields[1]+"' '"+fields[2]+"'");
 	  if(fields[1].includes("-"))
 	  {
 	    var cs=fields[1].split('-');
@@ -171,12 +186,18 @@
 	    var kort=col+"-"+c;
 	    if(kortpladelist[kort])
 	    {
-	      console.log("kort "+kort+" findes allerede "+kortpladelist[kort]);
+	      console.log("kort "+kort+" findes allerede II "+kortpladelist[kort]);
+	      if(kortpladelist[kort] != fields[2])
+	      {
+		console.log(" - mismatch: "+kortpladelist[kort]+"("+kortpladelistfilnavn[kort]+") "+fields[2]+"("+currentfilename+")");
+	      }
 	    }
 	    else
 	    {
 	      kortlist.push(kort);
 	      kortpladelist[kort] = fields[2];
+	      kortpladelistfilnavn[kort] = currentfilename;
+	      console.log("kort "+kort+" oprettes: "+kortpladelist[kort]);
 	      korttekstlist[kort] = fields.slice(3).join(' ');
 	    }
 	  }
@@ -259,6 +280,8 @@
       debuglines = "<pre>";
       for (fileno in inputFiles)
       {
+	currentfilename=inputFiles[fileno];
+	console.log("Læser "+inputFiles[fileno]);
 	debuglines += '\n\nFilename: '+inputFiles[fileno]+'\n\n';
 	xmlhttp.open("GET",inputFiles[fileno],false);
 	if(xmlhttp.overrideMimeType)
@@ -371,7 +394,14 @@
       else
       {
         if(!kortpladelist[txt]) console.log(txt+" undefined");
-	return '<td><a id="skuffe_'+txt+'" title="'+kortpladelist[txt]+': '+korttekstlist[txt]+'" href="#kort_'+txt+'" onclick="selectkort(\''+txt+'\',\'\');">'+txt+'</a>';
+	if(false)
+	{
+	  return '<td><a id="skuffe_'+txt+'" title="'+kortpladelist[txt]+': '+korttekstlist[txt]+'" href="#kort_'+txt+'" onclick="selectkort(\''+txt+'\',\'\');">'+kortpladelist[txt]+'</a>';
+	}
+	else
+	{
+	  return '<td><a id="skuffe_'+txt+'" title="'+kortpladelist[txt]+': '+korttekstlist[txt]+'" href="#kort_'+txt+'" onclick="selectkort(\''+txt+'\',\'\');">'+txt+'</a>';
+	}
       }
     }
 

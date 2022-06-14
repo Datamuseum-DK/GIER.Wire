@@ -703,7 +703,7 @@ kort	B2-47	0205	Li-H
 14N	B3-47-8N
 end
 
-kort	B2-48	0205	Li-H
+kort	B2-48	0205-3	Li-H
 1	CN-39
 2	CP-39
 3			x

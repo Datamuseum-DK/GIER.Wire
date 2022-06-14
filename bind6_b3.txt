@@ -230,7 +230,7 @@ kort	B3-33	0201	Adder
 15N			x
 end
 
-kort	B3-34	0201	Adder
+kort	B3-34	0201-1	Adder
 1	B2-34-13N
 2			x
 3	B3-35-13N
