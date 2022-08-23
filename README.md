@@ -1,5 +1,5 @@
 GIER computer wiring
-%%%%%%%%%%%%%%%%%%%%
+====================
 
 This repository contains images of all PCBs in the GIER
 computer, the complete backplan connection plan typed
